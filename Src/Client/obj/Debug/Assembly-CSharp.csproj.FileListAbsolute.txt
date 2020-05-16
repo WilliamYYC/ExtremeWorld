@@ -1,0 +1,2 @@
+D:\mmorpg\mmorpgwork\Src\Client\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\mmorpg\mmorpgwork\Src\Client\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

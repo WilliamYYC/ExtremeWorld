@@ -1,0 +1,93 @@
+
+2020-05-15 16:07:16,347 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-05-15 16:07:20,972 [1] [INFO ] [GameServer] £ºGame Server Exiting...
+2020-05-15 16:07:21,010 [1] [INFO ] [GameServer] £ºGame Server Exited
+2020-05-15 16:15:23,038 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-05-15 16:15:23,374 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-05-15 16:15:23,646 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,646 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,646 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,646 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,646 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,648 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,648 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,648 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:15:23,745 [1] [WARN ] [GameServer] £ºNetService Started
+2020-05-15 16:15:29,781 [1] [INFO ] [GameServer] £ºGame Server Exiting...
+2020-05-15 16:15:29,795 [1] [WARN ] [GameServer] £ºStop NetService...
+2020-05-15 16:15:29,796 [1] [WARN ] [GameServer] £ºStoping Message Handler...
+2020-05-15 16:15:29,799 [7] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,799 [5] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,800 [11] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,799 [6] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,800 [12] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,800 [8] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,801 [9] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,802 [10] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 16:15:29,903 [1] [INFO ] [GameServer] £ºGame Server Exited
+2020-05-15 16:16:19,252 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-05-15 16:16:19,593 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-05-15 16:16:19,953 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,953 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,954 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,953 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,953 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,953 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,957 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:19,957 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 16:16:20,048 [1] [WARN ] [GameServer] £ºNetService Started
+2020-05-15 21:37:34,146 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-05-15 21:37:34,506 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-05-15 21:37:34,739 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,739 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:37:34,839 [1] [WARN ] [GameServer] £ºNetService Started
+2020-05-15 21:37:42,513 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:50316]] Connected
+2020-05-15 21:37:48,680 [3] [WARN ] [GameServer] £ºClient[] Disconnected
+2020-05-15 21:46:31,141 [1] [INFO ] [GameServer] £ºGame Server Exiting...
+2020-05-15 21:46:31,208 [1] [WARN ] [GameServer] £ºStop NetService...
+2020-05-15 21:46:31,210 [1] [WARN ] [GameServer] £ºStoping Message Handler...
+2020-05-15 21:46:31,211 [6] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,211 [9] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,211 [10] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,212 [11] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,211 [8] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,211 [5] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,212 [12] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,211 [7] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-05-15 21:46:31,314 [1] [INFO ] [GameServer] £ºGame Server Exited
+2020-05-15 21:56:13,942 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-05-15 21:56:14,387 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-05-15 21:56:14,684 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,684 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 21:56:14,783 [1] [WARN ] [GameServer] £ºNetService Started
+2020-05-15 21:56:22,168 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:56073]] Connected
+2020-05-15 21:58:06,318 [3] [WARN ] [GameServer] £ºClient[] Disconnected
+2020-05-15 21:58:21,040 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:56110]] Connected
+2020-05-15 21:58:21,127 [3] [WARN ] [GameServer] £ºClient[] DataReceived Len:20
+2020-05-15 22:00:25,618 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-05-15 22:00:26,009 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-05-15 22:00:26,296 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,297 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,297 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,297 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,297 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,297 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,297 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,298 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-05-15 22:00:26,396 [1] [WARN ] [GameServer] £ºNetService Started
+2020-05-15 22:00:33,488 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:56155]] Connected
+2020-05-15 22:00:33,579 [3] [WARN ] [GameServer] £ºClient[] DataReceived Len:20
+2020-05-15 22:00:33,751 [5] [INFO ] [GameServer] £ºFirstDefineRequest : helloWorld
+2020-05-15 22:00:39,031 [3] [WARN ] [GameServer] £ºClient[] Disconnected
