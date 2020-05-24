@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e30439b89bfc0f24fa14cb790f352769
+guid: e49ab71241741cc4c993a708cdd6fe0c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -95,7 +95,8 @@ ModelImporter:
     2300000: Bone002
     3300000: Bone002
     4300000: Bone002
-    7400000: Warrior_AtkB
+    7400000: Warrior_AtcB
+    7400002: Warrior_AtkB
     9500000: //RootNode
   externalObjects: {}
   materials:
