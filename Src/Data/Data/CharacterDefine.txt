@@ -5,6 +5,7 @@
     "Type": "Normal",
     "Class": "WARRIOR",
     "Resource": "Character/Warrior",
+    "Description": "战士,近战物理职业",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -14,6 +15,7 @@
     "Type": "Normal",
     "Class": "WIZARD",
     "Resource": "Character/Wizard",
+    "Description": "法师,远程法系职业",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -23,6 +25,7 @@
     "Type": "Normal",
     "Class": "ARCHER",
     "Resource": "Character/Archer",
+    "Description": "弓箭手,远程物理系职业",
     "InitLevel": 1,
     "Speed": 300
   },

@@ -23,8 +23,11 @@ namespace GameServer
         {
             network = new NetService();
             network.Init(8000);
-            HelloWorldServices.Instance.Init();
+           
             DBService.Instance.Init();
+            //var name = DBService.Instance.Entities.Characters.Where(s=>s.TID == 1);
+            UserService.Instance.Init();
+            //Console.WriteLine("{0}", name.FirstOrDefault<TCharacter>().Name);
             thread = new Thread(new ThreadStart(this.Update));
             return true;
         }
@@ -32,7 +35,6 @@ namespace GameServer
         public void Start()
         {
             network.Start();
-            HelloWorldServices.Instance.Start();
             running = true;
             thread.Start();
         }
