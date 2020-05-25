@@ -15,13 +15,13 @@ public class LoadingManager : MonoBehaviour {
 
     public Slider progressBar;
     public Text progressText;
-    public Text progressNumbe;
+    public Text progressNumber;
 
     // Use this for initialization
     IEnumerator Start()
     {
         log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo("log4net.xml"));
-        //UnityLogger.Init();
+        UnityLogger.Init();
         Common.Log.Init("Unity");
         Common.Log.Info("LoadingManager start");
 

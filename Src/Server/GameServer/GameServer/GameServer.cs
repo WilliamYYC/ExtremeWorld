@@ -21,8 +21,9 @@ namespace GameServer
         NetService network;
         public bool Init()
         {
+            int port = Properties.Settings.Default.ServerPort;
             network = new NetService();
-            network.Init(8000);
+            network.Init(port);
            
             DBService.Instance.Init();
             //var name = DBService.Instance.Entities.Characters.Where(s=>s.TID == 1);

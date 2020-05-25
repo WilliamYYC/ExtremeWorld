@@ -19,17 +19,7 @@ public class UILogin : MonoBehaviour {
 	}
 	
 
-	public void OnLogin(Result result, string msg)
-	{
-		if (result == Result.Success)
-		{
-			SceneManager.Instance.LoadScene("CharSelect");
-		}
-		else
-		{
-			MessageBox.Show(msg, "错误", MessageBoxType.Error);
-		}
-	}
+
 
 	
 	// Update is called once per frame
@@ -51,5 +41,17 @@ public class UILogin : MonoBehaviour {
 		}
 
 		UserService.Instance.SendLogin(this.usernameLogin.text, this.passwordLogin.text);
+	}
+
+	public void OnLogin(Result result, string msg)
+	{
+		if (result == Result.Success)
+		{
+			SceneManager.Instance.LoadScene("CharSelect");
+		}
+		else
+		{
+			MessageBox.Show(msg, "错误", MessageBoxType.Error);
+		}
 	}
 }

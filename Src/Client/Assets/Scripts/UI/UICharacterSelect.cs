@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using Models;
 using Services;
 using SkillBridge.Message;
-using System.Reflection;
 
 public class UICharacterSelect : MonoBehaviour {
 
@@ -31,9 +30,9 @@ public class UICharacterSelect : MonoBehaviour {
 	public UICharacterView characterView;
 	// Use this for initialization
 	void Start () {
-		DataManager.Instance.Load();
+		//DataManager.Instance.Load();
 		InitCharacterSelect(true);
-		//UserService.Instance.OnCharacterCreate = this.OnCharacterCreate;
+		UserService.Instance.OnCharacterCreate = OnCharacterCreate;
 	}
 	
 	// Update is called once per frame
@@ -54,7 +53,7 @@ public class UICharacterSelect : MonoBehaviour {
 			}
 			uiChars.Clear();
 
-			/*for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
+			for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
 			{
 				GameObject go = Instantiate(uiCharInfo, this.uiCharList);
 				
@@ -65,11 +64,11 @@ public class UICharacterSelect : MonoBehaviour {
 
 				int idx = i;
 
-				button.onClick.AddListener(() => { OnSelectCharacter(idx) });
+				button.onClick.AddListener(() => { OnSelectCharacter(idx); });
 
 				uiChars.Add(go);
 				go.SetActive(true);
-			}*/
+			}
 		}
 
 	}
@@ -127,11 +126,11 @@ public class UICharacterSelect : MonoBehaviour {
         User.Instance.CurrentCharacter = cha;
         characterView.CurrentCharacter = idx;
 
-        //for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
-        //{
-        //    UICharInfo ci = this.uiChars[i].GetComponent<UICharInfo>();
-        //    ci.Selected = idx == i;
-        //}
+        for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
+        {
+            UICharInfo ci = this.uiChars[i].GetComponent<UICharInfo>();
+           ci.Selected = idx == i;
+        }
     }
     public void OnClickPlay()
     {

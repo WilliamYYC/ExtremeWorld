@@ -139,7 +139,7 @@ namespace Services
             if (response.Result == Result.Success)
             {//登陆成功逻辑
                 Models.User.Instance.SetupUserInfo(response.Userinfo);
-            }
+            };
             if (this.OnLogin != null)
             {
                 this.OnLogin(response.Result, response.Errormsg);

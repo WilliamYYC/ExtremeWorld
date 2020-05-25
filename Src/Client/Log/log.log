@@ -1,2 +1,33 @@
-2020-05-19 15:51:32,235 [ 1] INFO  Unity: LoadingManager start
-2020-05-19 15:51:44,949 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-05-24 20:56:54,391 [ 1] INFO  Unity: LoadingManager start
+2020-05-24 20:56:57,653 [ 1] INFO  Unity: DataManager > DataManager()
+2020-05-24 20:57:05,585 [ 1] INFO  Unity: UserLoginRequest::user :user123 psw:123456
+2020-05-24 20:57:05,587 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-05-24 20:57:05,592 [ 1] INFO  Unity: DoConnect
+2020-05-24 20:57:05,595 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-05-24 20:57:05,605 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-05-24 20:57:05,613 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-05-24 20:57:05,753 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-05-24 20:57:05,757 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-05-24 20:57:06,120 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-05-24 20:57:08,128 [ 1] INFO  Unity: Select Char:[1]æ¤æ¤[Warrior]
+2020-05-24 20:57:09,684 [ 1] INFO  Unity: Select Char:[1]æ¤æ¤[Warrior]
+2020-05-24 20:57:10,596 [ 1] INFO  Unity: Select Char:[2]yyc[Wizard]
+2020-05-24 20:57:11,937 [ 1] INFO  Unity: Select Char:[3]½ã[Warrior]
+2020-05-24 20:57:13,229 [ 1] INFO  Unity: Select Char:[2]yyc[Wizard]
+2020-05-24 20:57:14,538 [ 1] INFO  Unity: Select Char:[1]æ¤æ¤[Warrior]
+2020-05-24 20:57:15,450 [ 1] INFO  Unity: Select Char:[3]½ã[Warrior]
+2020-05-24 20:57:18,481 [ 1] INFO  Unity: Select Char:[1]æ¤æ¤[Warrior]
+2020-05-24 20:57:19,110 [ 1] INFO  Unity: Select Char:[2]yyc[Wizard]
+2020-05-24 20:57:19,939 [ 1] INFO  Unity: Select Char:[3]½ã[Warrior]
+2020-05-24 20:57:28,525 [ 1] INFO  Unity: Select Char:[1]æ¤æ¤[Warrior]
+2020-05-24 20:57:29,006 [ 1] INFO  Unity: Select Char:[2]yyc[Wizard]
+2020-05-24 20:57:33,262 [ 1] INFO  Unity: Select Char:[1]æ¤æ¤[Warrior]
+2020-05-24 20:57:33,859 [ 1] INFO  Unity: Select Char:[2]yyc[Wizard]
+2020-05-24 20:57:36,794 [ 1] INFO  Unity: Select Char:[3]½ã[Warrior]
+2020-05-24 20:57:47,608 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-05-24 20:57:47,610 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+
