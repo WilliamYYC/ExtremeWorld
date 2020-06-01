@@ -7,6 +7,9 @@ using Network;
 using UnityEngine;
 
 using SkillBridge.Message;
+using Models;
+using Managers;
+using Entities;
 
 namespace Services
 {
@@ -26,14 +29,22 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
+            MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnGameLeave);
+
             
         }
+
+       
 
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
             MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnGameEnter);
+            MessageDistributer.Instance.Unsubscribe<UserGameLeaveResponse>(this.OnGameLeave);
+            
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
         }
@@ -203,6 +214,7 @@ namespace Services
 
         void OnUserCreateCharacter(object sender, UserCreateCharacterResponse response)
         {
+            
             Debug.LogFormat("OnUserCreateCharacter:{0} [{1}]", response.Result, response.Errormsg);
 
             if(response.Result == Result.Success)
@@ -218,6 +230,43 @@ namespace Services
             }
         }
 
+        //发送进入游戏请求
+        public void sendGameEnter(int characterIdx)
+        {
+            Debug.LogFormat("UserGameEnterRequest::characterId :{0}", characterIdx);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameEnter = new UserGameEnterRequest();
+            message.Request.gameEnter.characterIdx = characterIdx;
+            NetClient.Instance.SendMessage(message);
+        }
+
+        void OnGameEnter(object sender, UserGameEnterResponse response)
+        {
+            Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {
+
+            }
+        }
+
+        //发送游戏退出请求
+        public void sendGameLeave()
+        {
+            Debug.LogFormat("UserGameLeaveRequest");
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameLeave = new UserGameLeaveRequest();
+            NetClient.Instance.SendMessage(message);
+        }
+
+        void OnGameLeave(object sender, UserGameLeaveResponse message)
+        {
+            MapService.Instance.CurrentMapId = 0;
+            User.Instance.CurrentCharacter = null;
+            Debug.LogFormat("OnGameEnter:{0} [{1}]", message.Result, message.Errormsg);
+        }
 
     }
 }

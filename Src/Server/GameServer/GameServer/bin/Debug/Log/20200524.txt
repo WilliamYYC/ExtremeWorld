@@ -1,0 +1,290 @@
+
+2020-05-24 13:32:24,204 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 13:32:25,003 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 13:32:25,135 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,135 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,135 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,136 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,147 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,147 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,148 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,151 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:32:25,219 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 13:34:44,565 [4] [WARN ] [GameServer] ：Client[127.0.0.1:56087]] Connected
+2020-05-24 13:34:44,644 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2020-05-24 13:34:44,832 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:1234
+2020-05-24 13:36:07,298 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2020-05-24 13:36:07,299 [8] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:1234
+2020-05-24 13:36:44,381 [5] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 13:36:44,383 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 13:38:33,834 [16] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 13:38:33,835 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 13:38:37,640 [16] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 13:39:00,634 [16] [WARN ] [GameServer] ：Client[127.0.0.1:56211]] Connected
+2020-05-24 13:39:00,716 [16] [WARN ] [GameServer] ：Client[] DataReceived Len:24
+2020-05-24 13:39:00,717 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user1234  Pass:0328
+2020-05-24 13:40:29,272 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:24
+2020-05-24 13:40:29,273 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user1234  Pass:0328
+2020-05-24 13:40:29,453 [20] [WARN ] [GameServer] ：Client[] DataReceived Len:24
+2020-05-24 13:40:29,454 [8] [INFO ] [GameServer] ：UserLoginRequest: User:user1234  Pass:0328
+2020-05-24 13:41:00,535 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 13:41:00,813 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 13:41:00,819 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,819 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,819 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,820 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,820 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,821 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,821 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,822 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 13:41:00,918 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 13:41:01,271 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56243]] Connected
+2020-05-24 13:41:06,406 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 13:41:22,625 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56258]] Connected
+2020-05-24 13:41:22,699 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:23
+2020-05-24 13:41:22,849 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:1234
+2020-05-24 13:41:45,475 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 13:41:45,476 [8] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 13:46:02,576 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 13:47:32,461 [13] [WARN ] [GameServer] ：Client[127.0.0.1:56344]] Connected
+2020-05-24 13:47:32,544 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 13:47:32,545 [11] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 13:47:58,896 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 13:50:08,789 [13] [WARN ] [GameServer] ：Client[127.0.0.1:56393]] Connected
+2020-05-24 13:50:08,866 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 13:50:08,867 [10] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:05:01,010 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 14:06:53,201 [13] [WARN ] [GameServer] ：Client[127.0.0.1:57644]] Connected
+2020-05-24 14:06:53,296 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:06:53,297 [12] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:08:06,371 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 14:12:35,249 [13] [WARN ] [GameServer] ：Client[127.0.0.1:57855]] Connected
+2020-05-24 14:12:35,331 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:26
+2020-05-24 14:12:35,332 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1231  Pass:123456
+2020-05-24 14:12:43,734 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:12:43,736 [9] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:13:23,406 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:13:23,407 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:13:49,577 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:24
+2020-05-24 14:13:49,578 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:12345
+2020-05-24 14:13:53,390 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:13:53,391 [8] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:16:48,138 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:16:48,139 [11] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:17:45,585 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:17:45,586 [10] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:25:17,320 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 14:29:42,792 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 14:29:43,066 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 14:29:43,072 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,073 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,073 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,073 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,073 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,073 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,073 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,074 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:29:43,171 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 14:30:09,104 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56037]] Connected
+2020-05-24 14:30:09,196 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:30:09,353 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:34:34,766 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 14:35:14,448 [3] [WARN ] [GameServer] ：Client[127.0.0.1:56330]] Connected
+2020-05-24 14:35:14,530 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:35:14,531 [8] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:35:16,541 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:35:16,542 [9] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:41:23,065 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 14:41:36,316 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 14:41:36,591 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 14:41:36,598 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,598 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,599 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,599 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,599 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,599 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,600 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,600 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 14:41:36,698 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 14:42:03,700 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53862]] Connected
+2020-05-24 14:42:03,786 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:42:03,943 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:52:17,509 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 14:55:03,212 [3] [WARN ] [GameServer] ：Client[127.0.0.1:59345]] Connected
+2020-05-24 14:55:03,296 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 14:55:03,297 [12] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 14:55:06,003 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 18:25:00,703 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 18:25:00,965 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 18:25:00,970 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,970 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,970 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,970 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,970 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,970 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,970 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:00,972 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 18:25:01,070 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 18:25:26,699 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55872]] Connected
+2020-05-24 18:25:26,781 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 18:25:26,952 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 18:26:27,654 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 18:27:54,893 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55914]] Connected
+2020-05-24 18:27:54,978 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 18:27:54,979 [11] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 18:28:06,120 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:18
+2020-05-24 18:28:06,125 [8] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:妞妞  class:Warrior
+2020-05-24 18:29:00,435 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:03:30,867 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 19:03:31,381 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 19:03:31,413 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,413 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,413 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,413 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,436 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,436 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,436 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,436 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:03:31,513 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 19:03:50,595 [3] [WARN ] [GameServer] ：Client[127.0.0.1:61621]] Connected
+2020-05-24 19:03:50,702 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:03:50,876 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:04:11,765 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:15
+2020-05-24 19:04:11,769 [5] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:yyc  class:Wizard
+2020-05-24 19:04:20,436 [14] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:06:10,843 [14] [WARN ] [GameServer] ：Client[127.0.0.1:61679]] Connected
+2020-05-24 19:06:10,932 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:06:10,933 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:08:04,713 [14] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:08:25,990 [14] [WARN ] [GameServer] ：Client[127.0.0.1:61719]] Connected
+2020-05-24 19:08:26,074 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:08:26,075 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:08:51,714 [18] [WARN ] [GameServer] ：Client[] DataReceived Len:15
+2020-05-24 19:08:51,715 [5] [INFO ] [GameServer] ：UserCreateCharacterRequest: Name:姐  class:Warrior
+2020-05-24 19:08:57,479 [18] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:09:15,542 [18] [WARN ] [GameServer] ：Client[127.0.0.1:61733]] Connected
+2020-05-24 19:09:15,636 [18] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:09:15,636 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:09:20,068 [18] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:18:43,464 [18] [WARN ] [GameServer] ：Client[127.0.0.1:61956]] Connected
+2020-05-24 19:18:43,558 [18] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:18:43,559 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:28:19,072 [40] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:28:54,193 [40] [WARN ] [GameServer] ：Client[127.0.0.1:55493]] Connected
+2020-05-24 19:28:54,277 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:24
+2020-05-24 19:28:54,278 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user1234  Pass:0328
+2020-05-24 19:29:02,464 [40] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:29:20,182 [40] [WARN ] [GameServer] ：Client[127.0.0.1:55503]] Connected
+2020-05-24 19:29:20,269 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:29:20,271 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:31:36,857 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 19:31:37,485 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 19:31:37,520 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,520 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,520 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,520 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,520 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,521 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,520 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,525 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:31:37,592 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 19:32:02,186 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55551]] Connected
+2020-05-24 19:32:02,277 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:32:02,434 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:35:31,161 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:35:52,308 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55671]] Connected
+2020-05-24 19:35:52,397 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:35:52,398 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:36:26,496 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:39:08,412 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55732]] Connected
+2020-05-24 19:39:08,506 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:39:08,507 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:39:13,277 [21] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:43:38,724 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 19:43:39,019 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 19:43:39,030 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,030 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,030 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,031 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,031 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,031 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,032 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,032 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:43:39,123 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 19:44:03,102 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55818]] Connected
+2020-05-24 19:44:03,193 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:44:03,344 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:44:34,879 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 19:44:35,438 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 19:44:35,504 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,505 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,504 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,506 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,506 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,507 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,509 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,512 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 19:44:35,577 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55830]] Connected
+2020-05-24 19:44:35,595 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 19:44:37,012 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:44:57,855 [3] [WARN ] [GameServer] ：Client[127.0.0.1:55844]] Connected
+2020-05-24 19:44:57,933 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:44:58,088 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:49:06,439 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 19:55:59,077 [13] [WARN ] [GameServer] ：Client[127.0.0.1:49624]] Connected
+2020-05-24 19:55:59,155 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 19:55:59,156 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 19:56:27,919 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 20:16:48,244 [1] [INFO ] [GameServer] ：Game Server Init
+2020-05-24 20:16:48,846 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-05-24 20:16:48,983 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,984 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,984 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,986 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,986 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,988 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,988 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:48,989 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-05-24 20:16:49,060 [1] [WARN ] [GameServer] ：NetService Started
+2020-05-24 20:17:06,943 [3] [WARN ] [GameServer] ：Client[127.0.0.1:50237]] Connected
+2020-05-24 20:17:07,035 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 20:17:07,210 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 20:17:08,211 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 20:17:08,212 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 20:17:08,376 [6] [ERROR] [GameServer] ：Message handler exception:System.InvalidOperationException: 连接未关闭。 连接的当前状态为正在连接。
+   在 System.Data.ProviderBase.DbConnectionClosedConnecting.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open(), 基础提供程序在 Open 上失败。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 GameServer.Services.UserService.OnLogin(NetConnection`1 sender, UserLoginRequest request) 位置 D:\mmorpg\mmorpgwork\Src\Server\GameServer\GameServer\Services\UserSerevice.cs:行号 35
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\mmorpg\mmorpgwork\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2020-05-24 20:21:55,260 [14] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 20:27:13,317 [14] [WARN ] [GameServer] ：Client[127.0.0.1:60746]] Connected
+2020-05-24 20:27:13,413 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 20:27:13,413 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 20:29:15,965 [14] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 20:33:33,632 [14] [WARN ] [GameServer] ：Client[127.0.0.1:61028]] Connected
+2020-05-24 20:33:33,716 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 20:33:33,717 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 20:33:49,291 [41] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 20:36:11,926 [41] [WARN ] [GameServer] ：Client[127.0.0.1:61117]] Connected
+2020-05-24 20:36:12,024 [41] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 20:36:12,025 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 20:36:20,726 [41] [WARN ] [GameServer] ：Client[] Disconnected
+2020-05-24 20:57:05,611 [41] [WARN ] [GameServer] ：Client[127.0.0.1:58553]] Connected
+2020-05-24 20:57:05,700 [88] [WARN ] [GameServer] ：Client[] DataReceived Len:25
+2020-05-24 20:57:05,701 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user123  Pass:123456
+2020-05-24 20:57:47,612 [41] [WARN ] [GameServer] ：Client[] Disconnected

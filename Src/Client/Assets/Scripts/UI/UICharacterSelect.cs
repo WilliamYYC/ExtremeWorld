@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Models;
 using Services;
 using SkillBridge.Message;
+using Managers;
 
 public class UICharacterSelect : MonoBehaviour {
 
@@ -123,8 +124,7 @@ public class UICharacterSelect : MonoBehaviour {
         this.selectCharacterIdx = idx;
         var cha = User.Instance.Info.Player.Characters[idx];
         Debug.LogFormat("Select Char:[{0}]{1}[{2}]", cha.Id, cha.Name, cha.Class);
-        User.Instance.CurrentCharacter = cha;
-        characterView.CurrentCharacter = idx;
+        characterView.CurrentCharacter = ((int)cha.Class - 1);
 
         for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
         {
@@ -136,7 +136,7 @@ public class UICharacterSelect : MonoBehaviour {
     {
         if (selectCharacterIdx >= 0)
         {
-            MessageBox.Show("进入游戏", "进入游戏", MessageBoxType.Confirm);
+			UserService.Instance.sendGameEnter(selectCharacterIdx);
         }
     }
 }

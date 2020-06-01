@@ -6,6 +6,7 @@ using System.IO;
 using Services;
 using SkillBridge.Message;
 using ProtoBuf;
+using Managers;
 
 public class LoadingManager : MonoBehaviour {
 
@@ -36,7 +37,7 @@ public class LoadingManager : MonoBehaviour {
         yield return DataManager.Instance.LoadData();
 
         //Init basic services
-        //MapService.Instance.Init();
+        MapService.Instance.Init();
         UserService.Instance.Init();
 
 

@@ -1207,7 +1207,7 @@ MonoBehaviour:
   UILogin: {fileID: 1606458622}
   progressBar: {fileID: 1951958025}
   progressText: {fileID: 470448329}
-  progressNumber: {fileID: 0}
+  progressNumber: {fileID: 654312838}
 --- !u!1 &630708558
 GameObject:
   m_ObjectHideFlags: 0
