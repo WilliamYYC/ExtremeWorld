@@ -16,21 +16,20 @@ public class UIMiniMap : MonoBehaviour {
 	private Transform thistransform;
 	// Use this for initialization
 	void Start () {
-		this.InitMap();
+		MiniMapManager.Instance.mini = this;
+		this.UpdateMap();
 	}
 
-	void InitMap()
+	public void UpdateMap()
 	{
 		this.MiniName.text = Models.User.Instance.CurrentMapData.Name;
-
-		if (this.MinMap.overrideSprite == null)
-		{
-			this.MinMap.overrideSprite = MiniMapManager.Instance.LoadCurrentMinimap();
-		}
+		this.MinMap.overrideSprite = MiniMapManager.Instance.LoadCurrentMinimap();
+	
 
 		this.MinMap.SetNativeSize();
 		this.MinMap.transform.localPosition = Vector3.zero;
-		
+		this.minimapBoundingBox = MiniMapManager.Instance.MiniBoundingBox;
+		this.thistransform = null;
 	}
 	
 	// Update is called once per frame

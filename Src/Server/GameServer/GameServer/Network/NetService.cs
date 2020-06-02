@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Sockets;
 using GameServer;
 using Common;
+using Common.Data;
 
 namespace Network
 {
@@ -68,6 +69,8 @@ namespace Network
         static void Disconnected(NetConnection<NetSession> sender, SocketAsyncEventArgs e)
         {
             //Performance.ServerConnect = Interlocked.Decrement(ref Performance.ServerConnect);
+            sender.Session.Disconnected();
+            
             Log.WarningFormat("Client[{0}] Disconnected", e.RemoteEndPoint);
         }
 

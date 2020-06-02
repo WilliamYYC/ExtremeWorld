@@ -78,6 +78,8 @@ namespace GameServer.Services
             sender.SendData(data, 0, data.Length);
         }
 
+
+
         void OnRegister(NetConnection<NetSession> sender, UserRegisterRequest request)
         {
             Log.InfoFormat("UserRegisterRequest: User:{0}  Pass:{1}", request.User, request.Passward);
@@ -173,10 +175,9 @@ namespace GameServer.Services
         void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("UserGameLeaveRequest:character:{0}:{1},mapID{2} ", character.Id, character.Info.Name,character.Info.mapId);
-            CharacterManager.Instance.RemoveCharacter(character.Id);
+            Log.InfoFormat("UserGameLeaveRequest:character:{0}:{1},mapID{2} ", character.Id, character.Info.Name, character.Info.mapId);
 
-            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+            ChacaterLeave(character);
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.gameLeave = new UserGameLeaveResponse();
@@ -189,8 +190,13 @@ namespace GameServer.Services
             sender.SendData(data, 0, data.Length);
         }
 
+        public void ChacaterLeave(Character character)
+        {
+            CharacterManager.Instance.RemoveCharacter(character.Id);
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+        }
 
-   
+
 
     }
 }
