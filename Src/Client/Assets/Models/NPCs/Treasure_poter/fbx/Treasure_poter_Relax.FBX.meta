@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a2e85bad60e137645bb24508a4b50fe3
+guid: dafacec756f8c754299dab668f4f68d6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -85,7 +85,8 @@ ModelImporter:
     400076: Dummy001
     400078: Dummy002
     400080: //RootNode
-    7400000: Treasure_poter_Relax
+    7400000: Take 001
+    7400002: Treasure_poter_Relax
     9500000: //RootNode
   externalObjects: {}
   materials:
