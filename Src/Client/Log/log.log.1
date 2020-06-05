@@ -1,7 +1,47 @@
-2020-06-03 14:01:35,517 [ 1] INFO  Unity: LoadingManager start
-2020-06-03 14:01:39,387 [ 1] INFO  Unity: DataManager > DataManager()
-2020-06-03 14:02:55,827 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-06-03 14:02:55,829 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-06-05 10:31:36,989 [ 1] INFO  Unity: LoadingManager start
+2020-06-05 10:31:40,969 [ 1] INFO  Unity: DataManager > DataManager()
+2020-06-05 10:32:01,449 [ 1] INFO  Unity: UserLoginRequest::user :user123 psw:123
+2020-06-05 10:32:01,459 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-06-05 10:32:01,482 [ 1] INFO  Unity: DoConnect
+2020-06-05 10:32:01,484 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-06-05 10:32:01,505 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-06-05 10:32:01,524 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-06-05 10:32:01,880 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-06-05 10:32:01,887 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 10:32:02,256 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 10:32:04,958 [ 1] INFO  Unity: Select Char:[1]獲獲[Archer]
+2020-06-05 10:32:06,922 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 10:32:07,009 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 10:32:23,707 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00114] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2535 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
+  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
+  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
+  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
+  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
+  at ItemManager.Init (System.Collections.Generic.List`1 Nitems) [0x0004a] in D:\mmorpg\mmorpgwork\Src\Client\Assets\Scripts\Managers\ItemManager.cs:20 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in D:\mmorpg\mmorpgwork\Src\Client\Assets\Scripts\Services\UserService.cs:252 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
+2020-06-05 10:32:23,710 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2535)
+System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
+System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
+System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
+UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
+UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
+UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
+ItemManager.Init (System.Collections.Generic.List`1 Nitems) (at Assets/Scripts/Managers/ItemManager.cs:20)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:252)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+}</args></log4net.Error>
+2020-06-05 10:32:23,803 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 10:32:23,814 [ 1] INFO  Unity: AddCharacter:2:獲獲 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 10:32:23,830 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 10:32:25,373 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 10:34:06,221 [ 1] INFO  Unity: Character_2_獲獲 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2020-06-05 10:34:06,228 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-06-05 10:34:06,232 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

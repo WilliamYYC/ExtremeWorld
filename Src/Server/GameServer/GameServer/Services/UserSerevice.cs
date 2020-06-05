@@ -158,12 +158,27 @@ namespace GameServer.Services
             Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
             Character character = CharacterManager.Instance.AddCharacter(dbchar);
 
+            //测试item
+            int itemid = 2;
+            bool hasitem = character.itemManager.HasItem(itemid);
+            Log.InfoFormat("HasItem {0}  {1}",itemid, hasitem);
+            if (hasitem)
+            {
+                character.itemManager.RemoveItem(itemid, 1);
+            }
+            else
+            {
+                character.itemManager.AddItem(itemid, 5);
+            }
+            Models.Item item = character.itemManager.GetItem(itemid);
+            Log.InfoFormat("Item {0}  {1}", itemid, item);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.gameEnter = new UserGameEnterResponse();
             message.Response.gameEnter.Result = Result.Success;
             message.Response.gameEnter.Errormsg = "None";
+            message.Response.gameEnter.Character = character.Info;
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);

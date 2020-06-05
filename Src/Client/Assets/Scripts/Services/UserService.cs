@@ -247,7 +247,10 @@ namespace Services
 
             if (response.Result == Result.Success)
             {
-
+                if (response.Character != null)
+                {
+                    ItemManager.Instance.Init(response.Character.Items);
+                }
             }
         }
 
