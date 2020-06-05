@@ -16,7 +16,9 @@ public class UIManagers : Singleton<UIManagers> {
 
 	public UIManagers()
 	{
+		
 		UIResources.Add(typeof(UITest), new UIElements() { ResourcePath = "UI/UITest", Cache = true });
+		UIResources.Add(typeof(UIBag), new UIElements() { ResourcePath = "UI/UIBag", Cache = true });
 	}
 
 	~UIManagers()

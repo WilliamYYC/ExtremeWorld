@@ -5,6 +5,7 @@
     <EntitySet Name="Players" EntityType="ExtremeWorldModel.Store.Players" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Characters" EntityType="ExtremeWorldModel.Store.Characters" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="CharacterItem" EntityType="ExtremeWorldModel.Store.CharacterItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CharacterBags" EntityType="ExtremeWorldModel.Store.CharacterBags" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="UserPlayer" Association="ExtremeWorldModel.Store.UserPlayer">
       <End Role="User" EntitySet="Users" />
       <End Role="Player" EntitySet="Players" />
@@ -16,6 +17,10 @@
     <AssociationSet Name="CharacterItems1" Association="ExtremeWorldModel.Store.CharacterItems">
       <End Role="TCharacter" EntitySet="Characters" />
       <End Role="TCharacterItems" EntitySet="CharacterItem" />
+    </AssociationSet>
+    <AssociationSet Name="CharacterBag" Association="ExtremeWorldModel.Store.CharacterBag">
+      <End Role="TCharacter" EntitySet="Characters" />
+      <End Role="TCharacterBag" EntitySet="CharacterBags" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Users">
@@ -47,6 +52,7 @@
     <Property Name="MapPosY" Type="int" Nullable="false" />
     <Property Name="MapPosZ" Type="int" Nullable="false" />
     <Property Name="Player_ID" Type="int" Nullable="false" />
+    <Property Name="Bag_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="CharacterItem">
     <Key>
@@ -56,6 +62,14 @@
     <Property Name="ItemID" Type="int" Nullable="false" />
     <Property Name="ItemCount" Type="int" Nullable="false" />
     <Property Name="CharacterID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CharacterBags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Items" Type="varbinary(max)" Nullable="false" />
+    <Property Name="Unlocked" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="UserPlayer">
     <End Role="User" Type="ExtremeWorldModel.Store.Users" Multiplicity="*" />
@@ -90,6 +104,18 @@
       </Principal>
       <Dependent Role="TCharacterItems">
         <PropertyRef Name="CharacterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CharacterBag">
+    <End Role="TCharacter" Type="ExtremeWorldModel.Store.Characters" Multiplicity="*" />
+    <End Role="TCharacterBag" Type="ExtremeWorldModel.Store.CharacterBags" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="TCharacterBag">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TCharacter">
+        <PropertyRef Name="Bag_Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

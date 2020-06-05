@@ -1,26 +1,79 @@
-2020-06-05 10:28:39,130 [ 1] INFO  Unity: LoadingManager start
-2020-06-05 10:28:42,535 [ 1] INFO  Unity: DataManager > DataManager()
-2020-06-05 10:29:11,032 [ 1] INFO  Unity: UserLoginRequest::user :user123 psw:123
-2020-06-05 10:29:11,041 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-06-05 10:29:11,057 [ 1] INFO  Unity: DoConnect
-2020-06-05 10:29:11,060 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-06-05 10:29:11,079 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-06-05 21:28:08,128 [ 1] INFO  Unity: LoadingManager start
+2020-06-05 21:28:11,486 [ 1] INFO  Unity: DataManager > DataManager()
+2020-06-05 21:35:30,822 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123
+2020-06-05 21:35:30,825 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-06-05 21:35:30,831 [ 1] INFO  Unity: DoConnect
+2020-06-05 21:35:30,833 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-06-05 21:35:30,843 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-06-05 10:29:11,101 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-06-05 10:29:15,179 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-06-05 10:29:15,185 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-06-05 10:29:15,608 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-06-05 10:29:48,921 [ 1] INFO  Unity: Select Char:[1]獲獲[Archer]
-2020-06-05 10:29:49,873 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2020-06-05 10:29:50,437 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-06-05 10:29:50,453 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
-2020-06-05 10:29:50,463 [ 1] INFO  Unity: AddCharacter:1:獲獲 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-06-05 10:29:50,481 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-06-05 10:29:51,721 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-06-05 10:30:33,098 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-06-05 10:30:33,100 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-06-05 21:35:30,852 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-06-05 21:35:35,000 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-06-05 21:35:35,002 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 21:35:35,430 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:35:36,381 [ 1] INFO  Unity: Select Char:[1]陛[Wizard]
+2020-06-05 21:35:36,927 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 21:35:37,199 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 21:35:37,202 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 21:35:37,203 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 21:35:37,204 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 21:35:37,205 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 21:35:37,208 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 21:35:37,210 [ 1] INFO  Unity: AddCharacter:1:陛 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 21:35:37,215 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 21:35:38,364 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:35:39,424 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Item].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
+UIBag+<InitBags>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Bag/UIBag.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIBag:Start() (at Assets/Scripts/UI/Bag/UIBag.cs:28)
+}</args></log4net.Error>
+2020-06-05 21:35:39,825 [ 1] INFO  Unity: SetDirection:(98, -20, 0)
+2020-06-05 21:35:39,826 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:35:39,923 [ 1] INFO  Unity: SetDirection:(92, -38, 0)
+2020-06-05 21:35:39,925 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:35:40,015 [ 1] INFO  Unity: SetDirection:(83, -56, 0)
+2020-06-05 21:35:40,015 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:35:40,094 [ 1] INFO  Unity: SetDirection:(71, -70, 0)
+2020-06-05 21:35:40,096 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:35:40,190 [ 1] INFO  Unity: MoveForward
+2020-06-05 21:35:40,191 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:35:40,193 [ 1] INFO  Unity: SetDirection:(55, -83, 0)
+2020-06-05 21:35:40,194 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:35:40,299 [ 1] INFO  Unity: SetDirection:(37, -93, 0)
+2020-06-05 21:35:40,300 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:35:40,411 [ 1] INFO  Unity: SetDirection:(19, -98, 0)
+2020-06-05 21:35:40,412 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:35:40,545 [ 1] INFO  Unity: Stop
+2020-06-05 21:35:40,547 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:37:42,025 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 21:37:42,028 [ 1] INFO  Unity: UserGameLeaveRequest
+2020-06-05 21:37:42,070 [ 1] INFO  Unity: OnMapCharacterLeave:charID:1
+2020-06-05 21:37:42,075 [ 1] INFO  Unity: RemoveCharacter:1
+2020-06-05 21:37:42,079 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 21:37:42,079 [ 1] INFO  Unity: Character_1_陛 OnDestroy :ID:1 POS:(5044, 3897, 820) DIR:(19, -98, 0) SPD:0 
+2020-06-05 21:37:42,280 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:37:43,373 [ 1] INFO  Unity: Select Char:[1]陛[Wizard]
+2020-06-05 21:37:43,898 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 21:37:43,934 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 21:37:43,936 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 21:37:43,937 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 21:37:43,938 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 21:37:43,939 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 21:40:31,991 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 21:40:31,992 [ 1] INFO  Unity: AddCharacter:2:陛 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 21:40:31,996 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 21:40:33,140 [ 1] INFO  Unity: SetPosition:(5000, 4000, 757)
+2020-06-05 21:40:33,141 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:40:33,307 [ 1] INFO  Unity: SetPosition:(5000, 4000, 684)
+2020-06-05 21:40:33,309 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:40:33,563 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:40:33,568 [ 1] INFO  Unity: SetPosition:(5000, 4000, 807)
+2020-06-05 21:40:33,569 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:40:42,607 [ 1] INFO  Unity: Character_2_陛 OnDestroy :ID:2 POS:(5000, 4000, 807) DIR:(100, 0, 0) SPD:0 
+2020-06-05 21:40:42,611 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-06-05 21:40:42,612 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2020-06-05 10:30:33,108 [ 1] INFO  Unity: Character_1_獲獲 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

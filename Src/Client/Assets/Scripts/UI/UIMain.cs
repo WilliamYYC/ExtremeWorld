@@ -11,7 +11,7 @@ public class UIMain : MonoSingleton<UIMain> {
 	public Text AvatarName;
 	public Text Avatarlevel;
 	// Use this for initialization
-	protected void  OnStart () {
+	protected override void  OnStart () {
 		this.UpdateAvatar();
 	}
 	
@@ -44,5 +44,10 @@ public class UIMain : MonoSingleton<UIMain> {
 	private void Test_OnClose(UIWindows sender, UIWindows.WinowResult result)
 	{
 		MessageBox.Show("点击了对话框的: " + result, "对话框响应结果", MessageBoxType.Information);
+	}
+
+	public void OnClickBag()
+	{
+		UIManagers.Instance.Show<UIBag>();
 	}
 }

@@ -8,6 +8,7 @@ using Network;
 using SkillBridge.Message;
 using GameServer.Entities;
 using GameServer.Managers;
+using System.Security.Cryptography;
 
 namespace GameServer.Services
 {
@@ -124,7 +125,12 @@ namespace GameServer.Services
                 MapPosZ = 820,
 
             };
-
+            //初始化背包
+            var bag = new TCharacterBag();
+            bag.Owner = character;
+            bag.Items = new Byte[0];
+            bag.Unlocked = 20;
+            character.Bag = DBService.Instance.Entities.CharacterBags.Add(bag);
             //数据库操作，session放在内存中提高性能
             character =  DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
@@ -164,14 +170,18 @@ namespace GameServer.Services
             Log.InfoFormat("HasItem {0}  {1}",itemid, hasitem);
             if (hasitem)
             {
-                character.itemManager.RemoveItem(itemid, 1);
+                //character.itemManager.RemoveItem(itemid, 1);
             }
             else
             {
-                character.itemManager.AddItem(itemid, 5);
+                character.itemManager.AddItem(1, 200);
+                character.itemManager.AddItem(2, 100);
+                character.itemManager.AddItem(3, 30);
+                character.itemManager.AddItem(4, 120);
             }
             Models.Item item = character.itemManager.GetItem(itemid);
             Log.InfoFormat("Item {0}  {1}", itemid, item);
+            DBService.Instance.Save();
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();

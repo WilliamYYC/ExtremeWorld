@@ -1,16 +1,129 @@
-2020-06-04 16:09:16,936 [ 1] INFO  Unity: LoadingManager start
-2020-06-04 16:09:20,126 [ 1] INFO  Unity: DataManager > DataManager()
-2020-06-04 16:09:41,522 [ 1] INFO  Unity: UserLoginRequest::user :user123 psw:123456
-2020-06-04 16:09:41,525 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-06-04 16:09:41,535 [ 1] INFO  Unity: DoConnect
-2020-06-04 16:09:41,538 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-06-04 16:09:41,551 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-06-05 20:32:23,525 [ 1] INFO  Unity: LoadingManager start
+2020-06-05 20:32:27,355 [ 1] INFO  Unity: DataManager > DataManager()
+2020-06-05 20:32:33,510 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123
+2020-06-05 20:32:33,518 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-06-05 20:32:33,533 [ 1] INFO  Unity: DoConnect
+2020-06-05 20:32:33,535 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-06-05 20:32:33,555 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-06-04 16:09:41,561 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-06-04 16:09:45,255 [ 1] INFO  Unity: OnLogin:Failed [”√ªß≤ª¥Ê‘⁄.]
-2020-06-04 16:09:57,218 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-06-04 16:09:57,227 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+2020-06-05 20:32:33,572 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-06-05 20:32:37,617 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-06-05 20:32:37,626 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 20:32:38,159 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:32:39,372 [ 1] INFO  Unity: Select Char:[1]∞°[Wizard]
+2020-06-05 20:32:40,281 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 20:32:40,539 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:32:40,547 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 20:32:40,548 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 20:32:40,549 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 20:32:40,550 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 20:32:40,560 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 20:32:40,569 [ 1] INFO  Unity: AddCharacter:1:∞° Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 20:32:40,586 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 20:32:41,857 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:37:06,327 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Item].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
+UIBag+<InitBags>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Bag/UIBag.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIBag:Start() (at Assets/Scripts/UI/Bag/UIBag.cs:28)
+}</args></log4net.Error>
+2020-06-05 20:42:31,529 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 20:42:31,530 [ 1] INFO  Unity: UserGameLeaveRequest
+2020-06-05 20:42:31,690 [ 1] INFO  Unity: OnMapCharacterLeave:charID:1
+2020-06-05 20:42:31,699 [ 1] INFO  Unity: RemoveCharacter:1
+2020-06-05 20:42:31,705 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:42:31,710 [ 1] INFO  Unity: Character_1_∞° OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2020-06-05 20:42:31,820 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:42:32,739 [ 1] INFO  Unity: Select Char:[1]∞°[Wizard]
+2020-06-05 20:42:32,904 [ 1] INFO  Unity: Select Char:[1]∞°[Wizard]
+2020-06-05 20:42:34,314 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 20:42:34,347 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:42:34,348 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 20:42:34,350 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 20:42:34,351 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 20:42:34,352 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 20:43:36,754 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 20:43:36,755 [ 1] INFO  Unity: AddCharacter:2:∞° Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 20:43:36,757 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 20:43:38,004 [ 1] INFO  Unity: SetPosition:(5000, 4000, 768)
+2020-06-05 20:43:38,006 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:43:38,195 [ 1] INFO  Unity: SetPosition:(5000, 4000, 693)
+2020-06-05 20:43:38,197 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:43:38,430 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:43:38,437 [ 1] INFO  Unity: SetPosition:(5000, 4000, 806)
+2020-06-05 20:43:38,438 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:44:15,728 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Item].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
+UIBag+<InitBags>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Bag/UIBag.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIBag:Start() (at Assets/Scripts/UI/Bag/UIBag.cs:28)
+}</args></log4net.Error>
+2020-06-05 20:44:22,129 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 20:44:22,131 [ 1] INFO  Unity: UserGameLeaveRequest
+2020-06-05 20:44:22,276 [ 1] INFO  Unity: OnMapCharacterLeave:charID:2
+2020-06-05 20:44:22,278 [ 1] INFO  Unity: RemoveCharacter:2
+2020-06-05 20:44:22,281 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:44:22,283 [ 1] INFO  Unity: Character_2_∞° OnDestroy :ID:2 POS:(5000, 4000, 806) DIR:(100, 0, 0) SPD:0 
+2020-06-05 20:44:22,411 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:44:23,434 [ 1] INFO  Unity: Select Char:[1]∞°[Wizard]
+2020-06-05 20:44:24,142 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 20:44:24,175 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:44:24,176 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 20:44:24,177 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 20:44:24,178 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 20:44:24,179 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 20:45:39,301 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 20:45:39,302 [ 1] INFO  Unity: AddCharacter:3:∞° Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 20:45:39,304 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 20:45:40,384 [ 1] INFO  Unity: SetPosition:(5000, 4000, 751)
+2020-06-05 20:45:40,386 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:45:40,581 [ 1] INFO  Unity: SetPosition:(5000, 4000, 657)
+2020-06-05 20:45:40,582 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:45:40,789 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:45:40,796 [ 1] INFO  Unity: SetPosition:(5000, 4000, 806)
+2020-06-05 20:45:40,798 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:45:42,253 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 20:45:42,255 [ 1] INFO  Unity: UserGameLeaveRequest
+2020-06-05 20:45:42,390 [ 1] INFO  Unity: OnMapCharacterLeave:charID:3
+2020-06-05 20:45:42,392 [ 1] INFO  Unity: RemoveCharacter:3
+2020-06-05 20:45:42,394 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:45:42,396 [ 1] INFO  Unity: Character_3_∞° OnDestroy :ID:3 POS:(5000, 4000, 806) DIR:(100, 0, 0) SPD:0 
+2020-06-05 20:45:42,523 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:45:43,527 [ 1] INFO  Unity: Select Char:[1]∞°[Wizard]
+2020-06-05 20:45:44,125 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 20:45:44,158 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:45:44,159 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 20:45:44,160 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 20:45:44,161 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 20:45:44,162 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 20:54:26,703 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 20:54:26,705 [ 1] INFO  Unity: AddCharacter:4:∞° Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 20:54:26,710 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 20:54:27,849 [ 1] INFO  Unity: SetPosition:(5000, 4000, 768)
+2020-06-05 20:54:27,850 [ 1] INFO  Unity: MapEntityUpdateRequest£∫ ID 4 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 20:54:28,199 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:56:18,180 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 20:56:18,182 [ 1] INFO  Unity: UserGameLeaveRequest
+2020-06-05 20:56:18,372 [ 1] INFO  Unity: OnMapCharacterLeave:charID:4
+2020-06-05 20:56:18,374 [ 1] INFO  Unity: RemoveCharacter:4
+2020-06-05 20:56:18,375 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 20:56:18,377 [ 1] INFO  Unity: Character_4_∞° OnDestroy :ID:4 POS:(5000, 4000, 768) DIR:(100, 0, 0) SPD:0 
+2020-06-05 20:56:18,581 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 20:56:21,408 [ 1] WARN  Unity: Assets/Scripts/UI/UILogin.cs(6,1): warning CS0105: The using directive for `Services' appeared previously in this namespace
+
+2020-06-05 20:56:21,408 [ 1] WARN  Unity: Assets/Scripts/GameObject/MainPlayerCamera.cs(8,19): warning CS0108: `MainPlayerCamera.camera' hides inherited member `UnityEngine.Component.camera'. Use the new keyword if hiding was intended
+
+2020-06-05 20:56:21,409 [ 1] WARN  Unity: Assets/Scripts/GameObject/MapController.cs(8,18): warning CS0108: `MapController.collider' hides inherited member `UnityEngine.Component.collider'. Use the new keyword if hiding was intended
+
+2020-06-05 20:56:21,410 [ 1] WARN  Unity: Assets/Scripts/GameObject/NpcController.cs(15,22): warning CS0108: `NpcController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
+
+2020-06-05 20:56:21,410 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(18,16): warning CS0649: Field `EntityController.rotation' is never assigned to, and will always have its default value
+
+2020-06-05 20:56:21,411 [ 1] WARN  Unity: Assets/Scripts/GameObject/EntityController.cs(21,16): warning CS0414: The private field `EntityController.lastRotation' is assigned but its value is never used
+
+2020-06-05 20:56:21,412 [ 1] WARN  Unity: Assets/Scripts/GameObject/PlayerInputController.cs(121,11): warning CS0414: The private field `PlayerInputController.lastSync' is assigned but its value is never used
+
+2020-06-05 20:56:21,412 [ 1] WARN  Unity: Assets/Editor/MapTools.cs(31,30): warning CS0219: The variable `AllTeleportObjects' is assigned but its value is never used
 

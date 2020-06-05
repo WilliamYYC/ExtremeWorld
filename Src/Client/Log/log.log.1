@@ -1,47 +1,143 @@
-2020-06-05 10:31:36,989 [ 1] INFO  Unity: LoadingManager start
-2020-06-05 10:31:40,969 [ 1] INFO  Unity: DataManager > DataManager()
-2020-06-05 10:32:01,449 [ 1] INFO  Unity: UserLoginRequest::user :user123 psw:123
-2020-06-05 10:32:01,459 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-06-05 10:32:01,482 [ 1] INFO  Unity: DoConnect
-2020-06-05 10:32:01,484 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-06-05 10:32:01,505 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-06-05 21:40:51,489 [ 1] INFO  Unity: LoadingManager start
+2020-06-05 21:40:54,806 [ 1] INFO  Unity: DataManager > DataManager()
+2020-06-05 21:41:04,092 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123
+2020-06-05 21:41:04,094 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-06-05 21:41:04,100 [ 1] INFO  Unity: DoConnect
+2020-06-05 21:41:04,102 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-06-05 21:41:04,110 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-06-05 10:32:01,524 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-06-05 10:32:01,880 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-06-05 10:32:01,887 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-06-05 10:32:02,256 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-06-05 10:32:04,958 [ 1] INFO  Unity: Select Char:[1]獲獲[Archer]
-2020-06-05 10:32:06,922 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2020-06-05 10:32:07,009 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-06-05 10:32:23,707 [ 1] ERROR Unity: Message handler exception:, Input string was not in a correct format., mscorlib,   at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00114] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2535 
-  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000ce] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923 
-  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
-  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
-  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in D:\unity\Runtime\Export\Logger\DebugLogHandler.cs:9 
-  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in D:\unity\Runtime\Export\Logger\Logger.cs:113 
-  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in D:\unity\Runtime\Export\Debug.bindings.cs:108 
-  at ItemManager.Init (System.Collections.Generic.List`1 Nitems) [0x0004a] in D:\mmorpg\mmorpgwork\Src\Client\Assets\Scripts\Managers\ItemManager.cs:20 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in D:\mmorpg\mmorpgwork\Src\Client\Assets\Scripts\Services\UserService.cs:252 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2020-06-05 10:32:23,710 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{FormatException: Input string was not in a correct format., System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:2535)
-System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1923)
-System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
-System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
-UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/DebugLogHandler.cs:9)
-UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Logger/Logger.cs:113)
-UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at D:/unity/Runtime/Export/Debug.bindings.cs:108)
-ItemManager.Init (System.Collections.Generic.List`1 Nitems) (at Assets/Scripts/Managers/ItemManager.cs:20)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:252)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
-}</args></log4net.Error>
-2020-06-05 10:32:23,803 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
-2020-06-05 10:32:23,814 [ 1] INFO  Unity: AddCharacter:2:獲獲 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-06-05 10:32:23,830 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-06-05 10:32:25,373 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-06-05 10:34:06,221 [ 1] INFO  Unity: Character_2_獲獲 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2020-06-05 10:34:06,228 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-06-05 10:34:06,232 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-06-05 21:41:04,118 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-06-05 21:41:04,278 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-06-05 21:41:04,281 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 21:41:04,662 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:41:05,401 [ 1] INFO  Unity: Select Char:[1]陛[Wizard]
+2020-06-05 21:41:06,455 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 21:41:06,496 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 21:41:06,499 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 21:41:06,500 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 21:41:06,501 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 21:41:06,502 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 21:41:06,504 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 21:41:06,507 [ 1] INFO  Unity: AddCharacter:3:陛 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 21:41:06,512 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 21:41:07,586 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:41:10,058 [ 1] INFO  Unity: SetDirection:(98, 19, 0)
+2020-06-05 21:41:10,060 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:10,161 [ 1] INFO  Unity: SetDirection:(93, 37, 0)
+2020-06-05 21:41:10,162 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:10,265 [ 1] INFO  Unity: SetDirection:(83, 55, 0)
+2020-06-05 21:41:10,266 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:10,320 [ 1] INFO  Unity: MoveForward
+2020-06-05 21:41:10,321 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:10,343 [ 1] INFO  Unity: SetDirection:(72, 69, 0)
+2020-06-05 21:41:10,344 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:10,446 [ 1] INFO  Unity: SetDirection:(56, 83, 0)
+2020-06-05 21:41:10,447 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:10,535 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
+2020-06-05 21:41:10,536 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:10,685 [ 1] INFO  Unity: SetDirection:(21, 98, 0)
+2020-06-05 21:41:10,686 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:10,980 [ 1] INFO  Unity: SetDirection:(40, 92, 0)
+2020-06-05 21:41:10,982 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:11,069 [ 1] INFO  Unity: SetDirection:(56, 83, 0)
+2020-06-05 21:41:11,070 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:11,149 [ 1] INFO  Unity: SetDirection:(70, 71, 0)
+2020-06-05 21:41:11,150 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:11,257 [ 1] INFO  Unity: SetDirection:(83, 55, 0)
+2020-06-05 21:41:11,258 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:11,348 [ 1] INFO  Unity: SetDirection:(93, 37, 0)
+2020-06-05 21:41:11,349 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:11,434 [ 1] INFO  Unity: SetDirection:(98, 20, 0)
+2020-06-05 21:41:11,434 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:11,501 [ 1] INFO  Unity: Stop
+2020-06-05 21:41:11,502 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:11,537 [ 1] INFO  Unity: SetDirection:(100, -1, 0)
+2020-06-05 21:41:11,538 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:11,639 [ 1] INFO  Unity: SetDirection:(98, -21, 0)
+2020-06-05 21:41:11,640 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:11,722 [ 1] INFO  Unity: SetDirection:(92, -38, 0)
+2020-06-05 21:41:11,723 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:11,819 [ 1] INFO  Unity: SetDirection:(83, -56, 0)
+2020-06-05 21:41:11,820 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:11,901 [ 1] INFO  Unity: SetDirection:(71, -70, 0)
+2020-06-05 21:41:11,902 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:11,985 [ 1] INFO  Unity: MoveForward
+2020-06-05 21:41:11,986 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,005 [ 1] INFO  Unity: SetDirection:(55, -83, 0)
+2020-06-05 21:41:12,006 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,117 [ 1] INFO  Unity: SetDirection:(37, -93, 0)
+2020-06-05 21:41:12,117 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,191 [ 1] INFO  Unity: SetDirection:(20, -98, 0)
+2020-06-05 21:41:12,191 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,291 [ 1] INFO  Unity: SetDirection:(-1, -100, 0)
+2020-06-05 21:41:12,293 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,398 [ 1] INFO  Unity: SetDirection:(-21, -98, 0)
+2020-06-05 21:41:12,399 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,473 [ 1] INFO  Unity: SetDirection:(-38, -92, 0)
+2020-06-05 21:41:12,475 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,569 [ 1] INFO  Unity: SetDirection:(-55, -83, 0)
+2020-06-05 21:41:12,570 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:12,720 [ 1] INFO  Unity: SetDirection:(-69, -72, 0)
+2020-06-05 21:41:12,721 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:13,694 [ 1] INFO  Unity: SetDirection:(-55, -84, 0)
+2020-06-05 21:41:13,695 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:13,815 [ 1] INFO  Unity: SetDirection:(-39, -92, 0)
+2020-06-05 21:41:13,820 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:13,948 [ 1] INFO  Unity: SetDirection:(-22, -98, 0)
+2020-06-05 21:41:13,949 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:14,695 [ 1] INFO  Unity: SetDirection:(-39, -92, 0)
+2020-06-05 21:41:14,696 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:14,803 [ 1] INFO  Unity: SetDirection:(-56, -83, 0)
+2020-06-05 21:41:14,804 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:15,290 [ 1] INFO  Unity: SetDirection:(-41, -91, 0)
+2020-06-05 21:41:15,291 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:15,366 [ 1] INFO  Unity: SetDirection:(-24, -97, 0)
+2020-06-05 21:41:15,367 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:15,470 [ 1] INFO  Unity: SetDirection:(-3, -100, 0)
+2020-06-05 21:41:15,471 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:15,536 [ 1] INFO  Unity: Stop
+2020-06-05 21:41:15,537 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:15,570 [ 1] INFO  Unity: SetDirection:(17, -98, 0)
+2020-06-05 21:41:15,570 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:15,655 [ 1] INFO  Unity: SetDirection:(34, -94, 0)
+2020-06-05 21:41:15,657 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:15,735 [ 1] INFO  Unity: SetDirection:(50, -87, 0)
+2020-06-05 21:41:15,736 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:15,819 [ 1] INFO  Unity: SetDirection:(64, -77, 0)
+2020-06-05 21:41:15,821 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:15,899 [ 1] INFO  Unity: SetDirection:(77, -64, 0)
+2020-06-05 21:41:15,900 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,005 [ 1] INFO  Unity: SetDirection:(88, -47, 0)
+2020-06-05 21:41:16,005 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,084 [ 1] INFO  Unity: SetDirection:(95, -31, 0)
+2020-06-05 21:41:16,085 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,165 [ 1] INFO  Unity: SetDirection:(99, -14, 0)
+2020-06-05 21:41:16,166 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,258 [ 1] INFO  Unity: SetDirection:(100, 3, 0)
+2020-06-05 21:41:16,259 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,336 [ 1] INFO  Unity: SetDirection:(98, 21, 0)
+2020-06-05 21:41:16,337 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,440 [ 1] INFO  Unity: SetDirection:(91, 41, 0)
+2020-06-05 21:41:16,441 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,538 [ 1] INFO  Unity: SetDirection:(81, 59, 0)
+2020-06-05 21:41:16,539 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,633 [ 1] INFO  Unity: SetDirection:(67, 74, 0)
+2020-06-05 21:41:16,634 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:16,656 [ 1] INFO  Unity: MoveForward
+2020-06-05 21:41:16,657 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:16,711 [ 1] INFO  Unity: SetDirection:(53, 85, 0)
+2020-06-05 21:41:16,712 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:16,816 [ 1] INFO  Unity: SetDirection:(34, 94, 0)
+2020-06-05 21:41:16,817 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:16,923 [ 1] INFO  Unity: SetDirection:(16, 99, 0)
+2020-06-05 21:41:16,923 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:17,094 [ 1] INFO  Unity: SetDirection:(-2, 100, 0)
+2020-06-05 21:41:17,095 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-06-05 21:41:17,573 [ 1] INFO  Unity: Stop
+2020-06-05 21:41:17,574 [ 1] INFO  Unity: MapEntityUpdateRequestㄩ ID 3 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-06-05 21:41:21,003 [ 1] INFO  Unity: Character_3_陛 OnDestroy :ID:3 POS:(4882, 3591, 820) DIR:(-2, 100, 0) SPD:0 
+2020-06-05 21:41:21,007 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-06-05 21:41:21,008 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

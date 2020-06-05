@@ -1,27 +1,29 @@
-2020-06-05 10:34:25,953 [ 1] INFO  Unity: LoadingManager start
-2020-06-05 10:34:29,609 [ 1] INFO  Unity: DataManager > DataManager()
-2020-06-05 10:34:36,466 [ 1] INFO  Unity: UserLoginRequest::user :user123 psw:123
-2020-06-05 10:34:36,468 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-06-05 10:34:36,474 [ 1] INFO  Unity: DoConnect
-2020-06-05 10:34:36,477 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-06-05 10:34:36,487 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-06-05 21:42:32,601 [ 1] INFO  Unity: LoadingManager start
+2020-06-05 21:42:35,938 [ 1] INFO  Unity: DataManager > DataManager()
+2020-06-05 21:42:41,098 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123
+2020-06-05 21:42:41,100 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-06-05 21:42:41,106 [ 1] INFO  Unity: DoConnect
+2020-06-05 21:42:41,109 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-06-05 21:42:41,117 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-06-05 10:34:36,493 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-06-05 10:34:36,659 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-06-05 10:34:36,662 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-06-05 10:34:36,994 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-06-05 10:34:37,981 [ 1] INFO  Unity: Select Char:[1]獲獲[Archer]
-2020-06-05 10:34:39,507 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2020-06-05 10:34:39,546 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-06-05 10:34:39,549 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 1
-2020-06-05 10:34:39,550 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 4
-2020-06-05 10:34:39,568 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
-2020-06-05 10:34:39,569 [ 1] INFO  Unity: AddCharacter:3:獲獲 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-06-05 10:34:39,575 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-06-05 10:34:40,719 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-06-05 10:35:20,220 [ 1] INFO  Unity: Character_3_獲獲 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2020-06-05 10:35:20,224 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-06-05 10:35:20,225 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-06-05 21:42:41,124 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-06-05 21:42:41,285 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-06-05 21:42:41,287 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-06-05 21:42:41,641 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:42:42,409 [ 1] INFO  Unity: Select Char:[1]陛[Wizard]
+2020-06-05 21:42:42,900 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2020-06-05 21:42:42,944 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-06-05 21:42:42,947 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 200
+2020-06-05 21:42:42,949 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 100
+2020-06-05 21:42:42,951 [ 1] INFO  Unity: ItemManager : Init() : ID 3  Count 30
+2020-06-05 21:42:42,952 [ 1] INFO  Unity: ItemManager : Init() : ID 4  Count 120
+2020-06-05 21:42:42,956 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-06-05 21:42:42,960 [ 1] INFO  Unity: AddCharacter:4:陛 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-06-05 21:42:42,967 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-06-05 21:42:44,200 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-06-05 21:42:51,867 [ 1] INFO  Unity: Character_4_陛 OnDestroy :ID:4 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2020-06-05 21:42:51,872 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-06-05 21:42:51,873 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
