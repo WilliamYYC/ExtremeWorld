@@ -63,6 +63,8 @@ namespace Managers
             }
         }
 
+     
+
         unsafe void Analyze(byte[] data)
         {
             fixed (byte* pt = data)
@@ -86,6 +88,48 @@ namespace Managers
                 }
             }
             return this.Info;
+        }
+
+
+        public void RemoveItem(int itemid, int count)
+        {
+            
+
+        }
+
+        public void AddItem(int itemid, int count)
+        {
+            ushort addCount = (ushort)count;
+            for (int i = 0; i < this.items.Length; i++)
+            {
+                if (this.items[i].itemId == itemid)
+                {
+                    ushort canAdd = (ushort)(DataManager.Instance.Items[itemid].StackLimit - this.items[i].Count);
+                    if (canAdd >= addCount)
+                    {
+                        this.items[i].Count += addCount;
+                        addCount = 0;
+                        break;
+                    }
+                    else
+                    {
+                        this.items[i].Count += canAdd;
+                        addCount -= canAdd;
+                    }
+                }
+            }
+
+            if (addCount > 0)
+            {
+                for (int i = 0; i < this.items.Length; i++)
+                {
+                    if (this.items[i].itemId == 0)
+                    {
+                        this.items[i].itemId = (ushort)itemid;
+                        this.items[i].Count = addCount;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Managers;
+using Models;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ public class UIBag : UIWindows {
 				Slots.AddRange(this.Pages[page].GetComponentsInChildren<Image>(true));
 			}
 		}
-
+		Moneys.text = User.Instance.CurrentCharacter.Gold.ToString();
 		StartCoroutine(InitBags());
 	}
 

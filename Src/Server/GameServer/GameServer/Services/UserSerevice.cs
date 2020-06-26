@@ -123,7 +123,7 @@ namespace GameServer.Services
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,
-
+                Gold = 100000, //初始角色拥有10w
             };
             //初始化背包
             var bag = new TCharacterBag();

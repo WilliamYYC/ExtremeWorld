@@ -10,11 +10,16 @@ public class Item {
     public int itemId;
     public int count;
     public ItemDefine itemDefine;
-    public Item(NItemInfo info)
+    public Item(NItemInfo info) : this(info.Id, info.Count)
     {
-        this.itemId = info.Id;
-        this.count = info.Count;
-        this.itemDefine = DataManager.Instance.Items[info.Id];
+         
+    }
+
+    public Item(int id, int count)
+    {
+        this.itemId = id;
+        this.count = count;
+        this.itemDefine = DataManager.Instance.Items[this.itemId];
     }
 
     public override string ToString()

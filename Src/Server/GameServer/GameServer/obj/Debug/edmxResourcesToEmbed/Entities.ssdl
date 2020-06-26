@@ -51,6 +51,7 @@
     <Property Name="MapPosX" Type="int" Nullable="false" />
     <Property Name="MapPosY" Type="int" Nullable="false" />
     <Property Name="MapPosZ" Type="int" Nullable="false" />
+    <Property Name="Gold" Type="bigint" Nullable="false" />
     <Property Name="Player_ID" Type="int" Nullable="false" />
     <Property Name="Bag_Id" Type="int" Nullable="false" />
   </EntityType>

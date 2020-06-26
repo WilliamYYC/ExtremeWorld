@@ -23,6 +23,7 @@ public class TableView : MonoBehaviour {
 
 	public void selectTab(int index)
 	{
+		//如果当前的页面index和传入的不一样 切换页面
 		if (this.index != index)
 		{
 			for (int i = 0; i < tableButtons.Length; i++)
