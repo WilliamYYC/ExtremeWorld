@@ -50,4 +50,10 @@ public class UIMain : MonoSingleton<UIMain> {
 	{
 		UIManagers.Instance.Show<UIBag>();
 	}
+
+
+	public void OnClickEquip()
+	{
+		UIManagers.Instance.Show<UICharEquip>();
+	}
 }

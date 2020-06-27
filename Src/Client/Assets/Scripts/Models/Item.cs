@@ -10,6 +10,7 @@ public class Item {
     public int itemId;
     public int count;
     public ItemDefine itemDefine;
+    public EquipDefine EquipInfo;
     public Item(NItemInfo info) : this(info.Id, info.Count)
     {
          
@@ -19,7 +20,8 @@ public class Item {
     {
         this.itemId = id;
         this.count = count;
-        this.itemDefine = DataManager.Instance.Items[this.itemId];
+        DataManager.Instance.Items.TryGetValue(this.itemId, out this.itemDefine);
+        DataManager.Instance.Equips.TryGetValue(this.itemId, out this.EquipInfo);
     }
 
     public override string ToString()

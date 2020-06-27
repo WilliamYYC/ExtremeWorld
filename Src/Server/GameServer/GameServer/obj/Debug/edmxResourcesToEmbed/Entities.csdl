@@ -60,6 +60,7 @@
     <NavigationProperty Name="Items" Relationship="ExtremeWorldModel.CharacterItems" FromRole="TCharacter" ToRole="TCharacterItems" />
     <NavigationProperty Name="Bag" Relationship="ExtremeWorldModel.CharacterBag" FromRole="TCharacter" ToRole="TCharacterBag" />
     <Property Name="Gold" Type="Int64" Nullable="false" />
+    <Property Name="Equips" Type="Binary" Nullable="false" FixedLength="true" MaxLength="28" />
   </EntityType>
   <Association Name="PlayerCharacter">
     <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />

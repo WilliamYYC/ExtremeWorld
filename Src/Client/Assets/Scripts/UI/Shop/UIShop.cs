@@ -4,6 +4,7 @@ using Models;
 using SkillBridge.Message;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,13 +25,22 @@ public class UIShop : UIWindows {
 	//从DataManager中加载到scrollview的content 中
 	IEnumerator InitItems()
 	{
+		int count = 0;
+		int page = 0; 
 		foreach (var kv in DataManager.Instance.ShopItems[shop.ID])
 		{
 			if (kv.Value.Status > 0)
 			{
-				GameObject go = Instantiate(shopItem, ItemRoot[0]);
+				GameObject go = Instantiate(shopItem, ItemRoot[page]);
 				UIShopItem ui = go.GetComponent<UIShopItem>();
 				ui.SetShopItem(kv.Key,kv.Value,this);
+				count++;
+				if (count > 15)
+				{
+					count = 0;
+					page++;
+					ItemRoot[page].gameObject.SetActive(true);
+				}
 			}
 		}
 		yield return null;

@@ -30,6 +30,7 @@
           <ScalarProperty Name="MapPosY" ColumnName="MapPosY" />
           <ScalarProperty Name="MapPosZ" ColumnName="MapPosZ" />
           <ScalarProperty Name="Gold" ColumnName="Gold" />
+          <ScalarProperty Name="Equips" ColumnName="Equips" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -28,6 +28,8 @@ namespace Common.Data
 
         public string Category { get; set; }
 
+        public int Level { get; set; }
+        public CharacterClass LimitClass { get; set; }
         public bool CanUse { get; set; }
 
         public float UseCD { get; set; }

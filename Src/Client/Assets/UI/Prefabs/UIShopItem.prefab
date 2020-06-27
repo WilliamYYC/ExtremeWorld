@@ -165,6 +165,7 @@ MonoBehaviour:
   title: {fileID: 114655099434037932}
   price: {fileID: 114600459349680868}
   count: {fileID: 114309498266548218}
+  limitClass: {fileID: 114155608412607142}
   Background: {fileID: 114102374597679018}
   NormalBg: {fileID: 21300000, guid: f2c26ba28b4d05643ba74996bb40967b, type: 3}
   SelectedBg: {fileID: 21300000, guid: bb799af4d1f965c4a93f16cb08f26925, type: 3}

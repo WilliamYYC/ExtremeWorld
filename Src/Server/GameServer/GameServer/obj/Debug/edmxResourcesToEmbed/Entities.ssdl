@@ -52,6 +52,7 @@
     <Property Name="MapPosY" Type="int" Nullable="false" />
     <Property Name="MapPosZ" Type="int" Nullable="false" />
     <Property Name="Gold" Type="bigint" Nullable="false" />
+    <Property Name="Equips" Type="binary" Nullable="false" MaxLength="28" />
     <Property Name="Player_ID" Type="int" Nullable="false" />
     <Property Name="Bag_Id" Type="int" Nullable="false" />
   </EntityType>

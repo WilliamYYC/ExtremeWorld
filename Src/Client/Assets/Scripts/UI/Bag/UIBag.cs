@@ -51,13 +51,21 @@ public class UIBag : UIWindows {
 	}
 
 
-	public void setTitle()
+	void Clear()
 	{
-
+		for (int i = 0; i < Slots.Count; i++)
+		{
+			if (Slots[i].transform.childCount > 0)
+			{
+				Destroy(Slots[i].transform.GetChild(0).gameObject);
+			}
+		}
 	}
 
 	public void OnReset()
 	{
 		BagManager.Instance.Reset();
+		Clear();
+		StartCoroutine(InitBags());
 	}
 }

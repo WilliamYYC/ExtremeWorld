@@ -127,6 +127,7 @@ namespace Managers
                     {
                         this.items[i].itemId = (ushort)itemid;
                         this.items[i].Count = addCount;
+                        break;
                     }
                 }
             }
