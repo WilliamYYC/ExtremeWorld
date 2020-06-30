@@ -43,9 +43,9 @@ namespace Managers
 
 		public bool Interactive(NpcDefine npcs)
 		{
-			if (npcs.Type == NpcType.Task)
+			if (DoTaskInteractive(npcs))
 			{
-				return DoTaskInteractive(npcs);
+				return true;
 			}
 			else if (npcs.Type == NpcType.Functional)
 			{
@@ -70,8 +70,13 @@ namespace Managers
 
 		public bool DoTaskInteractive(NpcDefine npcs)
 		{
-			MessageBox.Show("点击了Npc  "+npcs.Name, "Npc对话");
-			return true;
+			var status = QuestManager.Instance.GetQuestStatusByNpc(npcs.ID);
+			if (status == NpcQuestStatus.None)
+			{
+				return false;
+			}
+
+			return QuestManager.Instance.OpenNpcQuest(npcs.ID);
 		}
 	}
 

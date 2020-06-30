@@ -12,14 +12,12 @@ public class UINameBar : MonoBehaviour {
 	public Character character;
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		this.updateInfo();
-		this.transform.forward = Camera.main.transform.forward;
-		//this.transform.LookAt(Camera.main.transform);
+
 	}
 
 	public void updateInfo()

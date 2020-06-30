@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TableView : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class TableView : MonoBehaviour {
 	public GameObject[] tablePages;
 
 	public int index = -1;
+
+	public UnityAction<int> OnTabSelect;
 	// Use this for initialization
 	IEnumerator Start () {
 		for (int i = 0; i < tableButtons.Length; i++)
@@ -29,8 +32,13 @@ public class TableView : MonoBehaviour {
 			for (int i = 0; i < tableButtons.Length; i++)
 			{
 				tableButtons[i].Select(i == index);
-				tablePages[i].SetActive(i == index);
+				if (i < tablePages.Length-1)
+				{
+					tablePages[i].SetActive(i == index);
+				}
 			}
+			if (OnTabSelect != null)
+				OnTabSelect(index);
 		}
 	}
 	// Update is called once per frame

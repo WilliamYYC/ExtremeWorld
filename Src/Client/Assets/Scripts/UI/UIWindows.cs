@@ -44,6 +44,11 @@ public abstract class UIWindows : MonoBehaviour {
 		this.Close(WinowResult.Yes);
 	}
 
+	public virtual void OnNoClick()
+	{
+		this.Close(WinowResult.No);
+	}
+
 	void OnMouseDown()
 	{
 		Debug.LogFormat(this.name + "Clicked");

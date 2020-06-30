@@ -5,6 +5,7 @@ using Common.Data;
 using Managers;
 using UnityEditor;
 using Models;
+using System;
 
 public class NpcController : MonoBehaviour {
 
@@ -16,6 +17,8 @@ public class NpcController : MonoBehaviour {
 	Color originColor;
 
 	private bool isInteractive = false;
+
+	NpcQuestStatus questStatus;
 	// Use this for initialization
 	void Start () {
 		renderer = this.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
@@ -23,9 +26,29 @@ public class NpcController : MonoBehaviour {
 		originColor = renderer.sharedMaterial.color;
 		Npcs = NpcManager.Instance.GetNpcDefine(NpcID);
 		this.StartCoroutine(Actions());
+		RefreshNpcStatus();
+		QuestManager.Instance.OnQuestStatusChanged += OnQuestStatusChanged;
 	}
-	
 
+	void OnQuestStatusChanged(Quest quest)
+	{
+		this.RefreshNpcStatus();
+	}
+
+	 void RefreshNpcStatus()
+	{
+		questStatus = QuestManager.Instance.GetQuestStatusByNpc(this.NpcID);
+		UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);
+	}
+
+	void onDestroy()
+	{
+		QuestManager.Instance.OnQuestStatusChanged -= OnQuestStatusChanged;
+		if (UIWorldElementManager.Instance !=null)
+		{
+			UIWorldElementManager.Instance.RemoveNpcQusetStatus(this.transform);
+		}
+	}
 	IEnumerator Actions()
 	{
 		while (true)
@@ -36,7 +59,7 @@ public class NpcController : MonoBehaviour {
 			}
 			else
 			{
-				yield return new WaitForSeconds(Random.Range(5f,10f));
+				yield return new WaitForSeconds(UnityEngine.Random.Range(5f,10f));
 			}
 			this.Relax();
 		}

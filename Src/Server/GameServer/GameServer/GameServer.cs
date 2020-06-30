@@ -32,6 +32,7 @@ namespace GameServer
             DataManager.Instance.Load();
             MapService.Instance.Init();
             ItemService.Instance.Init();
+            QuestService.Instance.Init();
             //Console.WriteLine("{0}", name.FirstOrDefault<TCharacter>().Name);
             thread = new Thread(new ThreadStart(this.Update));
             return true;

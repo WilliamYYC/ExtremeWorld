@@ -21,6 +21,8 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UIBag), new UIElements() { ResourcePath = "UI/UIBag", Cache = false });
 		UIResources.Add(typeof(UIShop), new UIElements() { ResourcePath = "UI/UIShop", Cache = false });
 		UIResources.Add(typeof(UICharEquip), new UIElements() { ResourcePath = "UI/UICharEquip", Cache = false });
+		UIResources.Add(typeof(UIQuestDialog), new UIElements() { ResourcePath = "UI/UIQuestDialog", Cache = false });
+		UIResources.Add(typeof(UIQuestSystem), new UIElements() { ResourcePath = "UI/UIQuestSystem", Cache = false });
 	}
 
 	~UIManagers()
