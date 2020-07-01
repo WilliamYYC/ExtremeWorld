@@ -62,7 +62,7 @@ namespace Managers
             json = File.ReadAllText(this.DataPath + "QuestDefine.txt");
             this.Quests = JsonConvert.DeserializeObject<Dictionary<int, QuestDefine>>(json);
             //json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
-            //this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>> (json);
+           // this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>> (json);
         }
 
 

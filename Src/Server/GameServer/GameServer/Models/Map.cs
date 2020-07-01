@@ -37,14 +37,21 @@ namespace GameServer.Models
 
         Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
 
+        
 
+        SpawnManger SpawnManger = new SpawnManger();
+        public MonsterManager MonsterManager = new MonsterManager();
+        //刷怪管理器
         internal Map(MapDefine define)
         {
             this.Define = define;
+            this.SpawnManger.Init(this);
+            this.MonsterManager.Init(this);
         }
 
         internal void Update()
         {
+            SpawnManger.Update();
         }
 
         /// <summary>
@@ -57,39 +64,37 @@ namespace GameServer.Models
 
             character.Info.mapId = this.ID;
 
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
+            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
 
-            message.Response.mapCharacterEnter = new MapCharacterEnterResponse();
-            message.Response.mapCharacterEnter.mapId = this.Define.ID;
-            message.Response.mapCharacterEnter.Characters.Add(character.Info);
+            conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
+            conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;
 
             foreach (var kv in this.MapCharacters)
             {
-                message.Response.mapCharacterEnter.Characters.Add(kv.Value.character.Info);
-                this.SendCharacterEnterMap(kv.Value.connection, character.Info);
+                conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.character.Info);
+                if (kv.Value.character != character)
+                {
+                    this.AddCharacterEnterMap(kv.Value.connection, character.Info);
+                }
             }
-            
-            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
-
-            byte[] data = PackageHandler.PackMessage(message);
-            conn.SendData(data, 0, data.Length);
+            foreach(var kv in this.MonsterManager.Monsters)
+            {
+                conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
+            }
+            conn.SendResponse();
         }
 
-       
-
-        void SendCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
+         void AddCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo info)
         {
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
-
-            message.Response.mapCharacterEnter = new MapCharacterEnterResponse();
-            message.Response.mapCharacterEnter.mapId = this.Define.ID;
-            message.Response.mapCharacterEnter.Characters.Add(character);
-
-            byte[] data = PackageHandler.PackMessage(message);
-            conn.SendData(data, 0, data.Length);
+            if (conn.Session.Response.mapCharacterEnter == null)
+            {
+                conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
+                conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;
+            }
+            conn.Session.Response.mapCharacterEnter.Characters.Add(info);
+            conn.SendResponse();
         }
+
 
 
         internal void CharacterLeave(Character character)
@@ -105,14 +110,10 @@ namespace GameServer.Models
 
          void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
-            message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            conn.Session.Response.mapCharacterLeave.characterId = character.Id;
 
-            message.Response.mapCharacterLeave.characterId = character.Id;
-
-            byte[] data = PackageHandler.PackMessage(message);
-            conn.SendData(data, 0, data.Length);
+            conn.SendResponse();
         }
 
 
@@ -130,6 +131,16 @@ namespace GameServer.Models
                 {
                     MapService.Instance.SendMapEntityUpdate(kv.Value.connection, entity);
                 }
+            }
+        }
+
+        //怪物进入地图
+        internal void MonsterEnter(Monster monster)
+        {
+            Log.InfoFormat("MonsterEnter: map{0} monster{1}", this.Define.ID, monster.Id);
+            foreach (var item in this.MapCharacters)
+            {
+                this.AddCharacterEnterMap(item.Value.connection, monster.Info);
             }
         }
     }
