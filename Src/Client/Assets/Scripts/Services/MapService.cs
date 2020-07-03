@@ -40,7 +40,7 @@ namespace Services
 
             foreach (var kv in message.Characters)
             {
-                if (User.Instance.CurrentCharacter == null || kv.Id == User.Instance.CurrentCharacter.Id  )
+                if (User.Instance.CurrentCharacter == null ||  (kv.Type == CharacterType.Player && kv.Id == User.Instance.CurrentCharacter.Id))
                 {
                     User.Instance.CurrentCharacter = kv;
                 }
@@ -57,11 +57,11 @@ namespace Services
 
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse message)
         {
-            Debug.LogFormat("OnMapCharacterLeave:charID:{0}", message.characterId);
+            Debug.LogFormat("OnMapCharacterLeave:charID:{0}", message.entityId);
            //如果退出用户是自己删除所有信息,不是就删除退出的用户信息
-            if (message.characterId != User.Instance.CurrentCharacter.Id)
+            if (message.entityId != User.Instance.CurrentCharacter.EntityId)
             {
-                CharacterManager.Instance.RemoveCharacter(message.characterId);
+                CharacterManager.Instance.RemoveCharacter(message.entityId);
             }
             else
             {

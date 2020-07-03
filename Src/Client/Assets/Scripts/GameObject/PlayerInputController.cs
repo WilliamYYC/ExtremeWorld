@@ -36,7 +36,7 @@ public class PlayerInputController:MonoBehaviour
             NCharacterInfo info = new NCharacterInfo();
             info.Id = 1;
             info.Name = "test";
-            info.Tid = 1;
+            info.ConfigId = 1;
             info.Entity = new NEntity();
             info.Entity.Position = new NVector3();
             info.Entity.Direction = new NVector3();

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.UIElements;
 using UnityEngine;
 
 public class UIManagers : Singleton<UIManagers> {
@@ -23,6 +22,7 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UICharEquip), new UIElements() { ResourcePath = "UI/UICharEquip", Cache = false });
 		UIResources.Add(typeof(UIQuestDialog), new UIElements() { ResourcePath = "UI/UIQuestDialog", Cache = false });
 		UIResources.Add(typeof(UIQuestSystem), new UIElements() { ResourcePath = "UI/UIQuestSystem", Cache = false });
+		UIResources.Add(typeof(UIFriend), new UIElements() { ResourcePath = "UI/UIFriends", Cache = false });
 	}
 
 	~UIManagers()

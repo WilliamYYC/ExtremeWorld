@@ -17,8 +17,10 @@ namespace Network
         public Character Character { get; set; }
         public NEntity Entity { get; set; }
 
+        public IPostResponser PostResponser { get; set; }
         public void Disconnected()
         {
+            this.PostResponser = null;
             if (this.Character != null)
             {
                 UserService.Instance.ChacaterLeave(this.Character);
@@ -46,10 +48,9 @@ namespace Network
         {
             if (response != null)
             {
-                if (this.Character !=null && this.Character.statusManager.HasStatus)
-                {
-                    this.Character.statusManager.ApplyResponse(Response);
-                }
+                if (PostResponser != null)
+                    this.PostResponser.PostProcess(Response);
+
                 byte[] data = PackageHandler.PackMessage(response);
                 response = null;
                 return data;

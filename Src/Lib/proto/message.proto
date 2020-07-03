@@ -78,20 +78,23 @@ message NPlayerInfo {
 }
 
 message NCharacterInfo {
-	int32 id = 1;
-	int32 tid = 2;
-	string name = 3;
-	CHARACTER_TYPE type = 4;
-	CHARACTER_CLASS class = 5;
-	int32 level = 6;
-	int32 mapId = 7;
-	NEntity entity = 8;
-    int64 gold = 9;
+	int32 id = 1; //db id
+	int32 config_id = 2; // config id
+    int32 entity_id = 3; // entity_id
+	string name = 4;
+	CHARACTER_TYPE type = 5;
+	CHARACTER_CLASS class = 6;
+	int32 level = 7;
+	int32 mapId = 8;
+	NEntity entity = 9;
+    int64 gold = 10;
     
-    repeated NItemInfo Items = 10;//道具信息
-    NBagInfo Bag = 11; //背包信息
-    bytes Equips = 12; //装备信息
-    repeated NQuestInfo quests = 13;//任务信息
+    repeated NItemInfo Items = 11;//道具信息
+    NBagInfo Bag = 12; //背包信息
+    bytes Equips = 13; //装备信息
+    repeated NQuestInfo quests = 14;//任务信息
+    
+    repeated NFriendInfo friends = 15;//好友信息
 }
 
 message NItemInfo
@@ -201,6 +204,12 @@ message NetMessageRequest{
     QuestListRequest questList = 12;
     QuestAcceptRequest  questAccept = 13;
     QuestSubmitRequest questSubmit = 14;
+    
+    FriendAddRequest friendAddReq = 15;
+    FriendAddResponse friendAddRes = 16;
+    
+    FriendListRequest friendList = 17;
+    FriendRemoveRequest friendRemove = 18;
 }
 
 message NetMessageResponse{
@@ -221,6 +230,13 @@ message NetMessageResponse{
     QuestListResponse questList = 12;
     QuestAcceptResponse  questAccept = 13;
     QuestSubmitResponse questSubmit =14;
+    
+    FriendAddRequest friendAddReq = 15;
+    FriendAddResponse friendAddRes = 16;
+    
+    FriendListResponse friendList = 17;
+    FriendRemoveResponse friendRemove = 18;
+    
     
     StatusNotify statusNotify = 100;
 }
@@ -300,7 +316,7 @@ message MapCharacterEnterResponse
 
 message MapCharacterLeaveResponse
 {
-	int32 characterId = 1;
+	int32 entityId = 1;
 }
 
 
@@ -429,4 +445,51 @@ message QuestAbandonResponse
 {
     RESULT result = 1;
     string errormsg = 2;
+}
+
+
+//FriendSystem
+message NFriendInfo
+{
+    int32 id =1;
+    NCharacterInfo friendInfo = 2;
+    int32 status = 3;
+}
+
+message FriendAddRequest
+{
+    int32 from_id = 1;
+    string from_name = 2;
+    int32 to_id = 3;
+    string to_name = 4;
+}
+
+message FriendAddResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    FriendAddRequest request = 3;
+}
+
+message FriendListRequest
+{}
+
+message FriendListResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    repeated NFriendInfo friends = 3;
+}
+
+message FriendRemoveRequest
+{
+    int32 id = 1;
+    int32 friendId = 2;
+}
+
+message FriendRemoveResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    int32 id = 3;
 }
