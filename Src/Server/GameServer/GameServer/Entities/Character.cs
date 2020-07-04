@@ -1,6 +1,8 @@
-﻿using Common.Data;
+﻿using Common;
+using Common.Data;
 using GameServer.Core;
 using GameServer.Managers;
+using GameServer.Models;
 using Network;
 using SkillBridge.Message;
 using System;
@@ -19,6 +21,8 @@ namespace GameServer.Entities
         public StatusManager statusManager;
         public QuestManager QuestManager;
         public FriendManager FriendManager;
+        public Team Team;
+        public int TeamUpdateTS;
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
         {
@@ -67,7 +71,18 @@ namespace GameServer.Entities
 
         public void PostProcess(NetMessageResponse message)
         {
+            Log.InfoFormat("PostProcess > Character : CharacterID:{0}:{1}  ", this.Id, this.Info.Name);
             this.FriendManager.PostProcess(message);
+
+            if (this.Team !=null)
+            {
+                Log.InfoFormat("PostProcess > Team : CharacterID:{0}:{1}  {2}<{3}", this.Id, this.Info.Name, TeamUpdateTS, this.Team.timestamp);
+                if (TeamUpdateTS < this.Team.timestamp)
+                {
+                    TeamUpdateTS = this.Team.timestamp;
+                    this.Team.PostProcess(message);
+                }
+            }
             if (this.statusManager.HasStatus)
             {
                 this.statusManager.PostProcess(message);
@@ -76,7 +91,20 @@ namespace GameServer.Entities
 
         public void Clear()
         {
-            this.FriendManager.UpdateFriendInfo(this.Info, 0);
+            this.FriendManager.OfflineNotify();
+        }
+
+
+        public NCharacterInfo GetBasicInfo()
+        {
+            return new NCharacterInfo()
+            {
+                Id = this.Id,
+                Name = this.Info.Name,
+                Class = this.Info.Class,
+                Level = this.Info.Level,
+
+            };
         }
     }
 }

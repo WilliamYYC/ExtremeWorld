@@ -42,6 +42,24 @@ public class UIFriend : UIWindows {
 		InputBox.show("输入你要添加的好友名称或ID","添加好友").OnSubmit += OnFriendAddSubmit;
 	}
 
+	public void OnClickFriendInvite()
+	{
+		if (friendItem == null )
+		{
+			MessageBox.Show("请选择邀请的好友");
+			return;
+		}
+		if (friendItem.friend.Status == 0)
+		{
+			MessageBox.Show("请选择在线的好友");
+			return;
+		}
+
+		MessageBox.Show(string.Format("确定邀请{0}玩家加入队伍",friendItem.friend.friendInfo.Name), "邀请组队", MessageBoxType.Confirm, "确定", "取消").OnYes = () => {
+			TeamService.Instance.SendTeamInviteRequest(this.friendItem.friend.friendInfo.Id, this.friendItem.friend.friendInfo.Name);
+		};
+	}
+
 	private bool OnFriendAddSubmit(string inputText, out string tips)
 	{
 		tips = "";

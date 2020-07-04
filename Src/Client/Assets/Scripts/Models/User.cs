@@ -1,4 +1,5 @@
 ﻿using Common.Data;
+using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,7 @@ namespace Models
 
         public GameObject CurrentCharacterObject { get; set; }
 
+        public NTeamInfo TeamInfo { get; set; }
         public void AddGold(int gold)
         {
             this.CurrentCharacter.Gold += gold;

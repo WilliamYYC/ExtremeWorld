@@ -33,6 +33,7 @@ namespace GameServer
             MapService.Instance.Init();
             ItemService.Instance.Init();
             QuestService.Instance.Init();
+            TeamServices.Instance.Init();
             FriendService.Instance.Init();
             //Console.WriteLine("{0}", name.FirstOrDefault<TCharacter>().Name);
             thread = new Thread(new ThreadStart(this.Update));

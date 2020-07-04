@@ -1,5 +1,6 @@
 ﻿using Models;
 using Services;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class UIMain : MonoSingleton<UIMain> {
 
 	public Text AvatarName;
 	public Text Avatarlevel;
+	public UITeam TeamWindow;
 	// Use this for initialization
 	protected override void  OnStart () {
 		this.UpdateAvatar();
@@ -25,6 +27,8 @@ public class UIMain : MonoSingleton<UIMain> {
 		AvatarName.text = string.Format("{0}[{1}]", User.Instance.CurrentCharacter.Name, User.Instance.CurrentCharacter.Id);
 		Avatarlevel.text = User.Instance.CurrentCharacter.Level.ToString();
 	}
+
+	
 
 	public void BackToCharSelect()
 	{
@@ -65,5 +69,11 @@ public class UIMain : MonoSingleton<UIMain> {
 	public void OnClickFriend()
 	{
 		UIManagers.Instance.Show<UIFriend>();
+	}
+
+	
+	public void ShowTeamUI(bool show)
+	{
+		TeamWindow.ShowTeam(show);
 	}
 }

@@ -41,7 +41,7 @@ public class LoadingManager : MonoBehaviour {
         UserService.Instance.Init();
         FriendService.Instance.Init();
         StatusService.Instance.Init();
-
+        TeamService.Instance.Init();
         ShopManager.Instance.Init();
         // Fake Loading Simulate
         for (float i = 50; i < 100;)

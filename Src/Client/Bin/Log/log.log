@@ -1,259 +1,819 @@
-2020-07-03 11:11:11,372 [ 1] INFO  Unity: LoadingManager start
-2020-07-03 11:11:14,450 [ 1] INFO  Unity: DataManager > DataManager()
-2020-07-03 11:11:20,870 [ 1] INFO  Unity: UserLoginRequest::user :user2 psw:123
-2020-07-03 11:11:20,871 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-07-03 11:11:20,875 [ 1] INFO  Unity: DoConnect
-2020-07-03 11:11:20,876 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-03 11:11:20,878 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-07-04 20:29:16,412 [ 1] INFO  Unity: LoadingManager start
+2020-07-04 20:29:19,476 [ 1] INFO  Unity: DataManager > DataManager()
+2020-07-04 20:29:34,100 [ 1] INFO  Unity: UserLoginRequest::user :user2 psw:123
+2020-07-04 20:29:34,100 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-07-04 20:29:34,104 [ 1] INFO  Unity: DoConnect
+2020-07-04 20:29:34,106 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-07-04 20:29:34,108 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-07-03 11:11:20,883 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-07-03 11:11:21,006 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-07-03 11:11:21,007 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-07-03 11:11:21,187 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-07-03 11:11:21,985 [ 1] INFO  Unity: Select Char:[2]尼号[Wizard]
-2020-07-03 11:11:22,631 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2020-07-03 11:11:22,856 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-07-03 11:11:22,858 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 20
-2020-07-03 11:11:22,858 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 20
-2020-07-03 11:11:22,901 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
-2020-07-03 11:11:22,903 [ 1] INFO  Unity: AddCharacter:2:尼号 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-07-03 11:11:22,906 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-07-03 11:11:23,331 [ 1] WARN  Unity: UIWorldElementManager  [16846] Awake
+2020-07-04 20:29:34,115 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-07-04 20:29:34,293 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-07-04 20:29:34,294 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-07-04 20:29:34,470 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-07-04 20:29:37,893 [ 1] INFO  Unity: Select Char:[1002]美美[Archer]
+2020-07-04 20:29:38,559 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2020-07-04 20:29:38,598 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-07-04 20:29:38,600 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 20
+2020-07-04 20:29:38,600 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 20
+2020-07-04 20:29:38,614 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 2
+2020-07-04 20:29:38,616 [ 1] INFO  Unity: AddCharacter:1:Xixi Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-07-04 20:29:38,618 [ 1] INFO  Unity: AddCharacter:1002:美美 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-07-04 20:29:38,619 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-07-04 20:29:38,619 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:29:39,011 [ 1] WARN  Unity: UIWorldElementManager  [17428] Awake
 
-2020-07-03 11:11:23,331 [ 1] WARN  Unity: GameObjectManager  [16852] Awake
+2020-07-04 20:29:39,012 [ 1] WARN  Unity: GameObjectManager  [17434] Awake
 
-2020-07-03 11:11:23,341 [ 1] WARN  Unity: UIMain  [16920] Awake
+2020-07-04 20:29:39,019 [ 1] WARN  Unity: UIMain  [17532] Awake
 
-2020-07-03 11:11:23,341 [ 1] WARN  Unity: MainPlayerCamera  [16930] Awake
+2020-07-04 20:29:39,020 [ 1] WARN  Unity: MainPlayerCamera  [17544] Awake
 
-2020-07-03 11:11:23,346 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-07-03 11:11:24,552 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
-2020-07-03 11:11:24,552 [ 1] INFO  Unity: AddCharacter:1:Xixi Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-07-03 11:11:24,556 [ 1] INFO  Unity: OnFriendList
-2020-07-03 11:11:26,137 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5000, 4000, 900)  dir (100, 0, 0) speed0 
-2020-07-03 11:11:26,138 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5000,4000,900),dir:(100,0,0),spd:0 
+2020-07-04 20:29:39,024 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-07-04 20:29:39,127 [ 1] INFO  Unity: SetPosition:(5000, 4000, 900)
+2020-07-04 20:29:39,128 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:39,160 [ 1] INFO  Unity: SetPosition:(5000, 4000, 971)
+2020-07-04 20:29:39,160 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:39,881 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5000, 4000, 820)  dir (100, 0, 0) speed300 
+2020-07-04 20:29:39,882 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtMoveFwd  entity(1:pos:(5000,4000,820),dir:(100,0,0),spd:300 
 
-2020-07-03 11:11:26,138 [ 1] INFO  Unity: OnFriendList
-2020-07-03 11:11:26,165 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5000, 4000, 970)  dir (100, 0, 0) speed0 
-2020-07-03 11:11:26,166 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5000,4000,970),dir:(100,0,0),spd:0 
+2020-07-04 20:29:39,882 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:29:40,161 [ 1] INFO  Unity: SetPosition:(4977, 4000, 922)
+2020-07-04 20:29:40,161 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:40,244 [ 1] INFO  Unity: SetPosition:(4977, 4000, 870)
+2020-07-04 20:29:40,245 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:40,328 [ 1] INFO  Unity: SetPosition:(4976, 4000, 812)
+2020-07-04 20:29:40,328 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:40,379 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5155, 4000, 820)  dir (98, -19, 0) speed300 
+2020-07-04 20:29:40,379 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5155,4000,820),dir:(98,-19,0),spd:300 
 
-2020-07-03 11:11:28,185 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5000, 4000, 970)  dir (100, 0, 0) speed300 
-2020-07-03 11:11:28,186 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtMoveFwd  entity(2:pos:(5000,4000,970),dir:(100,0,0),spd:300 
+2020-07-04 20:29:40,379 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:29:40,480 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5185, 3994, 820)  dir (93, -37, 0) speed300 
+2020-07-04 20:29:40,480 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5185,3994,820),dir:(93,-37,0),spd:300 
 
-2020-07-03 11:11:28,333 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5082, 4000, 930)  dir (100, 0, 0) speed300 
-2020-07-03 11:11:28,333 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5082,4000,930),dir:(100,0,0),spd:300 
+2020-07-04 20:29:40,578 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5210, 3984, 820)  dir (85, -53, 0) speed300 
+2020-07-04 20:29:40,578 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5210,3984,820),dir:(85,-53,0),spd:300 
 
-2020-07-03 11:11:28,383 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5103, 4000, 873)  dir (100, 0, 0) speed300 
-2020-07-03 11:11:28,383 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5103,4000,873),dir:(100,0,0),spd:300 
+2020-07-04 20:29:40,612 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (85, -53, 0) speed0 
+2020-07-04 20:29:40,612 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtIdle  entity(1:pos:(5222,3975,820),dir:(85,-53,0),spd:0 
 
-2020-07-03 11:11:28,435 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5118, 4000, 810)  dir (100, 0, 0) speed300 
-2020-07-03 11:11:28,435 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5118,4000,810),dir:(100,0,0),spd:300 
+2020-07-04 20:29:40,661 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (72, -69, 0) speed0 
+2020-07-04 20:29:40,661 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(72,-69,0),spd:0 
 
-2020-07-03 11:11:28,783 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5223, 4000, 810)  dir (98, -18, 0) speed300 
-2020-07-03 11:11:28,783 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5223,4000,810),dir:(98,-18,0),spd:300 
+2020-07-04 20:29:40,746 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (59, -81, 0) speed0 
+2020-07-04 20:29:40,747 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(59,-81,0),spd:0 
 
-2020-07-03 11:11:28,834 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (98, -18, 0) speed0 
-2020-07-03 11:11:28,834 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtIdle  entity(2:pos:(5238,3997,810),dir:(98,-18,0),spd:0 
+2020-07-04 20:29:40,844 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (41, -91, 0) speed0 
+2020-07-04 20:29:40,845 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(41,-91,0),spd:0 
 
-2020-07-03 11:11:28,882 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (94, -35, 0) speed0 
-2020-07-03 11:11:28,883 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(94,-35,0),spd:0 
+2020-07-04 20:29:40,927 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (24, -97, 0) speed0 
+2020-07-04 20:29:40,927 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(24,-97,0),spd:0 
 
-2020-07-03 11:11:28,966 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (86, -51, 0) speed0 
-2020-07-03 11:11:28,966 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(86,-51,0),spd:0 
+2020-07-04 20:29:41,028 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (4, -100, 0) speed0 
+2020-07-04 20:29:41,028 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(4,-100,0),spd:0 
 
-2020-07-03 11:11:29,082 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (74, -68, 0) speed0 
-2020-07-03 11:11:29,083 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(74,-68,0),spd:0 
+2020-07-04 20:29:41,111 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (-14, -99, 0) speed0 
+2020-07-04 20:29:41,111 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(-14,-99,0),spd:0 
 
-2020-07-03 11:11:29,182 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (58, -81, 0) speed0 
-2020-07-03 11:11:29,182 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(58,-81,0),spd:0 
+2020-07-04 20:29:41,227 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (-34, -94, 0) speed0 
+2020-07-04 20:29:41,228 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(-34,-94,0),spd:0 
 
-2020-07-03 11:11:29,267 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (43, -90, 0) speed0 
-2020-07-03 11:11:29,267 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(43,-90,0),spd:0 
+2020-07-04 20:29:41,488 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (-52, -86, 0) speed0 
+2020-07-04 20:29:41,488 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5222,3975,820),dir:(-52,-86,0),spd:0 
 
-2020-07-03 11:11:29,333 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (27, -96, 0) speed0 
-2020-07-03 11:11:29,333 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(27,-96,0),spd:0 
+2020-07-04 20:29:46,278 [ 1] INFO  Unity: SendTeamInviteResponse
+2020-07-04 20:29:46,330 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:29:46,331 [ 1] INFO  Unity: OnTeamInfo
+2020-07-04 20:29:52,028 [ 1] INFO  Unity: SendTeamLeaveRequest
+2020-07-04 20:29:55,360 [ 1] INFO  Unity: MoveBack
+2020-07-04 20:29:55,360 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED -300
+2020-07-04 20:29:55,910 [ 1] INFO  Unity: Stop
+2020-07-04 20:29:55,910 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:56,610 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2020-07-04 20:29:56,611 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:56,710 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2020-07-04 20:29:56,710 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:56,777 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:29:56,778 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:56,811 [ 1] INFO  Unity: SetDirection:(84, 54, 0)
+2020-07-04 20:29:56,811 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:56,911 [ 1] INFO  Unity: SetDirection:(72, 69, 0)
+2020-07-04 20:29:56,912 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:57,077 [ 1] INFO  Unity: SetDirection:(59, 81, 0)
+2020-07-04 20:29:57,077 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:57,576 [ 1] INFO  Unity: Stop
+2020-07-04 20:29:57,576 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:57,593 [ 1] INFO  Unity: SetDirection:(74, 67, 0)
+2020-07-04 20:29:57,594 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:57,693 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
+2020-07-04 20:29:57,694 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:29:57,777 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:29:57,777 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:57,794 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2020-07-04 20:29:57,794 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:57,993 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2020-07-04 20:29:57,994 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,393 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2020-07-04 20:29:58,394 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,493 [ 1] INFO  Unity: SetDirection:(86, 52, 0)
+2020-07-04 20:29:58,493 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,576 [ 1] INFO  Unity: SetDirection:(75, 66, 0)
+2020-07-04 20:29:58,577 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,677 [ 1] INFO  Unity: SetDirection:(60, 80, 0)
+2020-07-04 20:29:58,677 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,759 [ 1] INFO  Unity: SetDirection:(45, 89, 0)
+2020-07-04 20:29:58,759 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,843 [ 1] INFO  Unity: SetDirection:(29, 96, 0)
+2020-07-04 20:29:58,843 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:58,927 [ 1] INFO  Unity: SetDirection:(12, 99, 0)
+2020-07-04 20:29:58,928 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,010 [ 1] INFO  Unity: SetDirection:(-6, 100, 0)
+2020-07-04 20:29:59,010 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,110 [ 1] INFO  Unity: SetDirection:(-26, 96, 0)
+2020-07-04 20:29:59,110 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,195 [ 1] INFO  Unity: SetDirection:(-43, 90, 0)
+2020-07-04 20:29:59,195 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,294 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2020-07-04 20:29:59,294 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,377 [ 1] INFO  Unity: SetDirection:(-73, 68, 0)
+2020-07-04 20:29:59,377 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,461 [ 1] INFO  Unity: SetDirection:(-84, 54, 0)
+2020-07-04 20:29:59,461 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,561 [ 1] INFO  Unity: SetDirection:(-93, 35, 0)
+2020-07-04 20:29:59,561 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,661 [ 1] INFO  Unity: SetDirection:(-99, 15, 0)
+2020-07-04 20:29:59,662 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,761 [ 1] INFO  Unity: SetDirection:(-100, -6, 0)
+2020-07-04 20:29:59,761 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,861 [ 1] INFO  Unity: SetDirection:(-96, -26, 0)
+2020-07-04 20:29:59,861 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:29:59,945 [ 1] INFO  Unity: SetDirection:(-90, -43, 0)
+2020-07-04 20:29:59,945 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:00,045 [ 1] INFO  Unity: SetDirection:(-80, -60, 0)
+2020-07-04 20:30:00,045 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:00,128 [ 1] INFO  Unity: SetDirection:(-68, -73, 0)
+2020-07-04 20:30:00,128 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:00,211 [ 1] INFO  Unity: SetDirection:(-54, -84, 0)
+2020-07-04 20:30:00,212 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:00,312 [ 1] INFO  Unity: SetDirection:(-36, -93, 0)
+2020-07-04 20:30:00,312 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:00,429 [ 1] INFO  Unity: SetDirection:(-18, -98, 0)
+2020-07-04 20:30:00,429 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:02,110 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:02,112 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,145 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2020-07-04 20:30:02,145 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,277 [ 1] INFO  Unity: SetDirection:(19, -98, 0)
+2020-07-04 20:30:02,277 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,376 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2020-07-04 20:30:02,376 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,476 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2020-07-04 20:30:02,476 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,560 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2020-07-04 20:30:02,560 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,660 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2020-07-04 20:30:02,660 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,743 [ 1] INFO  Unity: SetDirection:(92, -39, 0)
+2020-07-04 20:30:02,744 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,844 [ 1] INFO  Unity: SetDirection:(98, -19, 0)
+2020-07-04 20:30:02,844 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:02,943 [ 1] INFO  Unity: SetDirection:(100, 1, 0)
+2020-07-04 20:30:02,943 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,027 [ 1] INFO  Unity: SetDirection:(98, 19, 0)
+2020-07-04 20:30:03,027 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,127 [ 1] INFO  Unity: SetDirection:(92, 39, 0)
+2020-07-04 20:30:03,127 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,228 [ 1] INFO  Unity: SetDirection:(82, 57, 0)
+2020-07-04 20:30:03,228 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,310 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
+2020-07-04 20:30:03,310 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,410 [ 1] INFO  Unity: SetDirection:(55, 84, 0)
+2020-07-04 20:30:03,410 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,494 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
+2020-07-04 20:30:03,494 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,594 [ 1] INFO  Unity: SetDirection:(19, 98, 0)
+2020-07-04 20:30:03,594 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:03,627 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:03,627 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:03,693 [ 1] INFO  Unity: SetDirection:(0, 100, 0)
+2020-07-04 20:30:03,693 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:03,861 [ 1] INFO  Unity: SetDirection:(-18, 98, 0)
+2020-07-04 20:30:03,862 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:05,662 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:05,662 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:05,743 [ 1] INFO  Unity: SetDirection:(0, 100, 0)
+2020-07-04 20:30:05,743 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:05,844 [ 1] INFO  Unity: SetDirection:(19, 98, 0)
+2020-07-04 20:30:05,844 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:05,927 [ 1] INFO  Unity: SetDirection:(36, 93, 0)
+2020-07-04 20:30:05,927 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,027 [ 1] INFO  Unity: SetDirection:(55, 84, 0)
+2020-07-04 20:30:06,027 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,126 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
+2020-07-04 20:30:06,126 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,210 [ 1] INFO  Unity: SetDirection:(82, 57, 0)
+2020-07-04 20:30:06,210 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,310 [ 1] INFO  Unity: SetDirection:(92, 39, 0)
+2020-07-04 20:30:06,311 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,393 [ 1] INFO  Unity: SetDirection:(97, 22, 0)
+2020-07-04 20:30:06,394 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,493 [ 1] INFO  Unity: SetDirection:(100, 2, 0)
+2020-07-04 20:30:06,493 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,577 [ 1] INFO  Unity: SetDirection:(99, -16, 0)
+2020-07-04 20:30:06,577 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,678 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2020-07-04 20:30:06,678 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,777 [ 1] INFO  Unity: SetDirection:(84, -55, 0)
+2020-07-04 20:30:06,777 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,877 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2020-07-04 20:30:06,877 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:06,961 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
+2020-07-04 20:30:06,961 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:07,061 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2020-07-04 20:30:07,061 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:07,162 [ 1] INFO  Unity: SetDirection:(22, -97, 0)
+2020-07-04 20:30:07,162 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:07,262 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:07,262 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:08,712 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:08,712 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:09,361 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:09,361 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:10,395 [ 1] INFO  Unity: SetPosition:(4976, 3791, 805)
+2020-07-04 20:30:10,395 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:10,844 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:10,844 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:11,627 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:11,627 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:12,576 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:12,577 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:12,911 [ 1] INFO  Unity: SetDirection:(4, -100, 0)
+2020-07-04 20:30:12,912 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,077 [ 1] INFO  Unity: SetDirection:(-16, -99, 0)
+2020-07-04 20:30:13,078 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,178 [ 1] INFO  Unity: SetDirection:(-35, -94, 0)
+2020-07-04 20:30:13,178 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,261 [ 1] INFO  Unity: SetDirection:(-51, -86, 0)
+2020-07-04 20:30:13,262 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,344 [ 1] INFO  Unity: SetDirection:(-65, -76, 0)
+2020-07-04 20:30:13,344 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,445 [ 1] INFO  Unity: SetDirection:(-79, -61, 0)
+2020-07-04 20:30:13,445 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,595 [ 1] INFO  Unity: SetDirection:(-89, -46, 0)
+2020-07-04 20:30:13,595 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:13,711 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:13,711 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:15,628 [ 1] INFO  Unity: SetPosition:(4554, 3123, 805)
+2020-07-04 20:30:15,628 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:16,827 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:16,827 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,027 [ 1] INFO  Unity: SetDirection:(-96, -29, 0)
+2020-07-04 20:30:17,028 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,144 [ 1] INFO  Unity: SetDirection:(-100, -10, 0)
+2020-07-04 20:30:17,144 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,228 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
+2020-07-04 20:30:17,229 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,328 [ 1] INFO  Unity: SetDirection:(-96, 28, 0)
+2020-07-04 20:30:17,328 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,412 [ 1] INFO  Unity: SetDirection:(-90, 44, 0)
+2020-07-04 20:30:17,412 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,495 [ 1] INFO  Unity: SetDirection:(-81, 59, 0)
+2020-07-04 20:30:17,495 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,578 [ 1] INFO  Unity: SetDirection:(-69, 72, 0)
+2020-07-04 20:30:17,578 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,662 [ 1] INFO  Unity: SetDirection:(-55, 83, 0)
+2020-07-04 20:30:17,662 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,761 [ 1] INFO  Unity: SetDirection:(-37, 93, 0)
+2020-07-04 20:30:17,762 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,844 [ 1] INFO  Unity: SetDirection:(-20, 98, 0)
+2020-07-04 20:30:17,844 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:17,945 [ 1] INFO  Unity: SetDirection:(1, 100, 0)
+2020-07-04 20:30:17,945 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,045 [ 1] INFO  Unity: SetDirection:(21, 98, 0)
+2020-07-04 20:30:18,045 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,128 [ 1] INFO  Unity: SetDirection:(38, 93, 0)
+2020-07-04 20:30:18,128 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,212 [ 1] INFO  Unity: SetDirection:(53, 85, 0)
+2020-07-04 20:30:18,212 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,294 [ 1] INFO  Unity: SetDirection:(67, 74, 0)
+2020-07-04 20:30:18,294 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,378 [ 1] INFO  Unity: SetDirection:(79, 61, 0)
+2020-07-04 20:30:18,378 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,495 [ 1] INFO  Unity: SetDirection:(89, 46, 0)
+2020-07-04 20:30:18,495 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:18,827 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:18,827 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:19,494 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:19,495 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:20,110 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:20,110 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:20,961 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:20,961 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:21,423 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:21,423 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:22,494 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:22,494 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:23,076 [ 1] INFO  Unity: SetDirection:(79, 61, 0)
+2020-07-04 20:30:23,076 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:23,160 [ 1] INFO  Unity: SetDirection:(67, 74, 0)
+2020-07-04 20:30:23,160 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:23,260 [ 1] INFO  Unity: SetDirection:(50, 86, 0)
+2020-07-04 20:30:23,261 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:23,361 [ 1] INFO  Unity: SetDirection:(31, 95, 0)
+2020-07-04 20:30:23,361 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:23,461 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:30:23,461 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:23,461 [ 1] INFO  Unity: SetDirection:(11, 99, 0)
+2020-07-04 20:30:23,461 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:23,594 [ 1] INFO  Unity: SetDirection:(-7, 100, 0)
+2020-07-04 20:30:23,595 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:30:26,493 [ 1] INFO  Unity: Stop
+2020-07-04 20:30:26,493 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:30:38,214 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5222, 3975, 820)  dir (-52, -86, 0) speed300 
+2020-07-04 20:30:38,214 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtMoveFwd  entity(1:pos:(5222,3975,820),dir:(-52,-86,0),spd:300 
 
-2020-07-03 11:11:29,414 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (9, -100, 0) speed0 
-2020-07-03 11:11:29,415 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(9,-100,0),spd:0 
+2020-07-04 20:30:38,214 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:30:39,245 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5033, 3723, 820)  dir (-52, -86, 0) speed0 
+2020-07-04 20:30:39,245 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtIdle  entity(1:pos:(5033,3723,820),dir:(-52,-86,0),spd:0 
 
-2020-07-03 11:11:29,516 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (-11, -99, 0) speed0 
-2020-07-03 11:11:29,516 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(-11,-99,0),spd:0 
+2020-07-04 20:30:40,180 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5033, 3723, 820)  dir (-67, -74, 0) speed0 
+2020-07-04 20:30:40,180 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5033,3723,820),dir:(-67,-74,0),spd:0 
 
-2020-07-03 11:11:29,633 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (-29, -96, 0) speed0 
-2020-07-03 11:11:29,633 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5238,3997,810),dir:(-29,-96,0),spd:0 
+2020-07-04 20:30:40,311 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5033, 3723, 820)  dir (-79, -61, 0) speed0 
+2020-07-04 20:30:40,311 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5033,3723,820),dir:(-79,-61,0),spd:0 
 
-2020-07-03 11:11:29,898 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5238, 3997, 810)  dir (-29, -96, 0) speed-300 
-2020-07-03 11:11:29,898 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtMoveBack  entity(2:pos:(5238,3997,810),dir:(-29,-96,0),spd:-300 
+2020-07-04 20:30:40,411 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5033, 3723, 820)  dir (-90, -44, 0) speed0 
+2020-07-04 20:30:40,411 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5033,3723,820),dir:(-90,-44,0),spd:0 
 
-2020-07-03 11:11:30,132 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5252, 4067, 810)  dir (-45, -89, 0) speed-300 
-2020-07-03 11:11:30,132 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5252,4067,810),dir:(-45,-89,0),spd:-300 
+2020-07-04 20:30:40,528 [ 1] INFO  Unity: OnEntityChanged ID 1  pos (5033, 3723, 820)  dir (-96, -26, 0) speed0 
+2020-07-04 20:30:40,529 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [1] evtNone  entity(1:pos:(5033,3723,820),dir:(-96,-26,0),spd:0 
 
-2020-07-03 11:11:30,272 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5268, 4099, 810)  dir (-60, -80, 0) speed-300 
-2020-07-03 11:11:30,273 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5268,4099,810),dir:(-60,-80,0),spd:-300 
+2020-07-04 20:31:18,295 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
+2020-07-04 20:31:18,295 [ 1] INFO  Unity: AddCharacter:1003:Big Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-07-04 20:31:18,300 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:19,981 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5000, 4000, 820)  dir (100, 0, 0) speed300 
+2020-07-04 20:31:19,981 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtMoveFwd  entity(11:pos:(5000,4000,820),dir:(100,0,0),spd:300 
 
-2020-07-03 11:11:30,435 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5292, 4131, 810)  dir (-74, -68, 0) speed-300 
-2020-07-03 11:11:30,435 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5292,4131,810),dir:(-74,-68,0),spd:-300 
+2020-07-04 20:31:19,981 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:20,480 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5150, 4000, 820)  dir (98, 19, 0) speed300 
+2020-07-04 20:31:20,480 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5150,4000,820),dir:(98,19,0),spd:300 
 
-2020-07-03 11:11:30,602 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5340, 4167, 810)  dir (-74, -68, 0) speed0 
-2020-07-03 11:11:30,602 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtIdle  entity(2:pos:(5340,4167,810),dir:(-74,-68,0),spd:0 
+2020-07-04 20:31:20,480 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:20,631 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5195, 4009, 820)  dir (93, 37, 0) speed300 
+2020-07-04 20:31:20,632 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5195,4009,820),dir:(93,37,0),spd:300 
 
-2020-07-03 11:11:31,165 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5340, 4167, 810)  dir (-74, -68, 0) speed300 
-2020-07-03 11:11:31,165 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtMoveFwd  entity(2:pos:(5340,4167,810),dir:(-74,-68,0),spd:300 
+2020-07-04 20:31:20,632 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:20,730 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5225, 4021, 820)  dir (84, 54, 0) speed300 
+2020-07-04 20:31:20,730 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5225,4021,820),dir:(84,54,0),spd:300 
 
-2020-07-03 11:11:31,583 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (-74, -68, 0) speed0 
-2020-07-03 11:11:31,584 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtIdle  entity(2:pos:(5240,4092,810),dir:(-74,-68,0),spd:0 
+2020-07-04 20:31:20,730 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:20,814 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5245, 4036, 820)  dir (73, 68, 0) speed300 
+2020-07-04 20:31:20,814 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5245,4036,820),dir:(73,68,0),spd:300 
 
-2020-07-03 11:11:40,550 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2020-07-03 11:11:40,551 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:40,648 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
-2020-07-03 11:11:40,649 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:40,750 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
-2020-07-03 11:11:40,751 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:40,832 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
-2020-07-03 11:11:40,832 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:40,915 [ 1] INFO  Unity: SetDirection:(60, -80, 0)
-2020-07-03 11:11:40,915 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:41,015 [ 1] INFO  Unity: SetDirection:(42, -91, 0)
-2020-07-03 11:11:41,016 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:41,115 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
-2020-07-03 11:11:41,115 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:41,249 [ 1] INFO  Unity: SetDirection:(4, -100, 0)
-2020-07-03 11:11:41,249 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:45,770 [ 1] INFO  Unity: SendFriendRemoveRequest
-2020-07-03 11:11:45,802 [ 1] INFO  Unity: OnFriendList
-2020-07-03 11:11:46,782 [ 1] INFO  Unity: MoveForward
-2020-07-03 11:11:46,783 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
-2020-07-03 11:11:47,483 [ 1] INFO  Unity: Stop
-2020-07-03 11:11:47,483 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:47,835 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
-2020-07-03 11:11:47,835 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:47,932 [ 1] INFO  Unity: SetDirection:(42, -91, 0)
-2020-07-03 11:11:47,932 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:48,031 [ 1] INFO  Unity: SetDirection:(58, -81, 0)
-2020-07-03 11:11:48,032 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:48,232 [ 1] INFO  Unity: SetDirection:(72, -70, 0)
-2020-07-03 11:11:48,232 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:11:48,615 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (-60, -80, 0) speed0 
-2020-07-03 11:11:48,616 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(-60,-80,0),spd:0 
+2020-07-04 20:31:20,814 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:20,915 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5269, 4054, 820)  dir (58, 82, 0) speed300 
+2020-07-04 20:31:20,915 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5269,4054,820),dir:(58,82,0),spd:300 
 
-2020-07-03 11:11:48,766 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (-44, -90, 0) speed0 
-2020-07-03 11:11:48,766 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(-44,-90,0),spd:0 
+2020-07-04 20:31:20,915 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:20,997 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5284, 4074, 820)  dir (42, 91, 0) speed300 
+2020-07-04 20:31:20,997 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5284,4074,820),dir:(42,91,0),spd:300 
 
-2020-07-03 11:11:48,865 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (-26, -97, 0) speed0 
-2020-07-03 11:11:48,865 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(-26,-97,0),spd:0 
+2020-07-04 20:31:20,997 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,063 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (42, 91, 0) speed0 
+2020-07-04 20:31:21,063 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtIdle  entity(11:pos:(5292,4094,820),dir:(42,91,0),spd:0 
 
-2020-07-03 11:11:48,955 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (-9, -100, 0) speed0 
-2020-07-03 11:11:48,956 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(-9,-100,0),spd:0 
+2020-07-04 20:31:21,063 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,096 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (23, 97, 0) speed0 
+2020-07-04 20:31:21,096 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(23,97,0),spd:0 
 
-2020-07-03 11:11:49,031 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (9, -100, 0) speed0 
-2020-07-03 11:11:49,031 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(9,-100,0),spd:0 
+2020-07-04 20:31:21,097 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,182 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (5, 100, 0) speed0 
+2020-07-04 20:31:21,182 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(5,100,0),spd:0 
 
-2020-07-03 11:11:49,131 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (28, -96, 0) speed0 
-2020-07-03 11:11:49,131 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(28,-96,0),spd:0 
+2020-07-04 20:31:21,182 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,282 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-15, 99, 0) speed0 
+2020-07-04 20:31:21,282 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-15,99,0),spd:0 
 
-2020-07-03 11:11:49,299 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (45, -89, 0) speed0 
-2020-07-03 11:11:49,299 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(45,-89,0),spd:0 
+2020-07-04 20:31:21,282 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,470 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-32, 95, 0) speed0 
+2020-07-04 20:31:21,470 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-32,95,0),spd:0 
 
-2020-07-03 11:11:49,666 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (28, -96, 0) speed0 
-2020-07-03 11:11:49,666 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(28,-96,0),spd:0 
+2020-07-04 20:31:21,470 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,470 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-48, 88, 0) speed0 
+2020-07-04 20:31:21,470 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-48,88,0),spd:0 
 
-2020-07-03 11:11:49,835 [ 1] INFO  Unity: OnEntityChanged ID 2  pos (5240, 4092, 810)  dir (11, -99, 0) speed0 
-2020-07-03 11:11:49,836 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
-        [2] evtNone  entity(2:pos:(5240,4092,810),dir:(11,-99,0),spd:0 
+2020-07-04 20:31:21,470 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:21,548 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-63, 78, 0) speed0 
+2020-07-04 20:31:21,549 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-63,78,0),spd:0 
 
-2020-07-03 11:12:00,767 [ 1] INFO  Unity: SendFriendAddResponse
-2020-07-03 11:12:01,949 [ 1] INFO  Unity: SetDirection:(58, -81, 0)
-2020-07-03 11:12:01,950 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:12:02,067 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
-2020-07-03 11:12:02,067 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 1 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
-2020-07-03 11:12:14,951 [ 1] INFO  Unity: SendFriendAddResponse
-2020-07-03 11:12:15,166 [ 1] INFO  Unity: OnFriendList
-2020-07-03 11:12:15,169 [ 1] ERROR Unity: Message handler exception:, , Assembly-CSharp,   at (wrapper managed-to-native) UnityEngine.Component:get_transform ()
-  at UIFriend.InitFriendItems () [0x00000] in <filename unknown>:0 
-  at UIFriend.RefreshUI () [0x00000] in <filename unknown>:0 
-  at Services.FriendService.OnFriendList (System.Object sender, SkillBridge.Message.FriendListResponse response) [0x00000] in <filename unknown>:0 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[FriendListResponse] (System.Object sender, SkillBridge.Message.FriendListResponse msg) [0x00000] in <filename unknown>:0 
-2020-07-03 11:12:15,172 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException, UIFriend.InitFriendItems ()
-UIFriend.RefreshUI ()
-Services.FriendService.OnFriendList (System.Object sender, SkillBridge.Message.FriendListResponse response)
-Network.MessageDistributer`1[System.Object].RaiseEvent[FriendListResponse] (System.Object sender, SkillBridge.Message.FriendListResponse msg)
-}</args></log4net.Error>
-2020-07-03 11:18:08,578 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+2020-07-04 20:31:21,549 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:47,150 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:49,530 [ 1] INFO  Unity: SendFriendAddResponse
+2020-07-04 20:31:49,580 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:54,498 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-75, 66, 0) speed0 
+2020-07-04 20:31:54,498 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-75,66,0),spd:0 
 
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00000] in <filename unknown>:0 
+2020-07-04 20:31:54,499 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:54,665 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-86, 51, 0) speed0 
+2020-07-04 20:31:54,665 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-86,51,0),spd:0 
 
-2020-07-03 11:18:08,579 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+2020-07-04 20:31:54,665 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:54,751 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-94, 33, 0) speed0 
+2020-07-04 20:31:54,751 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-94,33,0),spd:0 
 
-2020-07-03 11:18:08,585 [ 1] INFO  Unity: DoConnect
-2020-07-03 11:18:08,586 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-03 11:18:08,586 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-07-04 20:31:54,751 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:31:54,881 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-99, 16, 0) speed0 
+2020-07-04 20:31:54,882 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-99,16,0),spd:0 
 
-2020-07-03 11:18:10,599 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2020-07-04 20:31:54,882 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:02,647 [ 1] INFO  Unity: SendTeamInviteResponse
+2020-07-04 20:32:02,696 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:02,697 [ 1] INFO  Unity: OnTeamInfo
+2020-07-04 20:32:03,529 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:32:03,530 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:32:04,447 [ 1] INFO  Unity: SetPosition:(4877, 4515, 805)
+2020-07-04 20:32:04,447 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:32:04,463 [ 1] INFO  Unity: Stop
+2020-07-04 20:32:04,463 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:05,545 [ 1] INFO  Unity: SetDirection:(-24, 97, 0)
+2020-07-04 20:32:05,545 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:05,680 [ 1] INFO  Unity: SetDirection:(-43, 90, 0)
+2020-07-04 20:32:05,680 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:05,763 [ 1] INFO  Unity: SetDirection:(-58, 81, 0)
+2020-07-04 20:32:05,763 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:05,863 [ 1] INFO  Unity: SetDirection:(-74, 67, 0)
+2020-07-04 20:32:05,864 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:05,966 [ 1] INFO  Unity: SetDirection:(-86, 51, 0)
+2020-07-04 20:32:05,966 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:06,047 [ 1] INFO  Unity: SetDirection:(-94, 35, 0)
+2020-07-04 20:32:06,047 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:06,130 [ 1] INFO  Unity: SetDirection:(-98, 18, 0)
+2020-07-04 20:32:06,130 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:06,230 [ 1] INFO  Unity: SetDirection:(-100, -3, 0)
+2020-07-04 20:32:06,231 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:06,330 [ 1] INFO  Unity: SetDirection:(-97, -22, 0)
+2020-07-04 20:32:06,331 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:06,463 [ 1] INFO  Unity: SetDirection:(-92, -39, 0)
+2020-07-04 20:32:06,463 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:08,347 [ 1] INFO  Unity: SendTeamInviteRequest
+2020-07-04 20:32:08,380 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:11,433 [ 1] INFO  Unity: SetDirection:(-84, -55, 0)
+2020-07-04 20:32:11,433 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:11,563 [ 1] INFO  Unity: SetDirection:(-71, -70, 0)
+2020-07-04 20:32:11,563 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:11,663 [ 1] INFO  Unity: SetDirection:(-55, -83, 0)
+2020-07-04 20:32:11,663 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:11,763 [ 1] INFO  Unity: SetDirection:(-37, -93, 0)
+2020-07-04 20:32:11,763 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:11,847 [ 1] INFO  Unity: SetDirection:(-20, -98, 0)
+2020-07-04 20:32:11,847 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:11,947 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2020-07-04 20:32:11,947 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:12,046 [ 1] INFO  Unity: SetDirection:(21, -98, 0)
+2020-07-04 20:32:12,046 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:12,180 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2020-07-04 20:32:12,180 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:19,230 [ 1] INFO  Unity: SendTeamInviteRequest
+2020-07-04 20:32:19,263 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:20,346 [ 1] INFO  Unity: MoveForward
+2020-07-04 20:32:20,346 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 300
+2020-07-04 20:32:21,563 [ 1] INFO  Unity: Stop
+2020-07-04 20:32:21,563 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:24,463 [ 1] INFO  Unity: SendTeamLeaveRequest
+2020-07-04 20:32:24,513 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:24,863 [ 1] INFO  Unity: MoveBack
+2020-07-04 20:32:24,863 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED -300
+2020-07-04 20:32:26,629 [ 1] INFO  Unity: SetPosition:(4813, 4667, 805)
+2020-07-04 20:32:26,629 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED -300
+2020-07-04 20:32:26,645 [ 1] INFO  Unity: Stop
+2020-07-04 20:32:26,645 [ 1] INFO  Unity: MapEntityUpdateRequest： ID 2 POS SkillBridge.Message.NVector3 DIR SkillBridge.Message.NVector3 SPEED 0
+2020-07-04 20:32:32,146 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-100, -3, 0) speed0 
+2020-07-04 20:32:32,146 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-100,-3,0),spd:0 
 
-2020-07-03 11:18:10,601 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2020-07-04 20:32:32,147 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,280 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-98, -22, 0) speed0 
+2020-07-04 20:32:32,280 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-98,-22,0),spd:0 
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2020-07-04 20:32:32,280 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,380 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-91, -41, 0) speed0 
+2020-07-04 20:32:32,380 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-91,-41,0),spd:0 
 
-2020-07-03 11:18:10,611 [ 1] INFO  Unity: DoConnect
-2020-07-03 11:18:10,612 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-03 11:18:10,612 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+2020-07-04 20:32:32,380 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,482 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-81, -59, 0) speed0 
+2020-07-04 20:32:32,482 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-81,-59,0),spd:0 
 
-2020-07-03 11:18:12,619 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2020-07-04 20:32:32,482 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,582 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-69, -72, 0) speed0 
+2020-07-04 20:32:32,582 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-69,-72,0),spd:0 
 
-2020-07-03 11:18:12,619 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2020-07-04 20:32:32,582 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,665 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-56, -83, 0) speed0 
+2020-07-04 20:32:32,666 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-56,-83,0),spd:0 
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2020-07-04 20:32:32,666 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,748 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-38, -92, 0) speed0 
+2020-07-04 20:32:32,749 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-38,-92,0),spd:0 
 
-2020-07-03 11:18:12,624 [ 1] INFO  Unity: DoConnect
-2020-07-03 11:18:12,624 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-03 11:18:12,624 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+2020-07-04 20:32:32,749 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:32,879 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-21, -98, 0) speed0 
+2020-07-04 20:32:32,879 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-21,-98,0),spd:0 
 
-2020-07-03 11:18:14,634 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+2020-07-04 20:32:32,879 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:33,797 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-38, -92, 0) speed0 
+2020-07-04 20:32:33,797 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-38,-92,0),spd:0 
 
-2020-07-03 11:18:14,634 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2020-07-04 20:32:33,797 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:33,914 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-56, -83, 0) speed0 
+2020-07-04 20:32:33,914 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-56,-83,0),spd:0 
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+2020-07-04 20:32:33,914 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:34,015 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-72, -70, 0) speed0 
+2020-07-04 20:32:34,015 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-72,-70,0),spd:0 
 
-2020-07-03 11:18:14,634 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2020-07-03 11:18:20,234 [ 1] INFO  Unity: Character_2_尼号 OnDestroy :ID:1 POS:(5000, 3790, 820) DIR:(43, -90, 0) SPD:0 
-2020-07-03 11:18:20,234 [ 1] INFO  Unity: Character_1_Xixi OnDestroy :ID:2 POS:(5240, 4092, 810) DIR:(11, -99, 0) SPD:0 
-2020-07-03 11:18:20,235 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-07-03 11:18:20,235 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-07-04 20:32:34,015 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:34,115 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-83, -56, 0) speed0 
+2020-07-04 20:32:34,116 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-83,-56,0),spd:0 
+
+2020-07-04 20:32:34,116 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:34,200 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-93, -38, 0) speed0 
+2020-07-04 20:32:34,200 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-93,-38,0),spd:0 
+
+2020-07-04 20:32:34,200 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:34,299 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-98, -20, 0) speed0 
+2020-07-04 20:32:34,299 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-98,-20,0),spd:0 
+
+2020-07-04 20:32:34,299 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:36,113 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-93, -38, 0) speed0 
+2020-07-04 20:32:36,113 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-93,-38,0),spd:0 
+
+2020-07-04 20:32:36,114 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:36,231 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-83, -56, 0) speed0 
+2020-07-04 20:32:36,231 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-83,-56,0),spd:0 
+
+2020-07-04 20:32:36,231 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:36,315 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-69, -72, 0) speed0 
+2020-07-04 20:32:36,315 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-69,-72,0),spd:0 
+
+2020-07-04 20:32:36,315 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:36,414 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-54, -84, 0) speed0 
+2020-07-04 20:32:36,414 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-54,-84,0),spd:0 
+
+2020-07-04 20:32:36,414 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:36,582 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-38, -92, 0) speed0 
+2020-07-04 20:32:36,582 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-38,-92,0),spd:0 
+
+2020-07-04 20:32:36,582 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:38,133 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-54, -84, 0) speed0 
+2020-07-04 20:32:38,133 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-54,-84,0),spd:0 
+
+2020-07-04 20:32:38,133 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:38,233 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-69, -72, 0) speed0 
+2020-07-04 20:32:38,233 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-69,-72,0),spd:0 
+
+2020-07-04 20:32:38,233 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:38,346 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-82, -57, 0) speed0 
+2020-07-04 20:32:38,347 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-82,-57,0),spd:0 
+
+2020-07-04 20:32:38,347 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:38,463 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-91, -42, 0) speed0 
+2020-07-04 20:32:38,463 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-91,-42,0),spd:0 
+
+2020-07-04 20:32:38,464 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:39,580 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-97, -24, 0) speed0 
+2020-07-04 20:32:39,580 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-97,-24,0),spd:0 
+
+2020-07-04 20:32:39,580 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:39,714 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-100, -4, 0) speed0 
+2020-07-04 20:32:39,714 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-100,-4,0),spd:0 
+
+2020-07-04 20:32:39,714 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:39,814 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-99, 16, 0) speed0 
+2020-07-04 20:32:39,814 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-99,16,0),spd:0 
+
+2020-07-04 20:32:39,814 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:39,900 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-94, 33, 0) speed0 
+2020-07-04 20:32:39,900 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-94,33,0),spd:0 
+
+2020-07-04 20:32:39,900 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:40,017 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-86, 51, 0) speed0 
+2020-07-04 20:32:40,018 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-86,51,0),spd:0 
+
+2020-07-04 20:32:40,018 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:40,151 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-76, 65, 0) speed0 
+2020-07-04 20:32:40,151 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5292,4094,820),dir:(-76,65,0),spd:0 
+
+2020-07-04 20:32:40,151 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:40,616 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5292, 4094, 820)  dir (-76, 65, 0) speed300 
+2020-07-04 20:32:40,617 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtMoveFwd  entity(11:pos:(5292,4094,820),dir:(-76,65,0),spd:300 
+
+2020-07-04 20:32:40,617 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,282 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5136, 4211, 820)  dir (-86, 51, 0) speed300 
+2020-07-04 20:32:41,282 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5136,4211,820),dir:(-86,51,0),spd:300 
+
+2020-07-04 20:32:41,282 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,485 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5112, 4229, 820)  dir (-94, 33, 0) speed300 
+2020-07-04 20:32:41,485 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5112,4229,820),dir:(-94,33,0),spd:300 
+
+2020-07-04 20:32:41,485 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,485 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5087, 4239, 820)  dir (-99, 16, 0) speed300 
+2020-07-04 20:32:41,485 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5087,4239,820),dir:(-99,16,0),spd:300 
+
+2020-07-04 20:32:41,485 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,531 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-99, 16, 0) speed0 
+2020-07-04 20:32:41,531 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtIdle  entity(11:pos:(5067,4243,820),dir:(-99,16,0),spd:0 
+
+2020-07-04 20:32:41,531 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,549 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-100, -2, 0) speed0 
+2020-07-04 20:32:41,550 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-100,-2,0),spd:0 
+
+2020-07-04 20:32:41,550 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,650 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-97, -22, 0) speed0 
+2020-07-04 20:32:41,650 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-97,-22,0),spd:0 
+
+2020-07-04 20:32:41,650 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,732 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-92, -39, 0) speed0 
+2020-07-04 20:32:41,732 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-92,-39,0),spd:0 
+
+2020-07-04 20:32:41,733 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,830 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-82, -57, 0) speed0 
+2020-07-04 20:32:41,831 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-82,-57,0),spd:0 
+
+2020-07-04 20:32:41,831 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:41,916 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-71, -71, 0) speed0 
+2020-07-04 20:32:41,916 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-71,-71,0),spd:0 
+
+2020-07-04 20:32:41,916 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:42,015 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-55, -84, 0) speed0 
+2020-07-04 20:32:42,015 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-55,-84,0),spd:0 
+
+2020-07-04 20:32:42,015 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:42,101 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-39, -92, 0) speed0 
+2020-07-04 20:32:42,101 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-39,-92,0),spd:0 
+
+2020-07-04 20:32:42,102 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:42,233 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-19, -98, 0) speed300 
+2020-07-04 20:32:42,233 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5067,4243,820),dir:(-19,-98,0),spd:300 
+
+2020-07-04 20:32:42,233 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:42,233 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5067, 4243, 820)  dir (-19, -98, 0) speed300 
+2020-07-04 20:32:42,233 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtMoveFwd  entity(11:pos:(5067,4243,820),dir:(-19,-98,0),spd:300 
+
+2020-07-04 20:32:42,300 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5060, 4208, 820)  dir (0, -100, 0) speed300 
+2020-07-04 20:32:42,300 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5060,4208,820),dir:(0,-100,0),spd:300 
+
+2020-07-04 20:32:43,430 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5060, 3873, 820)  dir (0, -100, 0) speed0 
+2020-07-04 20:32:43,431 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtIdle  entity(11:pos:(5060,3873,820),dir:(0,-100,0),spd:0 
+
+2020-07-04 20:32:44,133 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5060, 3873, 820)  dir (0, -100, 0) speed-300 
+2020-07-04 20:32:44,133 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtMoveBack  entity(11:pos:(5060,3873,820),dir:(0,-100,0),spd:-300 
+
+2020-07-04 20:32:44,797 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5060, 4073, 820)  dir (0, -100, 0) speed0 
+2020-07-04 20:32:44,797 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtIdle  entity(11:pos:(5060,4073,820),dir:(0,-100,0),spd:0 
+
+2020-07-04 20:32:46,549 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5060, 4073, 820)  dir (18, -98, 0) speed0 
+2020-07-04 20:32:46,549 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5060,4073,820),dir:(18,-98,0),spd:0 
+
+2020-07-04 20:32:46,549 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:46,916 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5060, 4073, 820)  dir (18, -98, 0) speed300 
+2020-07-04 20:32:46,916 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtMoveFwd  entity(11:pos:(5060,4073,820),dir:(18,-98,0),spd:300 
+
+2020-07-04 20:32:46,916 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,249 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5139, 3678, 820)  dir (-2, -100, 0) speed300 
+2020-07-04 20:32:48,249 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5139,3678,820),dir:(-2,-100,0),spd:300 
+
+2020-07-04 20:32:48,249 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,333 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5139, 3648, 820)  dir (-22, -97, 0) speed300 
+2020-07-04 20:32:48,334 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5139,3648,820),dir:(-22,-97,0),spd:300 
+
+2020-07-04 20:32:48,334 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,417 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5134, 3623, 820)  dir (-39, -92, 0) speed300 
+2020-07-04 20:32:48,417 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5134,3623,820),dir:(-39,-92,0),spd:300 
+
+2020-07-04 20:32:48,417 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,532 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5122, 3593, 820)  dir (-57, -82, 0) speed300 
+2020-07-04 20:32:48,532 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5122,3593,820),dir:(-57,-82,0),spd:300 
+
+2020-07-04 20:32:48,532 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,598 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5107, 3573, 820)  dir (-71, -71, 0) speed300 
+2020-07-04 20:32:48,598 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5107,3573,820),dir:(-71,-71,0),spd:300 
+
+2020-07-04 20:32:48,598 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,634 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5099, 3565, 820)  dir (-71, -71, 0) speed0 
+2020-07-04 20:32:48,634 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtIdle  entity(11:pos:(5099,3565,820),dir:(-71,-71,0),spd:0 
+
+2020-07-04 20:32:48,634 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,716 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5099, 3565, 820)  dir (-84, -55, 0) speed0 
+2020-07-04 20:32:48,717 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5099,3565,820),dir:(-84,-55,0),spd:0 
+
+2020-07-04 20:32:48,717 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,781 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5099, 3565, 820)  dir (-92, -39, 0) speed0 
+2020-07-04 20:32:48,781 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5099,3565,820),dir:(-92,-39,0),spd:0 
+
+2020-07-04 20:32:48,782 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:48,881 [ 1] INFO  Unity: OnEntityChanged ID 11  pos (5099, 3565, 820)  dir (-98, -20, 0) speed0 
+2020-07-04 20:32:48,881 [ 1] INFO  Unity: MapEntitySyncResponse: Entitise: 1
+        [11] evtNone  entity(11:pos:(5099,3565,820),dir:(-98,-20,0),spd:0 
+
+2020-07-04 20:32:48,881 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:49,048 [ 1] INFO  Unity: OnMapCharacterLeave:charID:11
+2020-07-04 20:32:49,048 [ 1] INFO  Unity: RemoveCharacter:11
+2020-07-04 20:32:49,050 [ 1] INFO  Unity: OnFriendList
+2020-07-04 20:32:49,050 [ 1] INFO  Unity: Character_1003_Big OnDestroy :ID:11 POS:(5099, 3565, 820) DIR:(-98, -20, 0) SPD:0 
+2020-07-04 20:32:51,577 [ 1] INFO  Unity: Character_1_Xixi OnDestroy :ID:1 POS:(5033, 3723, 820) DIR:(-96, -26, 0) SPD:0 
+2020-07-04 20:32:51,578 [ 1] INFO  Unity: Character_1002_美美 OnDestroy :ID:2 POS:(4813, 4667, 805) DIR:(39, -92, 0) SPD:0 
+2020-07-04 20:32:51,580 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-07-04 20:32:51,581 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 
