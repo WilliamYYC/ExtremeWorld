@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Managers;
+using Models;
 using Services;
 using System;
 using System.Collections;
@@ -76,4 +77,9 @@ public class UIMain : MonoSingleton<UIMain> {
 	{
 		TeamWindow.ShowTeam(show);
 	}
+
+	public void ShowGuildUI()
+    {
+		GuildManager.Instance.ShowGuild();
+    }
 }

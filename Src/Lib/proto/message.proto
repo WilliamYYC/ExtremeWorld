@@ -95,6 +95,8 @@ message NCharacterInfo {
     repeated NQuestInfo quests = 14;//任务信息
     
     repeated NFriendInfo friends = 15;//好友信息
+    
+    NGuildInfo guild = 16; //工会信息
 }
 
 message NItemInfo
@@ -215,6 +217,13 @@ message NetMessageRequest{
     TeamInfoRequest teamInfo= 21;
     TeamLeaveRequest teamLeave= 22;
     
+    CreateGuildRequest guildCreate = 23;
+    GuildJoinRequest guildJoinReq = 24;
+    GuildJoinResponse guildJoinRes = 25;
+    GuildRequest guild = 26;
+    GuildListRequest guildList = 27;
+    GuildLeaveRequest guildLeave =28;
+    GuildAdminRequest guildAdmin = 29;
 }
 
 message NetMessageResponse{
@@ -246,6 +255,14 @@ message NetMessageResponse{
     TeamInviteResponse teamInviteRes = 20;
     TeamInfoResponse teamInfo= 21;
     TeamLeaveResponse teamLeave= 22;
+    
+    CreateGuildResponse guildCreate = 23;
+    GuildJoinRequest guildJoinReq = 24;
+    GuildJoinResponse guildJoinRes = 25;
+    GuildResponse guild = 26;
+    GuildListResponse guildList = 27;
+    GuildLeaveResponse guildLeave =28;
+    GuildAdminResponse guildAdmin = 29;
     
     StatusNotify statusNotify = 100;
 }
@@ -549,4 +566,138 @@ message TeamLeaveResponse
     RESULT result = 1;
     string errormsg = 2;
     int32 characterId = 3;
+}
+
+//工会系统
+
+enum GUILD_TITLE
+{
+    NONE = 0;
+    PRESIDENT = 1;
+    VICEPRESIDENT = 2;
+}
+
+enum APPLY_RESULT
+{
+    NONE = 0;
+    ACCEPT = 1;
+    REJECT = 2;
+}
+
+message NGuildInfo
+{
+    int32 id = 1;
+    string guild_name = 2;
+    int32 leaderId = 3; 
+    string leaderName = 4;
+    string notice = 5;
+    int32 memberCount = 6;
+    repeated NGuildMemeberInfo members = 7;
+    repeated NGuildApplyInfo apply = 8;
+    int64 createtime = 9;
+}
+
+message NGuildMemeberInfo
+{
+    int32 id = 1;
+    int32 characterId = 2;
+    GUILD_TITLE title = 3;
+    NCharacterInfo info = 4;
+    int64 jointime = 5;
+    int64 lasttime = 6;
+    int32 status = 7;
+}
+
+message NGuildApplyInfo
+{
+    int32 guild_id = 1;
+    int32 characterId = 2;
+    string Name = 3;
+    int32 Class = 4;
+    int32 Level = 5;
+    APPLY_RESULT result = 6;
+}
+
+message CreateGuildRequest
+{
+    string guild_name = 1;
+    string notice = 2;
+}
+
+message CreateGuildResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    NGuildInfo guildInfo = 3;
+}
+
+message GuildJoinRequest
+{
+    NGuildApplyInfo apply = 1;
+}
+
+message GuildJoinResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    NGuildApplyInfo apply = 3;
+}
+
+
+message GuildListRequest
+{
+}
+
+message GuildListResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    repeated NGuildInfo guilds =3;
+}
+
+
+
+message GuildRequest
+{
+}
+
+message GuildResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    NGuildInfo guild =3;
+}
+
+message GuildLeaveRequest
+{
+    int32 guild_id =1;
+    int32 characterId =2;
+}
+
+message GuildLeaveResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    int32 characterId = 3;
+}
+
+enum GUILD_ADMIN_COMMAND
+{
+     KICKOUT = 1;//踢人
+     PROMOTE = 2 ;//晋升
+     DEPOST = 3;//罢免
+     TRANSFER = 4;//转让会长
+}
+
+message GuildAdminRequest
+{
+    GUILD_ADMIN_COMMAND command = 1;
+    int32 target = 2;
+}
+
+message GuildAdminResponse
+{
+    RESULT result = 1;
+    string errormsg = 2;
+    GuildAdminRequest command = 3;
 }

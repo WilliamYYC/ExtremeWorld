@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
      <Compile Include="Assets\Scripts\Managers\EquipManager.cs" />
      <Compile Include="Assets\Scripts\Managers\FriendManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\GuildManager.cs" />
      <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
      <Compile Include="Assets\Scripts\Managers\MiniMapManager.cs" />
      <Compile Include="Assets\Scripts\Managers\NpcManager.cs" />
@@ -87,6 +88,7 @@
      <Compile Include="Assets\Scripts\Network\NetClient.cs" />
      <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
      <Compile Include="Assets\Scripts\Services\FriendService.cs" />
+     <Compile Include="Assets\Scripts\Services\GuildServcie.cs" />
      <Compile Include="Assets\Scripts\Services\ItemService.cs" />
      <Compile Include="Assets\Scripts\Services\MapService.cs" />
      <Compile Include="Assets\Scripts\Services\QuestService.cs" />
@@ -98,6 +100,15 @@
      <Compile Include="Assets\Scripts\UI\Equip\UIEquipItem.cs" />
      <Compile Include="Assets\Scripts\UI\Friend\UIFriend.cs" />
      <Compile Include="Assets\Scripts\UI\Friend\UIFriendItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIApplyListItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuidPopNoGuid.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuild.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuildApplyList.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuildInfo.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuildItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuildList.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIGuildMemberItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Guid\UIPopCreate.cs" />
      <Compile Include="Assets\Scripts\UI\InputBox.cs" />
      <Compile Include="Assets\Scripts\UI\ListView\ListView.cs" />
      <Compile Include="Assets\Scripts\UI\MessageBox.cs" />

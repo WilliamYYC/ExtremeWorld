@@ -32,7 +32,7 @@ public class TableView : MonoBehaviour {
 			for (int i = 0; i < tableButtons.Length; i++)
 			{
 				tableButtons[i].Select(i == index);
-				if (i < tablePages.Length-1)
+				if (i <= tablePages.Length-1)
 				{
 					tablePages[i].SetActive(i == index);
 				}

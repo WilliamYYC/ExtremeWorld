@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Utils;
 using GameServer.Entities;
 using SkillBridge.Message;
 using System;
@@ -13,7 +14,7 @@ namespace GameServer.Models
     {
         public int Id;
         public Character Leader;
-        public int timestamp;
+        public double timestamp;
         public List<Character> members = new List<Character>();
 
         public Team(Character leader)
@@ -30,7 +31,7 @@ namespace GameServer.Models
             }
             this.members.Add(member);
             member.Team = this;
-            timestamp = Time.timestamp;
+            timestamp = TimeUtil.timestamp;
         }
 
         public void Leave(Character member)
@@ -49,7 +50,7 @@ namespace GameServer.Models
                 }
             }
             member.Team = null;
-            timestamp = Time.timestamp;
+            timestamp = TimeUtil.timestamp;
         }
         public void PostProcess(NetMessageResponse message)
         {

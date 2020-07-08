@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UIFriendItem : ListView.ListViewItem {
 
-	public ListView Owner;
 	public Text Name;
 	public Text Level;
 	public Text Class;

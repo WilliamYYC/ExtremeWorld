@@ -1627,7 +1627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43558a6f9ff899a468901f4006ab8547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemPrefab: {fileID: 1206769675574874, guid: 73ec67aee393da249b3f85ae646505ff, type: 2}
+  ItemPrefab: {fileID: 1387314104058934, guid: 73ec67aee393da249b3f85ae646505ff, type: 2}
   listMain: {fileID: 114989638877522560}
   ItemRoot: {fileID: 224474335733102590}
   friendItem: {fileID: 0}
@@ -1649,9 +1649,9 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 1
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 0
 --- !u!114 &114974950548187160
 MonoBehaviour:
@@ -2086,7 +2086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000023452481, y: 0.000008740616}
+  m_AnchoredPosition: {x: 0.000028956581, y: 0.000008740616}
   m_SizeDelta: {x: 0.000061035, y: 572.2}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224483114147675958

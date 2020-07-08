@@ -23,6 +23,12 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UIQuestDialog), new UIElements() { ResourcePath = "UI/UIQuestDialog", Cache = false });
 		UIResources.Add(typeof(UIQuestSystem), new UIElements() { ResourcePath = "UI/UIQuestSystem", Cache = false });
 		UIResources.Add(typeof(UIFriend), new UIElements() { ResourcePath = "UI/UIFriends", Cache = false });
+
+		UIResources.Add(typeof(UIGuild), new UIElements() { ResourcePath = "UI/Guild/UIGuild", Cache = false });
+		UIResources.Add(typeof(UIGuildList), new UIElements() { ResourcePath = "UI/Guild/UIGuildList", Cache = false });
+		UIResources.Add(typeof(UIGuidPopNoGuid), new UIElements() { ResourcePath = "UI/Guild/UIGuidPopNoGuid", Cache = false });
+		UIResources.Add(typeof(UIPopCreate), new UIElements() { ResourcePath = "UI/Guild/UIGuidCreate", Cache = false });
+		UIResources.Add(typeof(UIGuildApplyList), new UIElements() { ResourcePath = "UI/Guild/UIGuildApplyList", Cache = false });
 	}
 
 	~UIManagers()
