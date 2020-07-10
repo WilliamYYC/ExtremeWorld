@@ -21,7 +21,7 @@ namespace Services
         public UnityEngine.Events.UnityAction<Result, string> OnCharacterCreate;
         NetMessage pendingMessage = null;
         bool connected = false;
-
+        bool isQuited = false;
         public UserService()
         {
             NetClient.Instance.OnConnect += OnGameServerConnect;
@@ -234,6 +234,7 @@ namespace Services
         public void sendGameEnter(int characterIdx)
         {
             Debug.LogFormat("UserGameEnterRequest::characterId :{0}", characterIdx);
+            ChatManager.Instance.Init();//用户重新进入初始化聊天信息
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.gameEnter = new UserGameEnterRequest();
@@ -261,8 +262,9 @@ namespace Services
         }
 
         //发送游戏退出请求
-        public void sendGameLeave()
+        public void sendGameLeave(bool QuitGame = false)
         {
+            this.isQuited = QuitGame;
             Debug.LogFormat("UserGameLeaveRequest");
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
@@ -275,6 +277,15 @@ namespace Services
             MapService.Instance.CurrentMapId = 0;
             User.Instance.CurrentCharacter = null;
             Debug.LogFormat("OnGameEnter:{0} [{1}]", message.Result, message.Errormsg);
+            if (isQuited)
+            {
+                
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#else
+                Application.Quit();
+#endif
+            }
         }
 
     }

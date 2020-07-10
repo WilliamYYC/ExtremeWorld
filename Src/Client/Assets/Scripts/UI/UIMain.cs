@@ -14,13 +14,13 @@ public class UIMain : MonoSingleton<UIMain> {
 	public Text Avatarlevel;
 	public UITeam TeamWindow;
 	// Use this for initialization
-	protected override void  OnStart () {
+	protected override void OnStart() {
 		this.UpdateAvatar();
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update() {
+
 	}
 
 	void UpdateAvatar()
@@ -29,13 +29,9 @@ public class UIMain : MonoSingleton<UIMain> {
 		Avatarlevel.text = User.Instance.CurrentCharacter.Level.ToString();
 	}
 
-	
 
-	public void BackToCharSelect()
-	{
-		SceneManager.Instance.LoadScene("CharSelect");
-		UserService.Instance.sendGameLeave();
-	}
+
+
 
 	public void OnClickTest()
 	{
@@ -72,14 +68,25 @@ public class UIMain : MonoSingleton<UIMain> {
 		UIManagers.Instance.Show<UIFriend>();
 	}
 
-	
+
 	public void ShowTeamUI(bool show)
 	{
 		TeamWindow.ShowTeam(show);
 	}
 
 	public void ShowGuildUI()
-    {
+	{
 		GuildManager.Instance.ShowGuild();
-    }
+	}
+
+	public void OnClickSetting()
+    {
+		UIManagers.Instance.Show<UISetting>();
+	}
+
+	public void OnClickRide()
+	{
+		
+	}
+
 }

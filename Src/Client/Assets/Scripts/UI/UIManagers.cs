@@ -15,8 +15,8 @@ public class UIManagers : Singleton<UIManagers> {
 
 	public UIManagers()
 	{
+		UIResources.Add(typeof(UISetting), new UIElements() { ResourcePath = "UI/UISetting", Cache = true });
 		
-		UIResources.Add(typeof(UITest), new UIElements() { ResourcePath = "UI/UITest", Cache = true });
 		UIResources.Add(typeof(UIBag), new UIElements() { ResourcePath = "UI/UIBag", Cache = false });
 		UIResources.Add(typeof(UIShop), new UIElements() { ResourcePath = "UI/UIShop", Cache = false });
 		UIResources.Add(typeof(UICharEquip), new UIElements() { ResourcePath = "UI/UICharEquip", Cache = false });
@@ -29,6 +29,7 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UIGuidPopNoGuid), new UIElements() { ResourcePath = "UI/Guild/UIGuidPopNoGuid", Cache = false });
 		UIResources.Add(typeof(UIPopCreate), new UIElements() { ResourcePath = "UI/Guild/UIGuidCreate", Cache = false });
 		UIResources.Add(typeof(UIGuildApplyList), new UIElements() { ResourcePath = "UI/Guild/UIGuildApplyList", Cache = false });
+		UIResources.Add(typeof(UIPopChar), new UIElements() { ResourcePath = "UI/UIPopChar", Cache = false });
 	}
 
 	~UIManagers()

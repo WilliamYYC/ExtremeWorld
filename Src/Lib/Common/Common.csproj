@@ -64,6 +64,7 @@
     <Compile Include="Data\NpcDefine.cs" />
     <Compile Include="Data\TeleporterDefine.cs" />
     <Compile Include="Data\MapDefine.cs" />
+    <Compile Include="GameDefine.cs" />
     <Compile Include="MessageExtend.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Network\MessageDispatch.cs" />

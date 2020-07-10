@@ -10,6 +10,7 @@ public abstract class UIWindows : MonoBehaviour {
 	public delegate void CloseHandle(UIWindows sender, WinowResult result);
 	public event CloseHandle OnClose;
 
+	public GameObject Root;
 	public virtual System.Type Type
 	{
 		get 

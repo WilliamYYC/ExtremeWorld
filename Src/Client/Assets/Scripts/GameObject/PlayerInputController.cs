@@ -62,6 +62,10 @@ public class PlayerInputController:MonoBehaviour
             return;
         }
 
+        if (InputManager.Instance.isInputMode)
+        {
+            return;
+        }
         float v = Input.GetAxis("Vertical");
         if (v > 0.01)
         {

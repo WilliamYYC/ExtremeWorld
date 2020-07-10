@@ -211,22 +211,24 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("UserGameLeaveRequest:character:{0}:{1},mapID{2} ", character.Id, character.Info.Name, character.Info.mapId);
-            SessionManager.Instance.RemoveSession(character.Id);
+            
             ChacaterLeave(character);
 
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
 
-
+            
             sender.Session.Response.gameLeave.Result = Result.Success;
             sender.Session.Response.gameLeave.Errormsg = "None";
-
+            sender.Session.Character = null;
             sender.SendResponse();
         }
 
         public void ChacaterLeave(Character character)
         {
             Log.InfoFormat("PostProcess > ChacaterLeave : CharacterID:{0}:{1}  ", character.Id, character.Info.Name);
+            SessionManager.Instance.RemoveSession(character.Id);
             CharacterManager.Instance.RemoveCharacter(character.Id);
+           
             character.Clear();
             MapManager.Instance[character.Info.mapId].CharacterLeave(character);
            

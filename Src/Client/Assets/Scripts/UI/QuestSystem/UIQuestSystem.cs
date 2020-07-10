@@ -43,7 +43,7 @@ public class UIQuestSystem : UIWindows {
 				{
 					continue;
 				}
-			}
+			} 
 			else
 			{
 				if (kv.Value.Info == null)
