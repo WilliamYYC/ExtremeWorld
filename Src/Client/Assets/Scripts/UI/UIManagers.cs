@@ -31,6 +31,7 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UIGuildApplyList), new UIElements() { ResourcePath = "UI/Guild/UIGuildApplyList", Cache = false });
 		UIResources.Add(typeof(UIPopChar), new UIElements() { ResourcePath = "UI/UIPopChar", Cache = false });
 		UIResources.Add(typeof(UIRide), new UIElements() { ResourcePath = "UI/UIRide", Cache = false });
+		UIResources.Add(typeof(UISystemConfig), new UIElements() { ResourcePath = "UI/UISystemConfig", Cache = false });
 	}
 
 	~UIManagers()
@@ -39,6 +40,7 @@ public class UIManagers : Singleton<UIManagers> {
 	//显示UI
 	public T Show<T>()
 	{
+		SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Open);
 		Type type = typeof(T);
 
 		//查看UIResources是否已经有该UI类型

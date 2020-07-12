@@ -28,6 +28,7 @@ public abstract class UIWindows : MonoBehaviour {
 
 	public void Close(WinowResult result = WinowResult.None)
 	{
+		SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Win_Close);
 		UIManagers.Instance.Close(this.Type);
 		if (this.OnClose != null)
 		{

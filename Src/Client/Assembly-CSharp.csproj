@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Assets\Resloader.cs" />
+     <Compile Include="Assets\Scripts\Config\Config.cs" />
      <Compile Include="Assets\Scripts\Entities\Character.cs" />
      <Compile Include="Assets\Scripts\Entities\Entity.cs" />
      <Compile Include="Assets\Scripts\GameObject\EntityController.cs" />
@@ -99,6 +100,8 @@
      <Compile Include="Assets\Scripts\Services\StatusService.cs" />
      <Compile Include="Assets\Scripts\Services\TeamService.cs" />
      <Compile Include="Assets\Scripts\Services\UserService.cs" />
+     <Compile Include="Assets\Scripts\Sound\SoundDefine.cs" />
+     <Compile Include="Assets\Scripts\Sound\SoundManager.cs" />
      <Compile Include="Assets\Scripts\UI\Bag\UIBag.cs" />
      <Compile Include="Assets\Scripts\UI\Chat\UIChat.cs" />
      <Compile Include="Assets\Scripts\UI\Equip\UICharEquip.cs" />
@@ -146,6 +149,7 @@
      <Compile Include="Assets\Scripts\UI\UIPopChar.cs" />
      <Compile Include="Assets\Scripts\UI\UIRegister.cs" />
      <Compile Include="Assets\Scripts\UI\UISetting.cs" />
+     <Compile Include="Assets\Scripts\UI\UISystemConfig.cs" />
      <Compile Include="Assets\Scripts\UI\UITest.cs" />
      <Compile Include="Assets\Scripts\UI\UIWindows.cs" />
      <Compile Include="Assets\Scripts\UI\UIWorldElement.cs" />

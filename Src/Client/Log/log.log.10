@@ -1,49 +1,13 @@
-2020-07-10 14:22:42,359 [ 1] INFO  Unity: LoadingManager start
-2020-07-10 14:22:46,394 [ 1] INFO  Unity: DataManager > DataManager()
-2020-07-10 14:22:52,607 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123
-2020-07-10 14:22:52,622 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-07-10 14:22:52,647 [ 1] INFO  Unity: DoConnect
-2020-07-10 14:22:52,650 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-07-10 14:22:52,688 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2020-07-10 14:22:52,718 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-07-10 14:22:54,518 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-07-10 14:22:54,529 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-07-10 14:22:54,983 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-07-10 14:22:55,835 [ 1] INFO  Unity: Select Char:[1]你好啊[Warrior]
-2020-07-10 14:22:56,481 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2020-07-10 14:22:56,867 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-07-10 14:22:56,881 [ 1] INFO  Unity: ItemManager : Init() : ID 1  Count 20
-2020-07-10 14:22:56,883 [ 1] INFO  Unity: ItemManager : Init() : ID 2  Count 20
-2020-07-10 14:22:56,973 [ 1] INFO  Unity: OnGuildResponse  : Success  1 :  神的啊
-2020-07-10 14:22:56,975 [ 1] INFO  Unity: OnMapCharacterEnter: map: 1 count: 1
-2020-07-10 14:22:56,989 [ 1] INFO  Unity: AddCharacter:1:你好啊 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-07-10 14:22:57,019 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-07-10 14:22:58,449 [ 1] WARN  Unity: MainPlayerCamera  [-235442] Awake
+2020-07-12 19:20:06,894 [ 1] INFO  Unity: LoadingManager start
+2020-07-12 19:20:11,102 [ 1] INFO  Unity: DataManager > DataManager()
+2020-07-12 19:20:39,349 [ 1] WARN  Unity: PlayMusic :bgm-login is not existed
 UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+SoundManager:PlayMusic(String) (at Assets/Scripts/Sound/SoundManager.cs:107)
+<Start>c__Iterator0:MoveNext() (at Assets/Scripts/LoadingManager.cs:48)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
 
-2020-07-10 14:22:58,473 [ 1] WARN  Unity: GameObjectManager  [-232414] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2020-07-10 14:22:58,522 [ 1] WARN  Unity: UIWorldElementManager  [-229864] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2020-07-10 14:22:58,524 [ 1] WARN  Unity: UIMain  [91408] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2020-07-10 14:22:58,621 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-07-10 14:22:58,899 [ 1] INFO  Unity: set  Channel: Local
-2020-07-10 14:23:00,935 [ 1] INFO  Unity: UserGameLeaveRequest
-2020-07-10 14:24:17,571 [ 1] INFO  Unity: OnMapCharacterLeave:charID:1
-2020-07-10 14:24:17,578 [ 1] INFO  Unity: RemoveCharacter:1
-2020-07-10 14:24:17,587 [ 1] INFO  Unity: Character_1_你好啊 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2020-07-10 14:24:17,605 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-07-10 14:24:18,484 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-07-10 14:24:18,485 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-07-12 19:22:47,592 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-07-12 19:22:47,594 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:177)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:172)

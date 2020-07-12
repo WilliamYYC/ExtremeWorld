@@ -1177,3 +1177,401 @@
 2020-07-12 12:40:15,160 [77] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
 2020-07-12 12:40:15,167 [77] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
 2020-07-12 12:40:15,175 [77] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 19:16:22,543 [1] [INFO ] [GameServer] ：Game Server Init
+2020-07-12 19:16:23,685 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2020-07-12 19:16:24,243 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2020-07-12 19:16:24,249 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2020-07-12 19:16:24,250 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:野外2
+2020-07-12 19:16:24,251 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日空间
+2020-07-12 19:16:27,835 [1] [WARN ] [GameServer] ：Starting Listener...
+2020-07-12 19:16:27,847 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,847 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,848 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,850 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,851 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,875 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,875 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,875 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2020-07-12 19:16:27,948 [1] [WARN ] [GameServer] ：NetService Started
+2020-07-12 19:17:28,089 [5] [INFO ] [GameServer] ：Map:2  Spawn:1 Mon:1001 Lv:1 At Point 1
+2020-07-12 19:17:28,098 [5] [INFO ] [GameServer] ：MonsterEnter: map2 monster1
+2020-07-12 19:17:28,099 [5] [INFO ] [GameServer] ：Map:2  Spawn:2 Mon:1002 Lv:1 At Point 2
+2020-07-12 19:17:28,100 [5] [INFO ] [GameServer] ：MonsterEnter: map2 monster2
+2020-07-12 19:17:28,100 [5] [INFO ] [GameServer] ：Map:2  Spawn:3 Mon:1003 Lv:1 At Point 3
+2020-07-12 19:17:28,101 [5] [INFO ] [GameServer] ：MonsterEnter: map2 monster3
+2020-07-12 19:17:28,102 [5] [INFO ] [GameServer] ：Map:2  Spawn:4 Mon:1005 Lv:1 At Point 4
+2020-07-12 19:17:28,103 [5] [INFO ] [GameServer] ：MonsterEnter: map2 monster4
+2020-07-12 19:17:28,104 [5] [INFO ] [GameServer] ：Map:3  Spawn:1 Mon:1001 Lv:1 At Point 1
+2020-07-12 19:17:28,105 [5] [INFO ] [GameServer] ：MonsterEnter: map3 monster5
+2020-07-12 19:17:28,106 [5] [INFO ] [GameServer] ：Map:3  Spawn:2 Mon:1002 Lv:1 At Point 2
+2020-07-12 19:17:28,107 [5] [INFO ] [GameServer] ：MonsterEnter: map3 monster6
+2020-07-12 19:17:28,107 [5] [INFO ] [GameServer] ：Map:3  Spawn:3 Mon:1003 Lv:1 At Point 3
+2020-07-12 19:17:28,109 [5] [INFO ] [GameServer] ：MonsterEnter: map3 monster7
+2020-07-12 19:17:28,113 [5] [INFO ] [GameServer] ：Map:3  Spawn:4 Mon:1005 Lv:1 At Point 4
+2020-07-12 19:17:28,115 [5] [INFO ] [GameServer] ：MonsterEnter: map3 monster8
+2020-07-12 19:37:37,875 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53422]] Connected
+2020-07-12 19:37:38,003 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 19:37:38,199 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 19:37:43,728 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 19:37:43,733 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 19:37:43,911 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 19:37:43,915 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:37:43,916 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 19:37:44,031 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 19:37:44,033 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:37:44,034 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 19:37:47,358 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:37:47,366 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5000,4000,820),dir:(98,-18,0),spd:0
+2020-07-12 19:37:47,440 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:37:47,441 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5000,4000,820),dir:(93,-36,0),spd:0
+2020-07-12 19:37:47,525 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:37:47,526 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5000,4000,820),dir:(85,-52,0),spd:0
+2020-07-12 19:37:47,622 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:37:47,623 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5000,4000,820),dir:(73,-69,0),spd:0
+2020-07-12 19:37:47,723 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:47
+2020-07-12 19:37:47,724 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :MoveFwd Entity: (9:pos:(5000,4000,820),dir:(57,-82,0),spd:300
+2020-07-12 19:37:47,756 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2020-07-12 19:37:47,757 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5000,4000,820),dir:(57,-82,0),spd:300
+2020-07-12 19:37:47,808 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2020-07-12 19:37:47,810 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5015,3980,820),dir:(42,-91,0),spd:300
+2020-07-12 19:37:47,890 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2020-07-12 19:37:47,892 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5025,3955,820),dir:(25,-97,0),spd:300
+2020-07-12 19:37:47,990 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2020-07-12 19:37:47,992 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5031,3925,820),dir:(5,-100,0),spd:300
+2020-07-12 19:37:48,073 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:48,075 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5031,3900,820),dir:(-13,-99,0),spd:300
+2020-07-12 19:37:48,176 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:48,177 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5025,3870,820),dir:(-33,-94,0),spd:300
+2020-07-12 19:37:48,276 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:48,277 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(5013,3840,820),dir:(-51,-86,0),spd:300
+2020-07-12 19:37:48,442 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:48,444 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4983,3800,820),dir:(-65,-76,0),spd:300
+2020-07-12 19:37:51,546 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:51,548 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4395,3094,805),dir:(-65,-76,0),spd:300
+2020-07-12 19:37:51,611 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:51,613 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4383,3078,805),dir:(-78,-63,0),spd:300
+2020-07-12 19:37:51,733 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:51,734 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4355,3057,805),dir:(-88,-48,0),spd:300
+2020-07-12 19:37:53,141 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:53,143 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3981,2850,805),dir:(-88,-48,0),spd:300
+2020-07-12 19:37:53,725 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:53,728 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3845,2782,805),dir:(-95,-32,0),spd:300
+2020-07-12 19:37:53,901 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:37:53,902 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3790,2760,805),dir:(-99,-15,0),spd:300
+2020-07-12 19:37:57,223 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:53
+2020-07-12 19:37:57,225 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :Idle Entity: (9:pos:(2795,2561,805),dir:(-99,-15,0),spd:0
+2020-07-12 19:37:58,485 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:56
+2020-07-12 19:37:58,487 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :Ride Entity: (9:pos:(2795,2561,805),dir:(-99,-15,0),spd:0
+2020-07-12 19:37:59,844 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:56
+2020-07-12 19:37:59,845 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :MoveFwd Entity: (9:pos:(2795,2561,805),dir:(-99,-15,0),spd:300
+2020-07-12 19:38:00,637 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:38:00,638 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(2555,2564,805),dir:(-99,-15,0),spd:300
+2020-07-12 19:38:02,069 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2020-07-12 19:38:02,070 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(2125,2478,805),dir:(-100,3,0),spd:300
+2020-07-12 19:38:05,337 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2020-07-12 19:38:05,339 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(1146,2528,805),dir:(-100,3,0),spd:300
+2020-07-12 19:38:06,733 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2020-07-12 19:38:06,736 [8] [INFO ] [GameServer] ：OnMapTeleport character ID1 :System.Data.Entity.DynamicProxies.TCharacter_B60872A510DA8C5E2A87F1C430E0064D8EA5DF52686444808D25111566D3F351   TeleportID:1
+2020-07-12 19:38:06,740 [8] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 19:38:06,742 [8] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 19:38:06,747 [8] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:38:06,751 [8] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 19:38:06,756 [8] [INFO ] [GameServer] ：CharacterEnter: Map:2 characterId:1
+2020-07-12 19:38:06,757 [8] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:38:06,758 [8] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 19:38:08,740 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:38:08,742 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(2605,3992,5),dir:(100,0,0),spd:300
+2020-07-12 19:38:08,926 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:38:08,928 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(2605,3992,5),dir:(100,0,0),spd:300
+2020-07-12 19:38:09,105 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:38:09,106 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(2605,3992,5),dir:(100,0,0),spd:300
+2020-07-12 19:38:09,171 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:35
+2020-07-12 19:38:09,172 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :MoveFwd Entity: (9:pos:(2625,3992,5),dir:(100,0,0),spd:300
+2020-07-12 19:38:09,902 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:09,904 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(2845,3992,5),dir:(98,-18,0),spd:300
+2020-07-12 19:38:11,443 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:11,445 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3305,3900,5),dir:(93,-36,0),spd:300
+2020-07-12 19:38:12,322 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:12,324 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3524,3815,5),dir:(93,-36,0),spd:300
+2020-07-12 19:38:12,388 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:12,389 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3544,3807,5),dir:(98,-19,0),spd:300
+2020-07-12 19:38:13,739 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:13,743 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(3949,3726,5),dir:(93,-36,0),spd:300
+2020-07-12 19:38:15,358 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:15,359 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4390,3557,5),dir:(93,-36,0),spd:300
+2020-07-12 19:38:17,497 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:38:17,498 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4987,3327,5),dir:(93,-36,0),spd:300
+2020-07-12 19:38:19,221 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:43
+2020-07-12 19:38:19,223 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :Idle Entity: (9:pos:(5502,3121,5),dir:(93,-36,0),spd:0
+2020-07-12 19:38:35,953 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:38:35,954 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :MoveBack Entity: (9:pos:(5502,3121,5),dir:(93,-36,0),spd:-300
+2020-07-12 19:38:37,414 [48] [WARN ] [GameServer] ：Client[] DataReceived Len:43
+2020-07-12 19:38:37,415 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :Idle Entity: (9:pos:(5062,3297,5),dir:(93,-36,0),spd:0
+2020-07-12 19:38:41,553 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2020-07-12 19:38:41,555 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :MoveBack Entity: (9:pos:(5062,3297,5),dir:(93,-36,0),spd:-300
+2020-07-12 19:38:42,182 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:52
+2020-07-12 19:38:42,184 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4918,3353,5),dir:(93,-36,0),spd:-300
+2020-07-12 19:38:43,328 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:52
+2020-07-12 19:38:43,330 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4618,3469,5),dir:(93,-36,0),spd:-300
+2020-07-12 19:38:44,499 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:52
+2020-07-12 19:38:44,500 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4313,3587,5),dir:(93,-36,0),spd:-300
+2020-07-12 19:38:45,665 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:52
+2020-07-12 19:38:45,668 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :None Entity: (9:pos:(4008,3705,5),dir:(93,-36,0),spd:-300
+2020-07-12 19:38:45,869 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:43
+2020-07-12 19:38:45,870 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 9  Evt :Idle Entity: (9:pos:(3948,3729,5),dir:(93,-36,0),spd:0
+2020-07-12 19:42:23,585 [46] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 19:42:23,588 [46] [INFO ] [GameServer] ：CharacterLeave: Map:2 characterId:1
+2020-07-12 19:42:23,591 [46] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:2 character:1:你好啊 
+2020-07-12 19:42:23,592 [46] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 19:43:30,767 [46] [WARN ] [GameServer] ：Client[127.0.0.1:59966]] Connected
+2020-07-12 19:43:30,881 [46] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 19:43:30,884 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 19:43:33,070 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 19:43:33,071 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 19:43:33,079 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 19:43:33,082 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:43:33,084 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 19:43:33,086 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 19:43:33,092 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:43:33,094 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 19:43:35,988 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:35,989 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(98,-19,0),spd:0
+2020-07-12 19:43:36,087 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,089 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(93,-37,0),spd:0
+2020-07-12 19:43:36,179 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,184 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(83,-55,0),spd:0
+2020-07-12 19:43:36,299 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,301 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(72,-69,0),spd:0
+2020-07-12 19:43:36,381 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,384 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(56,-83,0),spd:0
+2020-07-12 19:43:36,471 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,473 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(38,-92,0),spd:0
+2020-07-12 19:43:36,563 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,564 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(19,-98,0),spd:0
+2020-07-12 19:43:36,683 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:36,685 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,4000,820),dir:(1,-100,0),spd:0
+2020-07-12 19:43:46,764 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:47
+2020-07-12 19:43:46,766 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :MoveFwd Entity: (10:pos:(5000,4000,820),dir:(1,-100,0),spd:300
+2020-07-12 19:43:48,039 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2020-07-12 19:43:48,042 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :Idle Entity: (10:pos:(5000,3615,820),dir:(1,-100,0),spd:0
+2020-07-12 19:43:55,444 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,446 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(20,-98,0),spd:0
+2020-07-12 19:43:55,526 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,528 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(37,-93,0),spd:0
+2020-07-12 19:43:55,626 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,628 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(55,-83,0),spd:0
+2020-07-12 19:43:55,708 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,712 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(69,-72,0),spd:0
+2020-07-12 19:43:55,820 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,823 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(82,-57,0),spd:0
+2020-07-12 19:43:55,893 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,894 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(91,-41,0),spd:0
+2020-07-12 19:43:55,994 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:55,996 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(98,-22,0),spd:0
+2020-07-12 19:43:56,075 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:43:56,077 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(100,-4,0),spd:0
+2020-07-12 19:43:56,177 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:56,180 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(99,17,0),spd:0
+2020-07-12 19:43:56,281 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:56,284 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(93,37,0),spd:0
+2020-07-12 19:43:56,400 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:56,402 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(85,53,0),spd:0
+2020-07-12 19:43:56,899 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:56,902 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(74,67,0),spd:0
+2020-07-12 19:43:57,314 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:57,316 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(61,79,0),spd:0
+2020-07-12 19:43:59,513 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:59,515 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(46,89,0),spd:0
+2020-07-12 19:43:59,663 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:43:59,666 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(29,96,0),spd:0
+2020-07-12 19:44:00,477 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:33
+2020-07-12 19:44:00,479 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(10,99,0),spd:0
+2020-07-12 19:44:00,607 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:00,608 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-9,100,0),spd:0
+2020-07-12 19:44:00,706 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:00,708 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-29,96,0),spd:0
+2020-07-12 19:44:00,794 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:00,795 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-45,89,0),spd:0
+2020-07-12 19:44:00,861 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:00,862 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-60,80,0),spd:0
+2020-07-12 19:44:00,948 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:00,949 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-73,68,0),spd:0
+2020-07-12 19:44:01,051 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:01,053 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-86,51,0),spd:0
+2020-07-12 19:44:01,153 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:01,155 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-95,33,0),spd:0
+2020-07-12 19:44:01,239 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:44:01,241 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-99,16,0),spd:0
+2020-07-12 19:44:01,332 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:44:01,333 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-100,-3,0),spd:0
+2020-07-12 19:44:01,515 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:44:01,517 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-98,-21,0),spd:0
+2020-07-12 19:45:14,091 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:14,092 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-92,-39,0),spd:0
+2020-07-12 19:45:14,207 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:14,208 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-84,-55,0),spd:0
+2020-07-12 19:45:15,010 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:15,012 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-93,-37,0),spd:0
+2020-07-12 19:45:15,091 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:15,092 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-98,-20,0),spd:0
+2020-07-12 19:45:15,174 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:15,175 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-100,-3,0),spd:0
+2020-07-12 19:45:15,270 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:45:15,272 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-99,16,0),spd:0
+2020-07-12 19:45:15,472 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:45:15,474 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-94,33,0),spd:0
+2020-07-12 19:45:15,953 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 19:45:15,955 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-99,14,0),spd:0
+2020-07-12 19:45:16,070 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:16,072 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-100,-5,0),spd:0
+2020-07-12 19:45:16,201 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 19:45:16,203 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 10  Evt :None Entity: (10:pos:(5000,3615,820),dir:(-97,-23,0),spd:0
+2020-07-12 19:45:33,366 [35] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 19:45:33,371 [35] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 19:45:33,382 [35] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 19:45:33,383 [35] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 19:48:40,474 [35] [WARN ] [GameServer] ：Client[127.0.0.1:60071]] Connected
+2020-07-12 19:48:40,579 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 19:48:40,581 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 19:48:47,801 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 19:48:47,802 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 19:48:47,805 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 19:48:47,819 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:48:47,828 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 19:48:47,830 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 19:48:47,831 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 19:48:47,832 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 19:51:34,331 [35] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 19:51:34,334 [35] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 19:51:34,344 [35] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 19:51:34,347 [35] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 20:02:45,364 [35] [WARN ] [GameServer] ：Client[127.0.0.1:60485]] Connected
+2020-07-12 20:02:45,473 [35] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 20:02:45,475 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 20:02:47,633 [65] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 20:02:47,637 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 20:02:47,641 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 20:02:47,644 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:02:47,646 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 20:02:47,653 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 20:02:47,657 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:02:47,659 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 20:07:17,701 [65] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 20:07:17,703 [65] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 20:07:17,711 [65] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 20:07:17,720 [65] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 20:09:54,711 [65] [WARN ] [GameServer] ：Client[127.0.0.1:57178]] Connected
+2020-07-12 20:09:55,078 [65] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 20:09:55,080 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 20:10:01,881 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 20:10:01,884 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 20:10:01,891 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 20:10:01,894 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:10:01,895 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 20:10:01,897 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 20:10:01,898 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:10:01,900 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 20:10:09,019 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:10:09,021 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 13  Evt :None Entity: (13:pos:(5000,4000,820),dir:(98,-19,0),spd:0
+2020-07-12 20:10:09,077 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:10:09,080 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 13  Evt :None Entity: (13:pos:(5000,4000,820),dir:(93,-38,0),spd:0
+2020-07-12 20:10:09,174 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:10:09,176 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 13  Evt :None Entity: (13:pos:(5000,4000,820),dir:(83,-56,0),spd:0
+2020-07-12 20:10:09,257 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:10:09,260 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 13  Evt :None Entity: (13:pos:(5000,4000,820),dir:(72,-70,0),spd:0
+2020-07-12 20:10:09,378 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:10:09,379 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 13  Evt :None Entity: (13:pos:(5000,4000,820),dir:(57,-82,0),spd:0
+2020-07-12 20:25:45,583 [79] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 20:25:45,585 [79] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 20:25:45,587 [79] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 20:25:45,588 [79] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 20:35:17,203 [79] [WARN ] [GameServer] ：Client[127.0.0.1:57766]] Connected
+2020-07-12 20:35:17,346 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 20:35:17,348 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 20:35:19,625 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 20:35:19,627 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 20:35:19,628 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 20:35:19,629 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:35:19,630 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 20:35:19,632 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 20:35:19,639 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:35:19,640 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 20:35:26,020 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,022 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(98,-20,0),spd:0
+2020-07-12 20:35:26,105 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,107 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(93,-37,0),spd:0
+2020-07-12 20:35:26,191 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,192 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(85,-53,0),spd:0
+2020-07-12 20:35:26,294 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,296 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(72,-69,0),spd:0
+2020-07-12 20:35:26,387 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,388 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(59,-81,0),spd:0
+2020-07-12 20:35:26,475 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,476 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(41,-91,0),spd:0
+2020-07-12 20:35:26,566 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,567 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(25,-97,0),spd:0
+2020-07-12 20:35:26,653 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:26,655 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(7,-100,0),spd:0
+2020-07-12 20:35:26,740 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:26,743 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-14,-99,0),spd:0
+2020-07-12 20:35:26,842 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:26,843 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-34,-94,0),spd:0
+2020-07-12 20:35:26,959 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:26,961 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-53,-85,0),spd:0
+2020-07-12 20:35:27,052 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:27,054 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-69,-72,0),spd:0
+2020-07-12 20:35:27,145 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:27,146 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-81,-59,0),spd:0
+2020-07-12 20:35:27,247 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:27,249 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-91,-41,0),spd:0
+2020-07-12 20:35:27,320 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:27,322 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-97,-25,0),spd:0
+2020-07-12 20:35:27,397 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:35:27,399 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-100,-7,0),spd:0
+2020-07-12 20:35:27,501 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:27,502 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-99,14,0),spd:0
+2020-07-12 20:35:27,611 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:27,613 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-94,34,0),spd:0
+2020-07-12 20:35:27,708 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:27,709 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-86,52,0),spd:0
+2020-07-12 20:35:27,859 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:35:27,861 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-75,67,0),spd:0
+2020-07-12 20:38:11,704 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:38:11,706 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-85,52,0),spd:0
+2020-07-12 20:38:11,808 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:38:11,811 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-94,34,0),spd:0
+2020-07-12 20:38:11,900 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2020-07-12 20:38:11,901 [8] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-99,14,0),spd:0
+2020-07-12 20:38:12,022 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,024 [9] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-100,-3,0),spd:0
+2020-07-12 20:38:12,088 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,091 [10] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-98,-21,0),spd:0
+2020-07-12 20:38:12,175 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,177 [11] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-91,-41,0),spd:0
+2020-07-12 20:38:12,277 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,279 [12] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-81,-59,0),spd:0
+2020-07-12 20:38:12,428 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,430 [13] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-67,-74,0),spd:0
+2020-07-12 20:38:12,466 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,468 [6] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-53,-85,0),spd:0
+2020-07-12 20:38:12,583 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2020-07-12 20:38:12,585 [7] [INFO ] [GameServer] ：OnMapEntitySync: characeterId1:你好啊 Entity.Id: 14  Evt :None Entity: (14:pos:(5000,4000,820),dir:(-37,-93,0),spd:0
+2020-07-12 20:44:10,083 [79] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 20:44:10,087 [79] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 20:44:10,088 [79] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 20:44:10,098 [79] [WARN ] [GameServer] ：Client[] Disconnected
+2020-07-12 20:46:24,144 [79] [WARN ] [GameServer] ：Client[127.0.0.1:52453]] Connected
+2020-07-12 20:46:24,251 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2020-07-12 20:46:24,254 [6] [INFO ] [GameServer] ：UserLoginRequest: User:user1  Pass:123
+2020-07-12 20:46:26,877 [79] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2020-07-12 20:46:26,878 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:你好啊 Map:1
+2020-07-12 20:46:26,882 [6] [INFO ] [GameServer] ：1:你好啊 GetFriendInfo :2:光大神 status:0
+2020-07-12 20:46:26,889 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:46:26,891 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  0<1594552587.83083
+2020-07-12 20:46:26,892 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2020-07-12 20:46:26,892 [6] [INFO ] [GameServer] ：PostProcess > Character : CharacterID:1:你好啊  
+2020-07-12 20:46:26,893 [6] [INFO ] [GameServer] ：PostProcess > Guild : CharacterID:1:你好啊  1594552587.83083<1594552587.83083
+2020-07-12 20:47:11,861 [79] [INFO ] [GameServer] ：PostProcess > ChacaterLeave : CharacterID:1:你好啊  
+2020-07-12 20:47:11,863 [79] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2020-07-12 20:47:11,866 [79] [INFO ] [GameServer] ：SendCharacterLeaveMap To 1:你好啊 : Map:1 character:1:你好啊 
+2020-07-12 20:47:11,873 [79] [WARN ] [GameServer] ：Client[] Disconnected

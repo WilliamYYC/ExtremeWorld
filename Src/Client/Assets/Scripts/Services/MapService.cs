@@ -76,6 +76,7 @@ namespace Services
                 MapDefine mpdefine = DataManager.Instance.Maps[mapId];
                 Models.User.Instance.CurrentMapData = mpdefine;
                 SceneManager.Instance.LoadScene(mpdefine.Resource);
+                SoundManager.Instance.PlayMusic(mpdefine.Music);
             }
             else
                 Debug.LogFormat("EnterMap: map :{0} is not exist", mapId);

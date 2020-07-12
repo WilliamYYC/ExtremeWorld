@@ -64,7 +64,7 @@ public class UIRegister : MonoBehaviour {
             MessageBox.Show("两次输入的密码不一致");
             return;
         }
-
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         UserService.Instance.SendRegister(this.usernameRegister.text,this.passwordRegister.text);
     }
 }

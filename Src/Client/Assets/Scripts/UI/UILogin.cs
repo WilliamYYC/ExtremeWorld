@@ -39,7 +39,7 @@ public class UILogin : MonoBehaviour {
 			MessageBox.Show("请输入密码");
 			return;
 		}
-
+		SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
 		UserService.Instance.SendLogin(this.usernameLogin.text, this.passwordLogin.text);
 	}
 
@@ -48,10 +48,12 @@ public class UILogin : MonoBehaviour {
 		if (result == Result.Success)
 		{
 			SceneManager.Instance.LoadScene("CharSelect");
+			SoundManager.Instance.PlayMusic(SoundDefine.Music_Select);
 		}
 		else
 		{
 			MessageBox.Show(msg, "错误", MessageBoxType.Error);
 		}
+		
 	}
 }
