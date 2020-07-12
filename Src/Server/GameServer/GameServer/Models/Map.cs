@@ -123,11 +123,17 @@ namespace GameServer.Models
         {
             foreach (var kv in this.MapCharacters)
             {
+                //如果是自己就更新一下缓存中的数据
                 if (kv.Value.character.entityId == entity.Id)
                 {
                     kv.Value.character.Position = entity.Entity.Position;
                     kv.Value.character.Direction = entity.Entity.Direction;
                     kv.Value.character.Speed = entity.Entity.Speed;
+                    //如果上了坐骑吧坐骑的id传进来
+                    if (entity.Event == EntityEvent.Ride)
+                    {
+                        kv.Value.character.Ride = entity.Param;
+                    }
                 }
                 else 
                 {

@@ -43,6 +43,7 @@ namespace GameServer.Entities
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
             this.Info.Gold = cha.Gold;
+            this.Info.Ride = 0;
             this.Info.Entity = this.EntityData;
             this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
 
@@ -53,6 +54,7 @@ namespace GameServer.Entities
             this.Info.Bag.Items = this.Data.Bag.Items;
             this.Info.Bag.Unlocked = this.Data.Bag.Unlocked;
             this.Info.Equips = this.Data.Equips;
+
             this.QuestManager = new QuestManager(this);
             this.QuestManager.GetQuestInfos(this.Info.Quests);
             this.statusManager = new StatusManager(this);
@@ -74,6 +76,19 @@ namespace GameServer.Entities
                 this.statusManager.AddGoldChange((int) (value - this.Data.Gold));
                 this.Data.Gold = value;
 
+            }
+        }
+
+        public int Ride
+        {
+            get { return this.Info.Ride; }
+
+            set {
+                if (this.Info.Ride == value)
+                {
+                    return;
+                }
+                this.Info.Ride = value;
             }
         }
 

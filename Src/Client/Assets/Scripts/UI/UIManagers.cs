@@ -30,6 +30,7 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UIPopCreate), new UIElements() { ResourcePath = "UI/Guild/UIGuidCreate", Cache = false });
 		UIResources.Add(typeof(UIGuildApplyList), new UIElements() { ResourcePath = "UI/Guild/UIGuildApplyList", Cache = false });
 		UIResources.Add(typeof(UIPopChar), new UIElements() { ResourcePath = "UI/UIPopChar", Cache = false });
+		UIResources.Add(typeof(UIRide), new UIElements() { ResourcePath = "UI/UIRide", Cache = false });
 	}
 
 	~UIManagers()

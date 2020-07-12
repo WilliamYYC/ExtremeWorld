@@ -7,7 +7,7 @@
   },
   "2": {
     "ID": 2,
-    "Name": "朵丽丝",
+    "Name": "多丽丝",
     "Description": "杂货商人",
     "Type": "Functional",
     "Function": "InvokeShop",
@@ -15,17 +15,25 @@
   },
   "3": {
     "ID": 3,
-    "Name": "布洛尔",
+    "Name": "埃布尔",
     "Description": "副本NPC",
     "Type": "Functional",
     "Function": "InvokeInstance"
   },
   "4": {
     "ID": 4,
-    "Name": "奥德里奇",
+    "Name": "奥德利奇",
     "Description": "装备NPC",
     "Type": "Functional",
     "Function": "InvokeShop",
     "Param": 2
+  },
+  "5": {
+    "ID": 5,
+    "Name": "薇薇安",
+    "Description": "坐骑NPC",
+    "Type": "Functional",
+    "Function": "InvokeShop",
+    "Param": 3
   }
 }

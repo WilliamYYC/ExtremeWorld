@@ -87,6 +87,27 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Ride Layer
+    m_StateMachine: {fileID: 1107206406322129568}
+    m_Mask: {fileID: 0}
+    m_Motions:
+    - serializedVersion: 2
+      m_State: {fileID: 1102771905450156204}
+      m_Motion: {fileID: 7400000, guid: 9b27f25daff31e94b9b3b4ad5bcd1c4d, type: 3}
+    - serializedVersion: 2
+      m_State: {fileID: 1102505325253835410}
+      m_Motion: {fileID: 7400000, guid: 9b27f25daff31e94b9b3b4ad5bcd1c4d, type: 3}
+    - serializedVersion: 2
+      m_State: {fileID: 1102241529847693504}
+      m_Motion: {fileID: 7400000, guid: 4dea8ad378d33ea4284af66302d9e8f1, type: 3}
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: 0
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
 --- !u!206 &206229645817367314
 BlendTree:
   m_ObjectHideFlags: 1
@@ -947,6 +968,24 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1107 &1107206406322129568
+AnimatorStateMachine:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ride Layer
+  m_ChildStates: []
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 0}
 --- !u!1107 &1107881650979825744
 AnimatorStateMachine:
   serializedVersion: 5

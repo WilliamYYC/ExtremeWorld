@@ -62,7 +62,7 @@ public class PlayerInputController:MonoBehaviour
             return;
         }
 
-        if (InputManager.Instance.isInputMode)
+        if (InputManager.Instance !=null && InputManager.Instance.isInputMode)
         {
             return;
         }
@@ -139,12 +139,12 @@ public class PlayerInputController:MonoBehaviour
         this.transform.position = this.rb.transform.position;
     }
 
-    void SendEntityEvent(EntityEvent entityEvent)
+    public void SendEntityEvent(EntityEvent entityEvent, int param = 0)
     {
         if (entityController != null)
-            entityController.OnEntityEvent(entityEvent);
+            entityController.OnEntityEvent(entityEvent,param);
 
-        MapService.Instance.SendMapEntitySync(entityEvent, this.character.EntityData);
+        MapService.Instance.SendMapEntitySync(entityEvent, this.character.EntityData, param);
     }
 }
 

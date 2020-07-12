@@ -81,7 +81,7 @@ namespace Services
                 Debug.LogFormat("EnterMap: map :{0} is not exist", mapId);
         }
 
-        public void SendMapEntitySync(EntityEvent entityEvent, NEntity entity)
+        public void SendMapEntitySync(EntityEvent entityEvent, NEntity entity, int param)
         {
             Debug.LogFormat("MapEntityUpdateRequest： ID {0} POS {1} DIR {2} SPEED {3}", entity.Id, entity.Position, entity.Direction, entity.Speed);
             NetMessage message = new NetMessage();
@@ -91,7 +91,8 @@ namespace Services
             {
                 Id = entity.Id,
                 Event = entityEvent,
-                Entity = entity
+                Entity = entity,
+                Param = param
             };
             NetClient.Instance.SendMessage(message);
         }

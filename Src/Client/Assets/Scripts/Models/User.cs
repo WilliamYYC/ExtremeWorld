@@ -28,12 +28,27 @@ namespace Models
 
         public MapDefine CurrentMapData { get; set; }
 
-        public GameObject CurrentCharacterObject { get; set; }
+        public PlayerInputController CurrentCharacterObject { get; set; }
 
         public NTeamInfo TeamInfo { get; set; }
         public void AddGold(int gold)
         {
             this.CurrentCharacter.Gold += gold;
+        }
+
+        public int CurrentRide = 0;
+        public void Ride(int id)
+        {
+            if (CurrentRide != id)
+            {
+                CurrentRide = id;
+                CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, CurrentRide);
+            }
+            else
+            {
+                CurrentRide =0;
+                CurrentCharacterObject.SendEntityEvent(EntityEvent.Ride, 0);
+            }
         }
     }
 }

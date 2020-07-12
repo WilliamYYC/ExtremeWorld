@@ -86,7 +86,7 @@ public class UIMain : MonoSingleton<UIMain> {
 
 	public void OnClickRide()
 	{
-		
+		UIManagers.Instance.Show<UIRide>();
 	}
 
 }
