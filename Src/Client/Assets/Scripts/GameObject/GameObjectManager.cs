@@ -7,7 +7,6 @@ using Services;
 using SkillBridge.Message;
 using Models;
 using Managers;
-using System;
 using System.Xml.Serialization;
 
 public class GameObjectManager :MonoSingleton<GameObjectManager>
@@ -88,6 +87,7 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
         {
             ec.entity = character;
             ec.isPlayer = character.IsCurrentPlayer;
+            ec.Ride(character.Info.Ride);
         }
 
         PlayerInputController pc = go.GetComponent<PlayerInputController>();
@@ -95,7 +95,7 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
         {
             if (character.IsCurrentPlayer)
             {
-                User.Instance.CurrentCharacterObject = go;
+                User.Instance.CurrentCharacterObject = pc;
                 MainPlayerCamera.Instance.player = go;
                 pc.enabled = true;
                 pc.character = character;
@@ -107,6 +107,20 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
             }
         }
        
+    }
+
+    public RideController LoadRide(int rideId, Transform parent)
+    {
+        var RideDefine = DataManager.Instance.Rides[rideId];
+        Object obj = Resloader.Load<Object>(RideDefine.Resource);
+        if (obj == null)
+        {
+            Debug.LogFormat("LoadRide : Ride :{0}  Resource:{1}  not existed", RideDefine.ID, RideDefine.Resource);
+            return null;
+        }
+        GameObject go = (GameObject)Instantiate(obj, parent);
+        go.name = RideDefine.ID + "_" + RideDefine.Name;
+        return go.GetComponent<RideController>();
     }
 }
 
