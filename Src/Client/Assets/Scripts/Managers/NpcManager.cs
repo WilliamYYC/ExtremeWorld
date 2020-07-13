@@ -11,7 +11,7 @@ namespace Managers
 		//使用委托注册事件,使用字典来管理
 		public delegate bool NpcActionHandler(NpcDefine Npc);
 		public Dictionary<NpcFunction, NpcActionHandler> eventMap = new Dictionary<NpcFunction, NpcActionHandler>();
-
+		public Dictionary<int, Vector3> npcPositions = new Dictionary<int, Vector3>();
 		public void RegisterNpcEvent(NpcFunction function, NpcActionHandler action)
 		{
 			if (!eventMap.ContainsKey(function))
@@ -78,6 +78,16 @@ namespace Managers
 
 			return QuestManager.Instance.OpenNpcQuest(npcs.ID);
 		}
+
+		public void  UpdateNpcPosition(int npc, Vector3 pos)
+        {
+			this.npcPositions[npc] = pos;
+        }
+
+		public Vector3 GetNpcPosition(int npc)
+        {
+			return this.npcPositions[npc];
+        }
 	}
 
 

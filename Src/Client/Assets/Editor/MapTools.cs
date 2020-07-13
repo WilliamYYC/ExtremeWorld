@@ -7,6 +7,7 @@ using UnityEditor;
 using Common.Data;
 using Managers;
 using JetBrains.Annotations;
+using UnityEngine.AI;
 
 public class MapTools
 {
@@ -129,5 +130,46 @@ public class MapTools
         EditorSceneManager.OpenScene("Assets/Levels/" + CurrentScene + ".unity");
         EditorUtility.DisplayDialog("提示", "怪物刷新点导出完成", "确定");
 
+    }
+
+
+    [MenuItem("Map Tools/Generate NavData")]
+    public static void GenerateNavData()
+    {
+        Material material = new Material(Shader.Find("Particles/Alpha Blended"));
+        material.color = Color.red;
+        material.SetColor("_TintColor", Color.red);
+        material.enableInstancing = true;
+        GameObject go = GameObject.Find("UIWorldBounds");
+
+        if (go !=null)
+        {
+            GameObject root = new GameObject("Root");
+            BoxCollider boxCollider = go.GetComponent<BoxCollider>();
+            float step = 1f;
+            for (float x = boxCollider.bounds.min.x; x < boxCollider.bounds.max.x; x+=step)
+            {
+                for (float z = boxCollider.bounds.min.z; z < boxCollider.bounds.max.z; z += step)
+                {
+                    for (float y= boxCollider.bounds.max.y; y < boxCollider.bounds.max.y + 5f; y+= step)
+                    {
+                        var pos = new Vector3(x, y, z);
+                        NavMeshHit hit;
+                        if (NavMesh.SamplePosition(pos, out hit, 0.5f, NavMesh.AllAreas))
+                        {
+                            if (hit.hit)
+                            {
+                                var box = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                                box.name = "Hit" + hit;
+                                box.GetComponent<MeshRenderer>().sharedMaterial = material;
+                                box.transform.SetParent(root.transform, true);
+                                box.transform.position = pos;
+                                box.transform.localScale = Vector3.one * 0.9f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

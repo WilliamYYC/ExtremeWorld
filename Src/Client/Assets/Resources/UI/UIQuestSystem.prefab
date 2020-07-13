@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 114024926392242204}
   - component: {fileID: 114400288006527468}
   m_Layer: 5
-  m_Name: AcceptButton
+  m_Name: NavButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1170,6 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be03fe5bffbb1d246bfc62e28afc91d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Root: {fileID: 0}
   Title: {fileID: 114650632216317268}
   ItemPrefab: {fileID: 1959325528317936, guid: 21e9903bfebf78542a201d82cae66ce6, type: 2}
   Tabs: {fileID: 114954925940282192}
@@ -1214,8 +1215,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114411516376950756}
   m_HandleRect: {fileID: 224710130139329932}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.99999994
+  m_Value: 0.33333334
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1606,7 +1607,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u63A5\u53D7\u4EFB\u52A1"
+  m_Text: "\u524D\u5F80\u9886\u53D6"
 --- !u!114 &114221246368518556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1934,7 +1935,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114024926392242204}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114563721628409256}
+        m_MethodName: OnClickNav
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114411516376950756
@@ -2029,8 +2041,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114255351252081234}
   m_HandleRect: {fileID: 224375390507910442}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2478,10 +2490,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: {fileID: 114516357509087986}
   Targets: []
-  Description: {fileID: 114515520307129670}
+  Description: {fileID: 0}
+  OverView: {fileID: 114515520307129670}
   RewardItem: {fileID: 0}
   RewardMoney: {fileID: 114661155664567808}
   RewardExp: {fileID: 114686629992020626}
+  NavButton: {fileID: 114400288006527468}
 --- !u!114 &114564781460577764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4144,7 +4158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 85.950005, y: -83.167465}
+  m_AnchoredPosition: {x: 85.950005, y: -83.37257}
   m_SizeDelta: {x: 171.9, y: 41.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224104879985624042
@@ -4477,7 +4491,7 @@ RectTransform:
   m_Father: {fileID: 224076720005005734}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.000000059604645}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.99999994}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -4519,7 +4533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -283.71747}
+  m_AnchoredPosition: {x: 0, y: -283.92255}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224401446242504140
@@ -4647,7 +4661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000010536459, y: 0.0000141161845}
+  m_AnchoredPosition: {x: 0.00009356768, y: -0.000046855588}
   m_SizeDelta: {x: 0, y: 230.65}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224502077917140830
@@ -4665,7 +4679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 85.950005, y: -125.06746}
+  m_AnchoredPosition: {x: 85.950005, y: -125.27257}
   m_SizeDelta: {x: 171.9, y: 41.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224535820214674566
@@ -4705,7 +4719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 408.0499, y: -214.86746}
+  m_AnchoredPosition: {x: 408.0499, y: -215.07257}
   m_SizeDelta: {x: 816.1, y: 137.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224564900075914694
@@ -4751,8 +4765,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000033974964, y: 0.000020373995}
-  m_SizeDelta: {x: 0, y: 283.71747}
+  m_AnchoredPosition: {x: -0.000034503388, y: -0.000070648035}
+  m_SizeDelta: {x: 0, y: 283.92255}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224622355972945416
 RectTransform:
@@ -4867,7 +4881,7 @@ RectTransform:
   m_Father: {fileID: 224900941768837174}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.000000059604645}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -5210,8 +5224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 428.99997, y: -52.05873}
-  m_SizeDelta: {x: 858, y: 20.317461}
+  m_AnchoredPosition: {x: 428.99997, y: -52.161285}
+  m_SizeDelta: {x: 858, y: 20.522564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224959835026558786
 RectTransform:

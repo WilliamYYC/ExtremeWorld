@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Managers;
+using Models;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,9 @@ public class UIQuestInfo : MonoBehaviour {
 
 	public Text RewardMoney;
 	public Text RewardExp;
+
+	public Button NavButton;
+	private int npc = 0;
 	// Use this for initialization
 	void Start () {
 		
@@ -49,6 +53,16 @@ public class UIQuestInfo : MonoBehaviour {
 		this.RewardMoney.text = quest.questDefine.RewardGold.ToString();
 		this.RewardExp.text = quest.questDefine.RewardExp.ToString();
 
+		//任务导航开启导航按钮
+        if (quest.Info == null)
+        {
+			this.npc = quest.questDefine.AcceptNPC;
+        }
+        else if (quest.Info.Status == SkillBridge.Message.QuestStatus.Completed)
+		{
+			this.npc = quest.questDefine.SubmitNPC;
+		}
+		this.NavButton.gameObject.SetActive(this.npc > 0);
 		foreach (var fitter in this.GetComponentsInChildren<ContentSizeFitter>())
 		{
 			fitter.SetLayoutVertical();
@@ -62,4 +76,11 @@ public class UIQuestInfo : MonoBehaviour {
 
 	public void OnClickAbandon()
 	{ }
+
+	public void OnClickNav()
+	{
+		Vector3 pos = NpcManager.Instance.GetNpcPosition(this.npc);
+		User.Instance.CurrentCharacterObject.startNav(pos);
+		UIManagers.Instance.Close<UIQuestSystem>();
+	}
 }

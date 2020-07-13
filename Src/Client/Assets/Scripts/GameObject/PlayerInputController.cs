@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 using Entities;
 using SkillBridge.Message;
 using Managers;
 using Services;
+using System;
 
 public class PlayerInputController:MonoBehaviour
 {
@@ -26,8 +28,10 @@ public class PlayerInputController:MonoBehaviour
 
     public bool onAir = false;
 
+    private NavMeshAgent agent;
+    private bool autoNav = false;
     // Use this for initialization
-    void start()
+    void Start()
     {
         state = SkillBridge.Message.CharacterState.Idle;
         if (this.character == null)
@@ -50,10 +54,48 @@ public class PlayerInputController:MonoBehaviour
             {
                 entityController.entity = this.character;
             }
-           
-
+        }
+        if (agent == null)
+        {
+            agent = this.gameObject.AddComponent<NavMeshAgent>();
+            agent.stoppingDistance = 0.3f;
         }
     }
+    //寻路移动
+    public void NavMove()
+    {
+        //寻路还在进行中直接返回
+        if (agent.pathPending)
+        {
+            return;
+        }
+        //寻路的路径无效关闭寻路
+        if (agent.pathStatus == NavMeshPathStatus.PathInvalid)
+        {
+            stopNav();
+            return;
+        }
+        //寻路还在进行中直接返回
+        if (agent.pathStatus != NavMeshPathStatus.PathComplete)
+        {
+            return;
+        }
+        //玩家方向键有输入关闭自动寻路
+        if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.1 || Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1)
+        {
+            stopNav();
+            return;
+        }
+
+        NavPathRenderer.Instance.SetPath(agent.path, agent.destination);
+        //代理关闭或者剩下的距离小于0.3关闭自动寻路
+        if (agent.isStopped || agent.remainingDistance < 2f)
+        {
+            stopNav();
+            return;
+        }
+    }
+
 
     void FixedUpdate()
     {
@@ -62,6 +104,11 @@ public class PlayerInputController:MonoBehaviour
             return;
         }
 
+        if (autoNav)
+        {
+            this.NavMove();
+            return;
+        }
         if (InputManager.Instance !=null && InputManager.Instance.isInputMode)
         {
             return;
@@ -121,6 +168,8 @@ public class PlayerInputController:MonoBehaviour
         }
     }
 
+   
+
     Vector3 lastPos;
     float lastSync = 0;
     private void LateUpdate()
@@ -131,12 +180,26 @@ public class PlayerInputController:MonoBehaviour
         //Debug.LogFormat("LateUpdate velocity {0} : {1}", this.rb.velocity.magnitude, this.speed);
         this.lastPos = this.rb.transform.position;
 
-        if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.position).magnitude > 50)
+        Vector3Int goLogicPos = GameObjectTool.WorldToLogic(this.rb.transform.position);
+        float logicOffset = (goLogicPos - this.character.position).magnitude;
+        if (logicOffset > 100)
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
             this.SendEntityEvent(EntityEvent.None);
         }
         this.transform.position = this.rb.transform.position;
+
+        //方向发生变化同步
+        Vector3 dir = GameObjectTool.LogicToWorld(character.direction);
+        Quaternion rot = new Quaternion();
+
+        rot.SetFromToRotation(dir, this.transform.forward);
+
+        if (rot.eulerAngles.y > this.turnAngle && rot.eulerAngles.y < (360-this.turnAngle))
+        {
+            this.character.SetDirection(GameObjectTool.WorldToLogic(this.transform.forward));
+            this.SendEntityEvent(EntityEvent.None);
+        }
     }
 
     public void SendEntityEvent(EntityEvent entityEvent, int param = 0)
@@ -145,6 +208,42 @@ public class PlayerInputController:MonoBehaviour
             entityController.OnEntityEvent(entityEvent,param);
 
         MapService.Instance.SendMapEntitySync(entityEvent, this.character.EntityData, param);
+    }
+
+    //寻路
+    public void startNav(Vector3 target)
+    {
+        StartCoroutine(beginNav(target));
+    }
+
+    //开始自动寻路
+    IEnumerator beginNav(Vector3 target)
+    {
+        agent.SetDestination(target);
+        yield return null;
+        autoNav = true;
+        if (state != CharacterState.Move)
+        {
+            state = CharacterState.Move;
+            this.character.MoveForward();
+            this.SendEntityEvent(EntityEvent.MoveFwd);
+            agent.speed = this.character.speed / 100f;
+        }
+    }
+
+    //停止自动寻路
+    public void stopNav()
+    {
+        autoNav = false;
+        agent.ResetPath();
+        if (state != CharacterState.Idle)
+        {
+            state = CharacterState.Idle;
+            this.rb.velocity = Vector3.zero;
+            this.character.Stop();
+            this.SendEntityEvent(EntityEvent.Idle);
+        }
+        NavPathRenderer.Instance.SetPath(null , Vector3.zero);
     }
 }
 

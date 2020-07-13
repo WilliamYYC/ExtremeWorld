@@ -34,7 +34,9 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UISystemConfig), new UIElements() { ResourcePath = "UI/UISystemConfig", Cache = false });
 	}
 
-	~UIManagers()
+  
+
+    ~UIManagers()
 	{ }
 
 	//显示UI
@@ -83,5 +85,10 @@ public class UIManagers : Singleton<UIManagers> {
 				info.Instance = null;
 			}
 		}
+	}
+
+	public void Close<T>()
+	{
+		this.Close(typeof(T));
 	}
 }
