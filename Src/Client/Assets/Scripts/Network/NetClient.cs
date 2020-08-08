@@ -52,6 +52,7 @@ namespace Network
         private bool connecting = false;
 
         private int retryTimes = 0;
+        //重连尝试总共三次
         private int retryTimesTotal = DEF_TRY_CONNECT_TIMES;
         private float lastSendTime = 0;
         private int sendOffset = 0;
@@ -67,6 +68,7 @@ namespace Network
             MessageDistributer.Instance.ThrowException = true;
         }
 
+        //连接建立回调
         protected virtual void RaiseConnected(int result, string reason)
         {
             ConnectEventHandler handler = OnConnect;
@@ -75,7 +77,7 @@ namespace Network
                 handler(result, reason);
             }
         }
-
+        //连接断开回调
         public virtual void RaiseDisonnected(int result, string reason = "")
         {
             ConnectEventHandler handler = OnDisconnect;
@@ -84,7 +86,7 @@ namespace Network
                 handler(result, reason);
             }
         }
-
+        //连接超时回调
         protected virtual void RaiseExpectPackageTimeout()
         {
             ExpectPackageEventHandler handler = OnExpectPackageTimeout;

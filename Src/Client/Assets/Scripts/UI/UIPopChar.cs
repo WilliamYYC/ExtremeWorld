@@ -23,10 +23,11 @@ public class UIPopChar : UIWindows,IDeselectHandler {
     }
 
 
-	public void OnEable()
+	public void OnEnable()
     {
         this.GetComponent<Selectable>().Select();
         this.Root.transform.position = Input.mousePosition + new Vector3(80, 0, 0);
+        this.Root.transform.SetAsLastSibling();
     }
 		
 	public void OnChat()

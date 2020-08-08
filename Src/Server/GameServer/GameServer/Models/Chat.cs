@@ -1,4 +1,5 @@
-﻿using GameServer.Entities;
+﻿using Common.Utils;
+using GameServer.Entities;
 using GameServer.Managers;
 using SkillBridge.Message;
 using System;
@@ -17,10 +18,11 @@ namespace GameServer.Models
         public int SystemIdx;
         public int teamIdx;
         public int guildIdx;
-
+        
         public Chat(Character owner)
         {
             this.Owner = owner;
+
         }
         public void PostProcess(NetMessageResponse message)
         {
@@ -29,6 +31,8 @@ namespace GameServer.Models
                 message.Chat = new ChatResponse();
                 message.Chat.Result = Result.Success;
             }
+
+            
 
             this.localIdx = ChatManager.Instance.GetLocalMessages(this.Owner.Info.mapId, this.localIdx, message.Chat.localMessages);
             this.worldIdx = ChatManager.Instance.GetWorldMessages(this.worldIdx, message.Chat.worldMessages);

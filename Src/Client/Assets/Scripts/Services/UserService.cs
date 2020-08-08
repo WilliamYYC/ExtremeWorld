@@ -31,8 +31,7 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnGameEnter);
             MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnGameLeave);
-
-            
+        
         }
 
        
@@ -245,7 +244,7 @@ namespace Services
         void OnGameEnter(object sender, UserGameEnterResponse response)
         {
             Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
-
+            //进入游戏之前初始化相应的资源
             if (response.Result == Result.Success)
             {
                 if (response.Character != null)
@@ -265,6 +264,7 @@ namespace Services
         public void sendGameLeave(bool QuitGame = false)
         {
             this.isQuited = QuitGame;
+            ChatManager.Instance.ClearMessage();
             Debug.LogFormat("UserGameLeaveRequest");
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();

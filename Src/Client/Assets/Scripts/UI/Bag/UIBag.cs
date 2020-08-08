@@ -1,5 +1,6 @@
 ﻿using Managers;
 using Models;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ public class UIBag : UIWindows {
 
 	public Text Moneys;
 	public Transform[] Pages;
-
+	private UIBagItem selectedItem;
 
 	public GameObject BagItem;
 
@@ -22,6 +23,7 @@ public class UIBag : UIWindows {
 			Slots = new List<Image>();
 			for (int page = 0; page < this.Pages.Length; page++)
 			{
+				//获取所有背包里的道具组件包括不活跃的
 				Slots.AddRange(this.Pages[page].GetComponentsInChildren<Image>(true));
 			}
 		}
@@ -37,12 +39,12 @@ public class UIBag : UIWindows {
 			if (item.itemId >0)
 			{
 				GameObject go = Instantiate(BagItem, Slots[i].transform);
-				var ui = go.GetComponent<UIIconItem>();
-				var def = ItemManager.Instance.items[item.itemId].itemDefine;
-				ui.SetMainIcon(def.Icon, item.Count.ToString());
+				var ui = go.GetComponent<UIBagItem>();
+				ui.SetBagItem(item, this);
 			}
 
 		}
+		//默认解锁20个格子 把未解锁的颜色编程灰色
 		for (int i = BagManager.Instance.items.Length; i < Slots.Count; i++)
 		{
 			Slots[i].color = Color.gray;
@@ -51,7 +53,7 @@ public class UIBag : UIWindows {
 	}
 
 
-	void Clear()
+    void Clear()
 	{
 		for (int i = 0; i < Slots.Count; i++)
 		{
@@ -62,6 +64,7 @@ public class UIBag : UIWindows {
 		}
 	}
 
+	//每次整理背包都先销毁在重新生成
 	public void OnReset()
 	{
 		BagManager.Instance.Reset();

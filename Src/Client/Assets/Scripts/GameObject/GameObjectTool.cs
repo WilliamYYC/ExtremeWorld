@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
+//世界与本地比例为1:100
 public class GameObjectTool
 {
     public static Vector3 LogicToWorld(NVector3 vector)
@@ -47,13 +48,14 @@ public class GameObjectTool
         };
     }
 
-
+    //同步更新角色的位置信息
     public static bool EntityUpdate(NEntity entity,UnityEngine.Vector3 position, Quaternion rotation,float speed)
     {
         NVector3 pos = WorldToLogicN(position);
         NVector3 dir = WorldToLogicN(rotation.eulerAngles);
         int spd = WorldToLogic(speed);
         bool updated = false;
+
         if(!entity.Position.Equal(pos))
         {
             entity.Position = pos;

@@ -34,12 +34,13 @@ namespace Managers
             }
         }
 
-
+        //整理重置背包
         public void Reset()
         {
             int i = 0;
             foreach (var kv in ItemManager.Instance.items)
             {
+                //如果数量小于最大堆叠数就接着用
                 if (kv.Value.count <= kv.Value.itemDefine.StackLimit)
                 {
                     this.items[i].itemId = (ushort)kv.Key;
@@ -48,6 +49,7 @@ namespace Managers
                 else
                 {
                     int count = kv.Value.count;
+                    //如果数量大于最大堆叠数就是用后面的格子
                     while (count > kv.Value.itemDefine.StackLimit)
                     {
                         this.items[i].itemId = (ushort)kv.Key;
@@ -65,30 +67,7 @@ namespace Managers
 
      
 
-        unsafe void Analyze(byte[] data)
-        {
-            fixed (byte* pt = data)
-            {
-                for (int i = 0; i < this.Unlocked; i++)
-                {
-                    BagItem* item = (BagItem*)(pt + i * sizeof(BagItem));
-                    items[i] = *item;
-                }
-            }
-        }
-
-        unsafe public NBagInfo GetBagInfo()
-        {
-            fixed (byte* pt = Info.Items)
-            {
-                for (int i = 0; i < this.Unlocked; i++)
-                {
-                    BagItem* item = (BagItem*)(pt + i * sizeof(BagItem));
-                    *item = items[i];
-                }
-            }
-            return this.Info;
-        }
+       
 
 
         public void RemoveItem(int itemid, int count)
@@ -123,6 +102,7 @@ namespace Managers
             {
                 for (int i = 0; i < this.items.Length; i++)
                 {
+                    //找一个没道具的格子放这个道具
                     if (this.items[i].itemId == 0)
                     {
                         this.items[i].itemId = (ushort)itemid;
@@ -131,6 +111,32 @@ namespace Managers
                     }
                 }
             }
+        }
+
+        //用指针解析binary的信息
+        unsafe void Analyze(byte[] data)
+        {
+            fixed (byte* pt = data)
+            {
+                for (int i = 0; i < this.Unlocked; i++)
+                {
+                    BagItem* item = (BagItem*)(pt + i * sizeof(BagItem));
+                    items[i] = *item;
+                }
+            }
+        }
+
+        unsafe public NBagInfo GetBagInfo()
+        {
+            fixed (byte* pt = Info.Items)
+            {
+                for (int i = 0; i < this.Unlocked; i++)
+                {
+                    BagItem* item = (BagItem*)(pt + i * sizeof(BagItem));
+                    *item = items[i];
+                }
+            }
+            return this.Info;
         }
     }
 }

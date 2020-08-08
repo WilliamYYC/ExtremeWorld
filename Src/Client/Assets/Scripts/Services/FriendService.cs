@@ -88,6 +88,23 @@ namespace Services
         {
             Debug.Log("OnFriendList");
             FriendManager.Instance.allFriends = response.Friends;
+            FriendManager.Instance.allLiveFriends.Clear();
+            FriendManager.Instance.allLeaveFriends.Clear();
+
+            foreach (var item in response.Friends)
+            {
+                if (item.Status == 1)
+                {
+                    FriendManager.Instance.allLiveFriends.Add(item);
+                }
+            }
+            foreach (var item in response.Friends)
+            {
+                if (item.Status == 0)
+                {
+                    FriendManager.Instance.allLeaveFriends.Add(item);
+                }
+            }
             if (this.OnFriendUpdate!=null)
             {
                 this.OnFriendUpdate();

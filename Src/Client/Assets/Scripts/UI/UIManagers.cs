@@ -32,6 +32,7 @@ public class UIManagers : Singleton<UIManagers> {
 		UIResources.Add(typeof(UIPopChar), new UIElements() { ResourcePath = "UI/UIPopChar", Cache = false });
 		UIResources.Add(typeof(UIRide), new UIElements() { ResourcePath = "UI/UIRide", Cache = false });
 		UIResources.Add(typeof(UISystemConfig), new UIElements() { ResourcePath = "UI/UISystemConfig", Cache = false });
+		UIResources.Add(typeof(UIPopBag), new UIElements() { ResourcePath = "UI/UIPopBag", Cache = false });
 	}
 
   
@@ -69,7 +70,7 @@ public class UIManagers : Singleton<UIManagers> {
 		return default (T);
 	}
 
-	//关闭UI
+	//关闭UI,销毁内存资源
 	public void Close(Type type)
 	{
 		if (UIResources.ContainsKey(type))

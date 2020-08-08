@@ -82,6 +82,17 @@ public class UIQuestSystem : UIWindows {
 
 	public  void OnQuestSelected(ListView.ListViewItem Item)
 	{
+        if (Item.owner == this.listMain &&  this.listBranch.SelectedItem!=null)
+        {
+			this.listBranch.SelectedItem.Selected = false;
+			this.listBranch.SelectedItem = null;
+		}
+        if (Item.owner == this.listBranch && this.listMain.SelectedItem!=null )
+		{
+			this.listMain.SelectedItem.Selected = false;
+			this.listMain.SelectedItem = null;
+		}
+        
 		UIQuestItem questItem = Item as UIQuestItem;
 		this.questInfo.SetQuestInfo(questItem.quest);
 	}

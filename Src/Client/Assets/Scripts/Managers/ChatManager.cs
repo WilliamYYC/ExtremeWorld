@@ -124,6 +124,13 @@ namespace Managers
             }
         }
 
+        public void ClearMessage()
+        {
+            for (int i = 0; i < this.Messages.Length; i++)
+            {
+                this.Messages[i].Clear();
+            }
+        }
         //添加系统消息
         public void AddSystemMessage(string message, string from ="")
         {

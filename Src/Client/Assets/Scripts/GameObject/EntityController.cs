@@ -18,6 +18,7 @@ public class EntityController:MonoBehaviour,IEntityNotify
     public UnityEngine.Vector3 direction;
     Quaternion rotation;
 
+    //上一次的位置信息
     public UnityEngine.Vector3 lastPosition;
     Quaternion lastRotation;
 
@@ -27,14 +28,18 @@ public class EntityController:MonoBehaviour,IEntityNotify
 
     public bool isPlayer = false;
 
+    //坐骑相关
     public RideController rideController;
     private int currentRide;
 
     public Transform rideBone;
+
+
     void Start()
     {
         if (entity != null)
         {
+            //注册位置同步事件
             EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId,this);
             this.UpdateTransform();
             
@@ -81,6 +86,7 @@ public class EntityController:MonoBehaviour,IEntityNotify
 
     public void OnEntityRemoved()
     {
+        //UIWorldElementManager全局mono元素 删除放到实体被移除这里来
         if (UIWorldElementManager.Instance !=null)
         {
             UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
@@ -88,6 +94,14 @@ public class EntityController:MonoBehaviour,IEntityNotify
         Destroy(this.gameObject);
     }
 
+    //角色改变打印日志，（开启会增加大量日志信息,如果要调试其他功能可以先注释掉）
+    public void OnEntityChanged(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChanged ID {0}  pos {1}  dir {2} speed{3} ", entity.entityId, entity.position, entity.direction, entity.speed);
+    }
+
+
+    //实体事件处理函数
     public void OnEntityEvent(EntityEvent entityEvent, int param)
     {
         switch (entityEvent)
@@ -109,6 +123,7 @@ public class EntityController:MonoBehaviour,IEntityNotify
                 this.Ride(param);
                 break;
         }
+        //如果有坐骑，调用坐骑事件处理函数
         if (this.rideController!=null)
         {
             this.rideController.OnEntityEvent(entityEvent, param);
@@ -132,6 +147,8 @@ public class EntityController:MonoBehaviour,IEntityNotify
             Destroy(this.rideController.gameObject);
             this.rideController = null;
         }
+
+        //上坐骑和下坐骑的切换
         if (this.rideController == null)
         {
             this.anim.transform.localPosition = Vector3.zero;
@@ -144,16 +161,10 @@ public class EntityController:MonoBehaviour,IEntityNotify
         }
     }
 
-
+    //设置任务角色和坐骑的接触点
     public void SetRidePosition(Vector3 position)
     {
         this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
     }
-    public void OnEntityChanged(Entity entity)
-    {
-        Debug.LogFormat("OnEntityChanged ID {0}  pos {1}  dir {2} speed{3} ", entity.entityId , entity.position, entity.direction, entity.speed);
-     }
-
-
 
 }

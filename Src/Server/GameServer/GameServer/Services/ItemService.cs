@@ -19,7 +19,8 @@ namespace GameServer.Services
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ItemEquipRequest>(this.OnItemEquip);
         }
 
-       
+        public void Init() { }
+
 
         void OnItemBuy(NetConnection<NetSession> sender, ItemBuyRequest message)
         {
@@ -40,6 +41,6 @@ namespace GameServer.Services
             sender.Session.Response.itemEquip.Result = result;
             sender.SendResponse();
         }
-        public void Init() { }
+        
     }
 }

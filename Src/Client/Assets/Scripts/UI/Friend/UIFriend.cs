@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIFriend : UIWindows {
 
@@ -12,6 +13,7 @@ public class UIFriend : UIWindows {
 	public ListView listMain;
 	public Transform ItemRoot;
 	public UIFriendItem friendItem;
+	public InputField friendFind;
 	// Use this for initialization
 	void Start () {
 		FriendService.Instance.OnFriendUpdate = RefreshUI;
@@ -95,21 +97,54 @@ public class UIFriend : UIWindows {
 			FriendService.Instance.SendFriendRemoveRequest(this.friendItem.friend.Id, this.friendItem.friend.friendInfo.Id);
 		};
 	}
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void OnClickFriendFind()
+	{
+		string str = friendFind.text;
+        if (string.IsNullOrEmpty(str))
+        {
+			RefreshUI();
+			return;
+        }
+		ClearFriendList();
+
+        foreach (var item in FriendManager.Instance.allFriends)
+        {
+            if (item.friendInfo.Name.Contains(str))
+            {
+				GameObject go = Instantiate(ItemPrefab, this.listMain.transform);
+				UIFriendItem ui = go.GetComponent<UIFriendItem>();
+				ui.SetFriendInfo(item);
+				this.listMain.AddItem(ui);
+			}
+        }
 	}
+		// Update is called once per frame
+		void Update () {
+			InputManager.Instance.isInputMode = friendFind.isFocused;
+		}
 
 
 	private void InitFriendItems()
 	{
-		foreach (var item in FriendManager.Instance.allFriends)
+		//先刷新在线的玩家
+		foreach (var item in FriendManager.Instance.allLiveFriends)
 		{
 			GameObject go = Instantiate(ItemPrefab, this.listMain.transform);
 			UIFriendItem ui = go.GetComponent<UIFriendItem>();
 			ui.SetFriendInfo(item);
 			this.listMain.AddItem(ui);
 		}
+
+		//先刷新离线的玩家
+		foreach (var item in FriendManager.Instance.allLeaveFriends)
+		{
+			GameObject go = Instantiate(ItemPrefab, this.listMain.transform);
+			UIFriendItem ui = go.GetComponent<UIFriendItem>();
+			ui.SetFriendInfo(item);
+			this.listMain.AddItem(ui);
+		}
+		
 	}
 
 	private void ClearFriendList()

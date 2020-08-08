@@ -47,14 +47,14 @@ public class ListView : MonoBehaviour
     public ListViewItem SelectedItem
     {
         get { return selectedItem; }
-        private set
+        set
         {
             if (selectedItem!=null && selectedItem != value)
             {
                 selectedItem.Selected = false;
             }
             selectedItem = value;
-            if (onItemSelected != null)
+            if (onItemSelected != null && value !=null)
                 onItemSelected.Invoke((ListViewItem)value);
         }
     }

@@ -117,8 +117,11 @@ namespace Managers
             {
                 this.npcQuests[NPC] = new Dictionary<NpcQuestStatus, List<Quest>>();
             }
-            List < Quest > availables;
+            //可接任务
+            List <Quest> availables;
+            //已完成任务
             List<Quest> completes;
+            //未完成任务
             List<Quest> incompletes;
 
             if (!this.npcQuests[NPC].TryGetValue(NpcQuestStatus.Available, out availables))
@@ -139,6 +142,7 @@ namespace Managers
                 this.npcQuests[NPC][NpcQuestStatus.Incomplete] = incompletes;
             }
 
+            //quest.Info 等于 null说明没有接任务
             if (quest.Info == null)
             {
                 if (NPC == quest.questDefine.AcceptNPC && !this.npcQuests[NPC][NpcQuestStatus.Available].Contains(quest))
@@ -224,6 +228,7 @@ namespace Managers
             }
             if (quest.Info != null || quest.Info.Status == QuestStatus.InProgress)
             {
+                //显示未完成的任务对话信息
                 if (!string.IsNullOrEmpty(quest.questDefine.DialogIncomplete))
                 {
                     MessageBox.Show(quest.questDefine.DialogIncomplete);
@@ -258,6 +263,7 @@ namespace Managers
             Quest result;
             if (this.allQuests.ContainsKey(quest.QuestId))
             {
+                //更新任务信息
                 this.allQuests[quest.QuestId].Info = quest;
                 result = this.allQuests[quest.QuestId];
             }

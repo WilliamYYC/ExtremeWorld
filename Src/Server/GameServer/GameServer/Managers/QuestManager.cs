@@ -22,6 +22,7 @@ namespace GameServer.Managers
 ;
         }
 
+        //获取当前角色身上的所有任务
         public  void GetQuestInfos(List<NQuestInfo> list)
         {
             foreach (var quest in this.Owner.Data.Quests)

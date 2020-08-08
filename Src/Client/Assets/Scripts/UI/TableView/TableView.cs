@@ -14,6 +14,7 @@ public class TableView : MonoBehaviour {
 	public UnityAction<int> OnTabSelect;
 	// Use this for initialization
 	IEnumerator Start () {
+		//tableButtons绑定对应的tabView
 		for (int i = 0; i < tableButtons.Length; i++)
 		{
 			tableButtons[i].tabView = this;

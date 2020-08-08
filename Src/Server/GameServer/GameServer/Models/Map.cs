@@ -75,10 +75,12 @@ namespace GameServer.Models
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.character.Info);
                 if (kv.Value.character != character)
                 {
+                    //给当前地图其他用户发送自己的信息
                     this.AddCharacterEnterMap(kv.Value.connection, character.Info);
                 }
             }
-            foreach(var kv in this.MonsterManager.Monsters)
+            //给当前地图所用用户发送怪物的信息
+            foreach (var kv in this.MonsterManager.Monsters)
             {
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
             }

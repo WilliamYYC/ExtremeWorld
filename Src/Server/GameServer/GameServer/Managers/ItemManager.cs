@@ -14,6 +14,7 @@ namespace GameServer.Managers
 {
     class ItemManager
     {
+        //道具的拥有者
         Character Owner;
 
         public Dictionary<int, Item> items = new Dictionary<int, Item>();
@@ -57,6 +58,8 @@ namespace GameServer.Managers
             }
             return false;
         }
+
+
         //获取item
         public Item GetItem(int itemid)
         {
@@ -86,6 +89,7 @@ namespace GameServer.Managers
                 Item item1 = new Item(dbcharItem);
                 this.items.Add(itemid, item1);
             }
+            //通知道具状态管理添加道具的消息
             this.Owner.statusManager.AddItemChange(itemid, count, StatusAction.Add);
             Log.InfoFormat("{0}  AddItem ID:{1} AddCount {2} ", this.Owner.Data.ID, itemid, count);
             //DBService.Instance.Save();

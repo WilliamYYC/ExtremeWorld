@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Utils;
 using GameServer.Entities;
 using GameServer.Managers;
 using Network;
@@ -73,6 +74,8 @@ namespace GameServer.Services
                 ChatManager.Instance.AddMessage(character, request.Message);
                 sender.SendResponse();
             }
+            
+            
         }
     }
 }

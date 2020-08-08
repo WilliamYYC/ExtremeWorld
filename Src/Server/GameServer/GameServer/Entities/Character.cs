@@ -47,6 +47,7 @@ namespace GameServer.Entities
             this.Info.Entity = this.EntityData;
             this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
 
+            //在角色身上绑定一个道具管理器
             this.itemManager = new ItemManager(this);
             this.itemManager.GetItemInfos(this.Info.Items);
 
@@ -57,7 +58,9 @@ namespace GameServer.Entities
 
             this.QuestManager = new QuestManager(this);
             this.QuestManager.GetQuestInfos(this.Info.Quests);
+            //道具金钱的状态改变管理器
             this.statusManager = new StatusManager(this);
+
             this.FriendManager = new FriendManager(this);
             this.FriendManager.GetFriendInfos(this.Info.Friends);
 

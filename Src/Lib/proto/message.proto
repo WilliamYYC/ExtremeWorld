@@ -629,6 +629,7 @@ message CreateGuildRequest
 {
     string guild_name = 1;
     string notice = 2;
+    int32 gold = 3;
 }
 
 message CreateGuildResponse

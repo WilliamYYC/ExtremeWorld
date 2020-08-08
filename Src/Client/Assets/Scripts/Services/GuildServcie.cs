@@ -47,7 +47,7 @@ namespace Services
         }
 
 
-        public void sendGuildCreate(string guildName, string guildNotice)
+        public void sendGuildCreate(string guildName, string guildNotice, int gold)
         {
             Debug.Log("sendGuildCreate");
             NetMessage message = new NetMessage();
@@ -55,6 +55,7 @@ namespace Services
             message.Request.guildCreate = new CreateGuildRequest();
             message.Request.guildCreate.GuildName = guildName;
             message.Request.guildCreate.Notice = guildNotice;
+            message.Request.guildCreate.Gold = gold;
             NetClient.Instance.SendMessage(message);
         }
 

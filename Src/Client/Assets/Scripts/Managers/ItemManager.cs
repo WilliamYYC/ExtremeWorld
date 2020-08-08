@@ -22,23 +22,11 @@ public class ItemManager : Singleton<ItemManager> {
 
 			Debug.LogFormat("ItemManager : Init() : {0}", newItem);
 		}
+		//注册道具同步事件
 		StatusService.Instance.RegisterStatusNotify(StatusType.Item, OnItemNotify);
 	}
 
-	public ItemDefine GetItem( int itemid)
-	{
-		return null;
-	}
-
-	public bool UseItem(int itemid)
-	{
-		return false;
-	}
-
-	public bool UseItem(ItemDefine item)
-	{
-		return false;
-	}
+	
 
 
 	bool OnItemNotify(NStatus status)
@@ -66,6 +54,7 @@ public class ItemManager : Singleton<ItemManager> {
 			item = new Item(itemid, count);
 			this.items.Add(itemid, item);
 		}
+		//背包中显示增加道具
 		BagManager.Instance.AddItem(itemid, count);
 	}
 
@@ -76,6 +65,7 @@ public class ItemManager : Singleton<ItemManager> {
 			return;
 		}
 		Item item = this.items[itemid];
+		//删除的道具数量少于传入的数量返回
 		if (item.count < count)
 			return;
 

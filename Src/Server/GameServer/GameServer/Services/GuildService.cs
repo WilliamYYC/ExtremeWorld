@@ -55,7 +55,19 @@ namespace GameServer.Services
                 sender.SendResponse();
                 return;
             }
-            GuildManager.Instance.CreateGuild(message.GuildName, message.Notice , character);
+            
+            if (sender.Session.Character.Gold >= message.Gold)
+            {
+                GuildManager.Instance.CreateGuild(message.GuildName, message.Notice, character);
+            }
+            else
+            {
+                sender.Session.Response.guildCreate.Result = Result.Failed;
+                sender.Session.Response.guildCreate.Errormsg = "公会创建资金不足";
+                sender.SendResponse();
+                return;
+            }
+            
             sender.Session.Response.guildCreate.guildInfo = character.Guild.GuildInfo(character);
             sender.Session.Response.guildCreate.Result = Result.Success;
             sender.SendResponse();

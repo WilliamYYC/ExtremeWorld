@@ -21,11 +21,13 @@ public class LoadingManager : MonoBehaviour {
     // Use this for initialization
     IEnumerator Start()
     {
+        //初始化日志库
         log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo("log4net.xml"));
         UnityLogger.Init();
         Common.Log.Init("Unity");
         Common.Log.Info("LoadingManager start");
 
+        //初始化loading界面
         UITips.SetActive(true);
         UILoading.SetActive(false);
         UILogin.SetActive(false);
@@ -34,6 +36,7 @@ public class LoadingManager : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         UITips.SetActive(false);
 
+        //加载配置表文件
         yield return DataManager.Instance.LoadData();
 
         //Init basic services
@@ -46,6 +49,7 @@ public class LoadingManager : MonoBehaviour {
         ChatService.Instance.Init();
         ShopManager.Instance.Init();
         SoundManager.Instance.PlayMusic(SoundDefine.Music_Login);
+       
         // Fake Loading Simulate
         for (float i = 50; i < 100;)
         {

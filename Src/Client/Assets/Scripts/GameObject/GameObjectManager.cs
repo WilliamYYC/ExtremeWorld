@@ -17,11 +17,10 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
     protected override  void  OnStart()
     {
         StartCoroutine(InitGameObjects());
+        //注册角色进入离开事件
         CharacterManager.Instance.OnCharacterEnter += OnCharacterEnter;
         CharacterManager.Instance.OnCharacterLeave += OnCharacterLeave;
     }
-
-    
 
     private void OnDestroy()
     {
@@ -45,10 +44,13 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
 
         if (this.Characters[cha.entityId] != null)
         {
+            //先销毁角色，在移除Dictionary中角色
             Destroy(this.Characters[cha.entityId]);
             this.Characters.Remove(cha.entityId);
         }
     }
+
+
     IEnumerator InitGameObjects()
     {
         foreach (var cha in CharacterManager.Instance.characters.Values)
@@ -60,14 +62,17 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
 
     private void CreateCharacterObject(Character character)
     {
+        
         if (!Characters.ContainsKey(character.entityId) || Characters[character.entityId] == null)
         {
             UnityEngine.Object obj = Resloader.Load<UnityEngine.Object>(character.Define.Resource);
+
             if(obj == null)
             {
                 Debug.LogErrorFormat("Character[{0}] Resource[{1}] not existed.",character.Define.TID, character.Define.Resource);
                 return;
             }
+
             GameObject go = (GameObject)Instantiate(obj, this.transform);
             go.name = "Character_" + character.Id + "_" + character.Name;
             Characters[character.entityId] = go;
@@ -109,6 +114,7 @@ public class GameObjectManager :MonoSingleton<GameObjectManager>
        
     }
 
+    //从配置中获取坐骑Controller
     public RideController LoadRide(int rideId, Transform parent)
     {
         var RideDefine = DataManager.Instance.Rides[rideId];

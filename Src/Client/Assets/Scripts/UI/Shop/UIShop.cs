@@ -74,7 +74,8 @@ public class UIShop : UIWindows {
 		}
 		if (!ShopManager.Instance.BuyItem(this.shop.ID, this.selectedItem.ShopItemID))
 		{
-
+			MessageBox.Show("道具无法购买", "购买提示");
+			return;
 		}
 	}
 	// Update is called once per frame

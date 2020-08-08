@@ -68,6 +68,7 @@ namespace Managers
 			return eventMap[npcs.Function](npcs);
 		}
 
+		//NPC的任务交互
 		public bool DoTaskInteractive(NpcDefine npcs)
 		{
 			var status = QuestManager.Instance.GetQuestStatusByNpc(npcs.ID);
@@ -79,11 +80,12 @@ namespace Managers
 			return QuestManager.Instance.OpenNpcQuest(npcs.ID);
 		}
 
+		//更新NPC的位置信息 留的接口以后可能会用到
 		public void  UpdateNpcPosition(int npc, Vector3 pos)
         {
 			this.npcPositions[npc] = pos;
         }
-
+		//获取NPC的位置信息 留的接口以后可能会用到
 		public Vector3 GetNpcPosition(int npc)
         {
 			return this.npcPositions[npc];

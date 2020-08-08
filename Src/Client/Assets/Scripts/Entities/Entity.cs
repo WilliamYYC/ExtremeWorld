@@ -21,6 +21,7 @@ namespace Entities
         public NEntity EntityData
         {
             get {
+                //每次返回之前更新一下实例对象的位置信息
                 UpdateEntityData();
                 return entityData;
             }

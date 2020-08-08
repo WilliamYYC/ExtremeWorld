@@ -1272,6 +1272,9 @@ namespace SkillBridge.Message
         [global::System.ComponentModel.DefaultValue("")]
         public string Notice { get; set; } = "";
 
+        [global::ProtoBuf.ProtoMember(3, Name = @"gold")]
+        public int Gold { get; set; }
+
     }
 
     [global::ProtoBuf.ProtoContract()]

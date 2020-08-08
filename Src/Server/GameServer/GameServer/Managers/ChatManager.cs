@@ -17,8 +17,20 @@ namespace GameServer.Managers
         public List<ChatMessage> worlds = new List<ChatMessage>();//世界
         public Dictionary<int, List<ChatMessage>> teams = new Dictionary<int, List<ChatMessage>>();//队伍消息
         public Dictionary<int, List<ChatMessage>> guilds = new Dictionary<int, List<ChatMessage>>();//公会消息
+        public double TimeChatTs;
         public void Init()
-        { 
+        {
+            TimeChatTs = TimeUtil.timestamp;
+        }
+
+        public void ClearMessage()
+        {
+            locals.Clear();
+            systems.Clear();
+            worlds.Clear();
+            teams.Clear();
+            guilds.Clear();
+            TimeChatTs = TimeUtil.timestamp;
         }
 
         public void AddMessage(Character from, ChatMessage message)
@@ -128,6 +140,11 @@ namespace GameServer.Managers
 
         public int GetMessage(int idx, List<ChatMessage> result, List<ChatMessage> messages)
         {
+            if (idx != 0 && messages.Count == 0)
+            {
+                return 0;
+            }
+
             if (idx == 0)
             {
                 if (messages.Count > GameDefine.MaxChatRecordNums)

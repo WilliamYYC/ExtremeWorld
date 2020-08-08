@@ -15,9 +15,9 @@ namespace GameServer.Managers
     {
         public Result EquipItem(NetConnection<NetSession> sender, int slot, int itemId, bool isEquip)
         {
-            //判断是否存在该装备
+            //判断是否存在该装备 职业不符合不能装备
             Character character = sender.Session.Character;
-            if (!character.itemManager.items.ContainsKey(itemId))
+            if (!character.itemManager.items.ContainsKey(itemId) || DataManager.Instance.Items[itemId].LimitClass != character.Info.Class)
             {
                 return Result.Failed;
             }

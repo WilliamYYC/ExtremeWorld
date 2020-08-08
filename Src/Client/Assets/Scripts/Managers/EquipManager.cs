@@ -39,10 +39,10 @@ namespace Managers
         {
             return Equips[(int)slot];
         }
-
+        //从byte数组中解析装备信息
         unsafe void ParseEquipData(byte[] data)
         {
-            fixed(byte* pt = this.Data)
+            fixed(byte* pt = data)
             {
                 for (int i = 0; i < this.Equips.Length; i++)
                 {
@@ -57,7 +57,7 @@ namespace Managers
                 
             }
         }
-
+        
         unsafe public byte[] GetEquipData()
         {
             fixed (byte* pt = this.Data)
@@ -88,6 +88,8 @@ namespace Managers
         {
             ItemService.Instance.SendItemEquip(Equip, false);
         }
+
+
         public void OnEquipItem(Item pendingEquip)
         {
             //已经穿上相同的装备return

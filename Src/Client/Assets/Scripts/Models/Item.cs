@@ -10,6 +10,7 @@ public class Item {
     public int itemId;
     public int count;
     public ItemDefine itemDefine;
+    //装备也归到道具中
     public EquipDefine EquipInfo;
     public Item(NItemInfo info) : this(info.Id, info.Count)
     {

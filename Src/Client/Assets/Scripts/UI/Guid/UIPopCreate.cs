@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Models;
+using Services;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +8,11 @@ using UnityEngine.UI;
 public class UIPopCreate : UIWindows {
 	public InputField GuildName;
 	public InputField GuildNotice;
+	public Text gold;
 	// Use this for initialization
 	void Start () {
 		GuildServcie.Instance.OnGuildCreateResult = OnGuildCreate;
+		gold.text = "5000";
 	}
 
 	private void onDestroy()
@@ -20,6 +23,7 @@ public class UIPopCreate : UIWindows {
 
     public override void OnYesClick()
     {
+		int goldnum = 0;
         if (string.IsNullOrEmpty(GuildName.text))
         {
 			MessageBox.Show("请输入公会名称","错误",MessageBoxType.Error);
@@ -43,7 +47,14 @@ public class UIPopCreate : UIWindows {
 			MessageBox.Show("公会宣言请在2和50个字符之间", "错误", MessageBoxType.Error);
 			return;
 		}
-		GuildServcie.Instance.sendGuildCreate(this.GuildName.text, this.GuildNotice.text);
+
+		if (User.Instance.CurrentCharacter.Gold < 5000)
+		{
+			MessageBox.Show("创建公会需要5000金币", "错误", MessageBoxType.Error);
+			return;
+		}
+		int.TryParse(gold.text, out goldnum);
+		GuildServcie.Instance.sendGuildCreate(this.GuildName.text, this.GuildNotice.text, goldnum);
 
 	}
     // Update is called once per frame

@@ -55,6 +55,7 @@ public class PlayerInputController:MonoBehaviour
                 entityController.entity = this.character;
             }
         }
+        //自动寻路代理
         if (agent == null)
         {
             agent = this.gameObject.AddComponent<NavMeshAgent>();

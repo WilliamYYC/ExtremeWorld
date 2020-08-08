@@ -18,8 +18,6 @@ namespace Services
             MessageDistributer.Instance.Subscribe<ItemEquipResponse>(this.OnItemEquip);
         }
 
-        
-
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<ItemBuyResponse>(this.OnItemBuy);
@@ -55,6 +53,7 @@ namespace Services
                 return false;
             }
             Debug.Log("SendItemEquip");
+            //装备未装备
             pendingEquip = Equip;
             this.isEquip = isEquip;
             NetMessage message = new NetMessage();
@@ -67,12 +66,14 @@ namespace Services
             NetClient.Instance.SendMessage(message);
             return true;
         }
+
         private void OnItemEquip(object sender, ItemEquipResponse message)
         {
             if (message.Result == Result.Success)
             {
                 if (pendingEquip != null)
                 {
+                    //是否装备,装备了就脱下 ，未装备就船上
                     if (this.isEquip)
                     {
                         EquipManager.Instance.OnEquipItem(pendingEquip);

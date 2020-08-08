@@ -57,8 +57,9 @@ namespace Network
         }
         private Queue<MessageArgs> messageQueue = new Queue<MessageArgs>();
 
-
+        //消息句柄的委托
         public delegate void MessageHandler<Tm>(T sender, Tm message);
+        //用一个字典管理注册的委托类
         private Dictionary<string, System.Delegate> messageHandlers = new Dictionary<string, System.Delegate>();
 
         private bool Running = false;
@@ -73,8 +74,10 @@ namespace Network
         {
         }
 
+        //订阅关注事件
         public void Subscribe<Tm>(MessageHandler<Tm> messageHandler)
         {
+            //通过反射获得类名
             string type = typeof(Tm).Name;
             if (!messageHandlers.ContainsKey(type))
             {
@@ -82,6 +85,7 @@ namespace Network
             }
             messageHandlers[type] = (MessageHandler<Tm>)messageHandlers[type] + messageHandler;
         }
+        //取消关注事件
         public void Unsubscribe<Tm>(MessageHandler<Tm> messageHandler)
         {
             string type = typeof(Tm).Name;
@@ -92,6 +96,7 @@ namespace Network
             messageHandlers[type] = (MessageHandler<Tm>)messageHandlers[type] - messageHandler;
         }
 
+        //处理消息回调
         public void RaiseEvent<Tm>(T sender,Tm msg)
         {
             string key = msg.GetType().Name;
@@ -118,12 +123,14 @@ namespace Network
             }
         }
 
+        //接受消息放入消息队列
         public void ReceiveMessage(T sender ,SkillBridge.Message.NetMessage message)
         {
             this.messageQueue.Enqueue(new MessageArgs() { sender = sender, message = message });
             threadEvent.Set();
         }
 
+        //清空消息队列
         public void Clear()
         {
             this.messageQueue.Clear();

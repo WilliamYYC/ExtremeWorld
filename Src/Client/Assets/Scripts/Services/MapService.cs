@@ -66,6 +66,7 @@ namespace Services
             else
             {
                 CharacterManager.Instance.clear();
+                ChatManager.Instance.ClearMessage();
             }
         }
 

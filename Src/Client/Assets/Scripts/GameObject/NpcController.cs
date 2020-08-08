@@ -27,20 +27,13 @@ public class NpcController : MonoBehaviour {
 		Npcs = NpcManager.Instance.GetNpcDefine(NpcID);
 		NpcManager.Instance.UpdateNpcPosition(NpcID, this.transform.position);
 		this.StartCoroutine(Actions());
+
+		//刷新NPC的任务信息
 		RefreshNpcStatus();
 		QuestManager.Instance.OnQuestStatusChanged += OnQuestStatusChanged;
 	}
 
-	void OnQuestStatusChanged(Quest quest)
-	{
-		this.RefreshNpcStatus();
-	}
 
-	 void RefreshNpcStatus()
-	{
-		questStatus = QuestManager.Instance.GetQuestStatusByNpc(this.NpcID);
-		UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);
-	}
 
 	void onDestroy()
 	{
@@ -134,9 +127,9 @@ public class NpcController : MonoBehaviour {
 	{
 		if (highlight)
 		{
-			if (renderer.sharedMaterial.color != Color.white)
+			if (renderer.sharedMaterial.color != Color.red)
 			{
-				renderer.sharedMaterial.color = Color.white;
+				renderer.sharedMaterial.color = Color.red;
 			}
 		}
 		else
@@ -146,5 +139,18 @@ public class NpcController : MonoBehaviour {
 				renderer.sharedMaterial.color = originColor;
 			}
 		}
+	}
+
+
+	//任务系统相关
+	void OnQuestStatusChanged(Quest quest)
+	{
+		this.RefreshNpcStatus();
+	}
+
+	void RefreshNpcStatus()
+	{
+		questStatus = QuestManager.Instance.GetQuestStatusByNpc(this.NpcID);
+		UIWorldElementManager.Instance.AddNpcQuestStatus(this.transform, questStatus);
 	}
 }

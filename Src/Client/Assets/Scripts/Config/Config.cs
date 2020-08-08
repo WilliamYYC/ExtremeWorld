@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 
+//配置类
 class Config
 {
+    //背景音乐
     public static bool MusicOn
     {
         get
@@ -14,7 +16,7 @@ class Config
             SoundManager.Instance.MusicOn = value;
         }
     }
-
+    //声音音效
     public static bool SoundOn
     {
         get
@@ -28,6 +30,7 @@ class Config
         }
     }
 
+    //背景音乐音量
     public static int MusicVolume
     {
         get
@@ -40,7 +43,7 @@ class Config
             SoundManager.Instance.MusicVolume = value;
         }
     }
-
+    //声音音效音量
     public static int SoundVolume
     {
         get

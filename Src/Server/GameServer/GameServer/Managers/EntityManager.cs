@@ -14,6 +14,7 @@ namespace GameServer.Managers
         private int idx = 0;
         public List<Entity> AllEntities = new List<Entity>();
 
+        //对应地图上的所有实体
         public Dictionary<int, List<Entity>> mapEntities = new Dictionary<int, List<Entity>>();
 
         public void AddEntity(int mapId, Entity entity) 
@@ -23,7 +24,7 @@ namespace GameServer.Managers
 
 
             List<Entity> entities = null;
-
+            //地图上是不是又该实体(角色)
             if (!mapEntities.TryGetValue(mapId, out entities))
             {
                 entities = new List<Entity>();
